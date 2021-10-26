@@ -28,7 +28,7 @@
 ### JOIN DULU TOT!!:
 
 <a href="https://t.me/codersUpdates"><img src="https://img.shields.io/badge/Channel%20RAM%20UBOT-red.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/gsahmanja"><img src="https://img.shields.io/badge/Join-TEMAN%20RANDOM-purple.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/gsahmanja"><img src="https://img.shields.io/badge/Join-GSAH%20MANJA-purple.svg?style=for-the-badge&logo=Telegram"></a>
 
 
 
