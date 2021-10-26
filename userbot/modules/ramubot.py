@@ -28,7 +28,7 @@ async def typewriter(typew):
                      "\n**Permisi Aku mau nimbrung Kk..**")
 
 
-@register(outgoing=True, pattern='^.geez(?: |$)(.*)')
+@register(outgoing=True, pattern='^.ren(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**piki Peler☑️**")
@@ -93,6 +93,6 @@ CMD_HELP.update({
     \nUsage: menampilkan alive bot.\
     \n\n`.sadboy`\
     \nUsage: hiks\
-    \n\n`.punten` ; `.geez`\
+    \n\n`.punten` ; `.ren`\
     \nUsage: misi."
 })
