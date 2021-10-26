@@ -46,7 +46,7 @@
 ##
 [![VEGETA-USERBOT-STRING](https://replit.com/badge/github/@ramadhani892/RAM-UBOT)](https://replit.com/@Randi356/StringSession-1#main.py)
 ##
-<a href="https://heroku.com/deploy?template=https://github.com/Randi356/RAM-UBOT.git"><img src="https://img.shields.io/badge/DEPLOY%20VEGETA%20USERBOT%20DI%20HEROKU-red?style=flat&logo=Heroku" width="325" height="50.100" />
+<a href="https://heroku.com/deploy?template=https://github.com/Randi356/VEGETA-USERBOT.git"><img src="https://img.shields.io/badge/DEPLOY%20VEGETA%20USERBOT%20DI%20HEROKU-red?style=flat&logo=Heroku" width="325" height="50.100" />
 
 <br>
 </p>
