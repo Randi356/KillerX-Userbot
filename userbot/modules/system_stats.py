@@ -159,7 +159,7 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**☛**RAM-UBOT Versi:** \n "
+            "**☛**VEGETA-UBOT Versi:** \n "
             f"{verout}"
             "\n**☛**Revisi:**\n "
             f"{revout}"
@@ -241,7 +241,7 @@ async def amireallyalive(alive):
         f"┣• `✨ Modules  :`{len(modules)} \n"
         f"╰✠╼━━━━━━❖━━━━━━━✠╯\n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-        f"[𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/Randi356/RAM-UBOT) || [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK}) \n"
+        f"[🔘ᴠᴇɢᴇᴛᴀ-ᴜꜱᴇʀʙᴏᴛ🔘]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/Randi356/RAM-UBOT) || [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK}) \n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰")
     if ALIVE_LOGO:
         try:
@@ -269,7 +269,7 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
-        f"       **♕  ⭐️𝗥𝗔𝗠-𝗨𝗕𝗢𝗧⭐️  ♕** \n"
+        f"       **♕🔘ᴠᴇɢᴇᴛᴀ-ᴜꜱᴇʀʙᴏᴛ🔘♕** \n"
         f"**╰✠╼━━━━━━❖━━━━━━━✠╯**\n"
         f"❃ **Tuan**             ➥ `{DEFAULTUSER}` \n"
         f"❃ **Username**    ➥ `@{user.username}` \n"
@@ -310,7 +310,7 @@ async def amireallyalive(alive):
     await asyncio.sleep(3)
     output = (
         f"**✠╼━━━━━━❖━━━━━━━✠ ** \n"
-        f"**          ⭐️𝗥𝗔𝗠-𝗨𝗕𝗢𝗧⭐️** \n"
+        f"**        🔘ᴠᴇɢᴇᴛᴀ-ᴜꜱᴇʀʙᴏᴛ🔘** \n"
         f"**✠╼━━━━━━❖━━━━━━━✠** \n"
         f"╭✠╼━━━━━━❖━━━━━━━✠╮ \n"
         f"┣|• `🤴 Majikan  :`{DEFAULTUSER} \n"
