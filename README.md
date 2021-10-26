@@ -10,13 +10,13 @@
   </a>
 </p>  
 
-![VIEWS](https://komarev.com/ghpvc/?username=ramadhani892)
+![VIEWS](https://komarev.com/ghpvc/?username=Randi356)
 
 <a href="https://t.me/StaryWild"><img src="https://img.shields.io/badge/KODE%20PENILAIAN-A+-blue.svg?style=for-the-badge&logo=Factor.">
 
 ## PEMILIK REPO
 * **Vegeta** 🦔
-[<img src="https://media.giphy.com/media/o97Wl6qaoJytXcppUj/giphy.gif">](https://t.me/FlashProSpeed)
+[<img src="https://telegra.ph/file/312dc9f0067b8b7a39728.jpg">](https://t.me/FlashProSpeed)
 
   
   
