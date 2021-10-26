@@ -98,7 +98,7 @@ def register(**args):
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                     text = "**RAM-UBOT ERROR**\n"
-                    link = "Silahkan chat: @MAAFGAUSAHSOKAP"
+                    link = "Silahkan chat: @FlashProSpeed"
                     text += "Untuk melaporkan kesalahan"
                     text += f"- tinggal teruskan pesan ini {link}.\n"
                     text += "Rama Siap Membantu Kamu\n"
