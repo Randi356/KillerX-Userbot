@@ -25,7 +25,7 @@ async def var(m):
 
 
 CMD_HELP.update({
-    "ramhelper":
+    "vegetahelper":
     "`.helpmy`\
 \nPenjelasan: Bantuan Untuk VEGETA-USERBOT.\
 \n`.rvars`\
