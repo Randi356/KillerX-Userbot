@@ -55,7 +55,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari RAM-USERBOT.`'
+                ' untuk dapat deploy perubahan terbaru dari VEGETA-USERBOT.`'
             )
             repo.__del__()
             return
@@ -236,9 +236,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     ".update"
-    "\nUsage: Untuk Melihat Pembaruan Terbaru RAM-UBOT."
+    "\nUsage: Untuk Melihat Pembaruan Terbaru VEGETA-UBOT."
     "\n\n.update one"
-    "\nUsage: Memperbarui RAM-UBOT."
+    "\nUsage: Memperbarui VEGETA-UBOT."
     "\n\n.update all"
-    "\nUsage: Memperbarui RAM-UBOT Dengan Cara Deploy Ulang."
+    "\nUsage: Memperbarui VEGETA-UBOT Dengan Cara Deploy Ulang."
 })
