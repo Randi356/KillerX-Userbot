@@ -1,12 +1,12 @@
 <a href="https://www.instagram.com/yotteno?r=nametag"><img src="https://telegra.ph/file/0e98f36a04f5d592f5d2d.jpg" width="320" height="211" alt="  Vegeta-UserBot" /></a>
 
 <p align="center">
-  <a href="https://github.com/Randi356/RAM-UBOT/fork">
-    <img src="https://img.shields.io/github/forks/Randi356/RAM-UBOT?label=Fork&style=social">
+  <a href="https://github.com/Randi356/VEGETA-USERBOT/fork">
+    <img src="https://img.shields.io/github/forks/Randi356/VEGETA-USERBOT?label=Fork&style=social">
     
   </a>
-  <a href="https://github.com/Randi356/RAM-UBOT">
-    <img src="https://img.shields.io/github/stars/Randi356/RAM-UBOT?style=social">
+  <a href="https://github.com/Randi356/VEGETA-USERBOT">
+    <img src="https://img.shields.io/github/stars/Randi356/VEGETA-USERBOT?style=social">
   </a>
 </p>  
 
@@ -15,7 +15,7 @@
 <a href="https://t.me/StaryWild"><img src="https://img.shields.io/badge/KODE%20PENILAIAN-A+-blue.svg?style=for-the-badge&logo=Factor.">
 
 ## PEMILIK REPO
-* **Vegeta** 🦔
+* **Vegeta**🔘
 [<img src="https://telegra.ph/file/312dc9f0067b8b7a39728.jpg">](https://t.me/FlashProSpeed)
 
   
@@ -27,7 +27,7 @@
 
 ### JOIN DULU TOT!!:
 
-<a href="https://t.me/codersUpdates"><img src="https://img.shields.io/badge/Channel%20RAM%20UBOT-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/codersUpdates"><img src="https://img.shields.io/badge/Channel%20VEGETA%20USERBOT-red.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/gsahmanja"><img src="https://img.shields.io/badge/Join-GSAH%20MANJA-purple.svg?style=for-the-badge&logo=Telegram"></a>
 
 
