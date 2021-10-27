@@ -1,4 +1,4 @@
-<a href="https://www.instagram.com/yotteno?r=nametag"><img src="https://telegra.ph/file/0e98f36a04f5d592f5d2d.jpg" width="320" height="211" alt="  Vegeta-UserBot" /></a>
+
 
 <p align="center">
   <a href="https://github.com/Randi356/VEGETA-USERBOT/fork">
