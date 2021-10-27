@@ -54,21 +54,21 @@
   
   # MODULES COMMAD NEW 2021
   
-``from platform import uname``
-``from userbot import ALIVE_NAME, CMD_HELP``
-``from userbot.events import register``
+`from platform import uname``
 
-``================= CONSTANT =================``
-``DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node``
-``============================================``
+`from userbot import ALIVE_NAME, CMD_HELP``
+`from userbot.events import register``
+`================= CONSTANT =================``
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node``
+`============================================``
   
-``@register(outgoing=True, pattern='^.hi(?: |$)(.*)')``
+`@register(outgoing=True, pattern='^.hi(?: |$)(.*)')``
 
-``async def typewriter(typew):``
+`async def typewriter(typew):``
 
-``typew.pattern_match.group(1)``
+`typew.pattern_match.group(1)``
 
-``await typew.edit("**Hello**")``
+`await typew.edit("**Hello**")``
 
 ## Credit
 TERIMAKASIH UNTUK
