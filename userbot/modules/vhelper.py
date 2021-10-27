@@ -27,7 +27,7 @@ async def var(m):
 CMD_HELP.update({
     "ramhelper":
     "`.helpmy`\
-\nPenjelasan: Bantuan Untuk RAM-UBOT.\
+\nPenjelasan: Bantuan Untuk VEGETA-USERBOT.\
 \n`.rvars`\
 \nPenjelasan: Untuk Melihat Beberapa Daftar Vars."
 })
