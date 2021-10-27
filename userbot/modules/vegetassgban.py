@@ -82,11 +82,11 @@ async def gben(userbot):
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
-        dark = await dc.reply("`Memulai Proses Gban Si Ngentot!`")
+        dark = await dc.reply("`Memulai Proses Gban Whacking...!`")
     else:
-        dark = await dc.edit("`Memproses Global Banned Si ngentot ini!!!`")
+        dark = await dc.edit("`Memproses Global Banned Whacking!!!`")
     me = await userbot.client.get_me()
-    await dark.edit(f"`Global Banned Akan Segera Aktif, ngentot!!!`")
+    await dark.edit(f"`Global Banned Akan Segera Aktif, Blok!!!`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -108,7 +108,7 @@ async def gben(userbot):
     if user:
         if user.id == 1779447750:
             return await dark.edit(
-                f"`LU GABISA GBAN RAMA, DIA YANG BIKIN GUA NGENTOTTT!!!`"
+                f"`LU GABISA GBAN HACKER, DIA YANG BIKIN GUA NGENTOTTT!!!`"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import gmute
@@ -127,7 +127,7 @@ async def gben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await dark.edit(f"`Global Banned Aktif ya ngentott✅`")
+                await dark.edit(f"`Global Banned Aktif ya Blok✅`")
             except BaseException:
                 b += 1
     else:
