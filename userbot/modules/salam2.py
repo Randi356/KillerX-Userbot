@@ -116,6 +116,11 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**GC SAMPAH KAYA GINI, BUBARIN AJA PLIS!!🤣**")
+    
+    @register(outgoing=True, pattern='^.psos(?: |$)(.*)')
+    async def typewriter(typew):
+        typew.pattern_match.group(1)
+        await typew.edit("**GC PANSOS LO KONTOL!!**")
 
 CMD_HELP.update({
     "salam3":
@@ -158,5 +163,7 @@ CMD_HELP.update({
 \n\n.m\
 \nUsage:\
 \n\n.k\
+\nUsage:\
+\n\n.psos\
 \nUsage:"
 })
