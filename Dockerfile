@@ -1,8 +1,8 @@
 # Using Python Slim-Buster
 FROM xluxz/geezproject:buster
-# RAM-UBOT
-# Geez-UserBot
-#yaudah iya
+# VEGETA-USERBOT
+# HACKER
+# KONTOL
 
 RUN git clone -b VEGETA-USERBOT https://github.com/Randi356/VEGETA-USERBOT /root/userbot
 RUN mkdir /root/userbot/.bin
