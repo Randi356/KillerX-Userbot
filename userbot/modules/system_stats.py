@@ -241,7 +241,7 @@ async def amireallyalive(alive):
         f"┣• `✨ Modules  :`{len(modules)} \n"
         f"╰✠╼━━━━━━❖━━━━━━━✠╯\n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-        f"[🔘ᴠᴇɢᴇᴛᴀ-ᴜꜱᴇʀʙᴏᴛ🔘]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/Randi356/RAM-UBOT) || [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK}) \n"
+        f"[🔘ᴠᴇɢᴇᴛᴀ-ᴜꜱᴇʀʙᴏᴛ🔘]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/Randi356/VEGETA-USERBOT) || [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK}) \n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰")
     if ALIVE_LOGO:
         try:
