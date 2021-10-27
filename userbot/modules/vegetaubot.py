@@ -28,7 +28,7 @@ async def typewriter(typew):
                      "\n**Permisi Aku mau nimbrung Kk..**")
 
 
-@register(outgoing=True, pattern='^.ren(?: |$)(.*)')
+@register(outgoing=True, pattern='^.vegeta(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**piki Peler☑️**")
@@ -88,11 +88,12 @@ async def typewriter(typew):
     await typew.edit("`Dah sana cabut, Makasih hiburannya, Udah bikin Gua tawa ngakak`")
 
 CMD_HELP.update({
-    "rambot":
-    "`.rambot`\
+    "vegetabot":
+    "`.vegetabot`\
     \nUsage: menampilkan alive bot.\
     \n\n`.sadboy`\
+    \n\n`.lahk`\
     \nUsage: hiks\
-    \n\n`.punten` ; `.ren`\
+    \n\n`.punten` ; `.vegeta`\
     \nUsage: misi."
 })
