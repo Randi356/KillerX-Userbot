@@ -31,7 +31,7 @@ async def get_full_user(event):
         try:
             user_obj = await event.client.get_entity(user)
         except Exception as err:
-            return await event.edit("`Terjadi Kesalahan... Mohon Lapor Ke Grup` @GeezSupportGroup", str(err))
+            return await event.edit("`Terjadi Kesalahan... Mohon Lapor Ke Grup` @StaryWild", str(err))
     return user_obj, extra
 
 
@@ -173,7 +173,7 @@ async def gunben(userbot):
         return await dark.edit("`Terjadi Kesalahan`")
     if user:
         if user.id == 1779447750:
-            return await dark.edit("**LU GABISA BLACKLIST RAMA, DIA YG BIKIN GUA NGENTOT!!!**")
+            return await dark.edit("**LU GABISA BLACKLIST HACKER, DIA YG BIKIN GUA NGENTOT!!!**")
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
         except BaseException:
