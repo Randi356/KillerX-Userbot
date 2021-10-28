@@ -56,4 +56,4 @@
 ## Credit
 TERIMAKASIH UNTUK
 
-*   [VICKY](https://t.me/vckyouubitch) - ⚡Geez-Userbot⚡
+*   [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT://) - 😎RAM-UBOT
