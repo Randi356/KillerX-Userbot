@@ -56,4 +56,4 @@
 ## Credit
 TERIMAKASIH UNTUK
 
-*   [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT://) - 😎RAM-UBOT
+*   [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT) - RAM-UBOT
