@@ -2,9 +2,9 @@
 
 on:
   push:
-    branches: [ RAM-UBOT ]
+    branches: [ VEGETA-USERBOT ]
   pull_request:
-    branches: [ RAM-UBOT ]
+    branches: [ VEGETA-USERBOT ]
 
 jobs:
   build:
