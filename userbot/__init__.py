@@ -174,8 +174,8 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # Youtube API key
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
-# Untuk Perintah .rambot (alive)
-RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "ㅤ"
+# Untuk Perintah .vegetabot (alive)
+VEGETA_TEKS_KOSTUM = os.environ.get("VEGETA_TEKS_KOSTUM") or "ㅤ"
 
 # Untuk Melihat Repo
 REPO_NAME = os.environ.get("REPO_NAME") or "🔘VEGETA-USERBOT🔘"
