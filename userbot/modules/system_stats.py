@@ -14,7 +14,7 @@ import time
 from datetime import datetime
 import psutil
 
-from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, RAM_TEKS_KOSTUM, IG_ALIVE, REPO_NAME, GROUP_LINK, StartTime, bot
+from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, VEGETA_TEKS_KOSTUM, IG_ALIVE, REPO_NAME, GROUP_LINK, StartTime, bot
 from userbot.events import register
 
 
@@ -228,7 +228,7 @@ async def amireallyalive(alive):
     await asyncio.sleep(3)
     output = (
         f"**     ۩  ⬚⃝⃟    {REPO_NAME} ⬚⃝⃟     ۩ ** \n\n"
-        f"\n__**{RAM_TEKS_KOSTUM}**__\n"
+        f"\n__**{VEGETA_TEKS_KOSTUM}**__\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
         f"**🔘 HACKER** \n"
         f" ➥ `{DEFAULTUSER}` \n"
