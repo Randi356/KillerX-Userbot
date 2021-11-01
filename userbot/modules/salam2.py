@@ -145,7 +145,7 @@ CMD_HELP.update({
 \nUsage:\
 \n\n.hai\
 \nUsage:\
-\n\n.eh\
+\n\n.ds\
 \nUsage:\
 \n\n.nj\
 \nUsage:\
