@@ -88,16 +88,16 @@ async def typewriter(typew):
     await typew.edit("**Hai, Anak yatim!!**")
 
 
-@register(outgoing=True, pattern='^.em(?: |$)(.*)')
+@register(outgoing=True, pattern='^.nj(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**Eh memek..!!!**")
+    await typew.edit("**Anjing lo Muka Kontol...!!!**")
 
 
-@register(outgoing=True, pattern='^.eh(?: |$)(.*)')
+@register(outgoing=True, pattern='^.ds(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**EH NGENTOT...!**")
+    await typew.edit("**DESAH AH AH AH AWOKWOKWOK**")
 
 
 @register(outgoing=True, pattern='^.ucp(?: |$)(.*)')
@@ -147,7 +147,7 @@ CMD_HELP.update({
 \nUsage:\
 \n\n.eh\
 \nUsage:\
-\n\n.em\
+\n\n.nj\
 \nUsage:\
 \n\n.gls\
 \nUsage:\
