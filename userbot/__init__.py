@@ -122,7 +122,7 @@ DB_URI = os.environ.get("DATABASE_URL", None)
 OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
 
 # remove.bg API key
-REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
+REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "rYhGCFjG9jEasYqLYFMHjWeW")
 
 # Redis URI & Redis Password
 REDIS_URI = os.environ.get('REDIS_URI', None)
