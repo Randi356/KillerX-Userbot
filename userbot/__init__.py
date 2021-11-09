@@ -224,7 +224,7 @@ EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🔘"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/StaryWild"
+    "GROUP_LINK") or "t.me/RemixSupport"
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
@@ -494,7 +494,7 @@ with bot:
                              Button.url(f"{EMOJI_HELP} 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 {EMOJI_HELP}",
                                         "t.me/codersUpdates"),
                              Button.url(f"{EMOJI_HELP} 𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 {EMOJI_HELP}",
-                                        "t.me/StaryWild")],
+                                        "t.me/RemixSupport")],
                              [Button.url("👤 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 👤",
                                         "t.me/FlashProSpeed")],
                     ]
@@ -584,7 +584,7 @@ with bot:
                             Button.url(f"{REPO_NAME}",
                                        "t.me/codersUpdates"),
                             Button.url(f"{EMOJI_HELP} SUPPORT {EMOJI_HELP} ", 
-                                       "t.me/StaryWild")],
+                                       "t.me/RemixSupport")],
                         [Button.url(f"{EMOJI_HELP} OWNER {EMOJI_HELP} ",
                                     f"{OWNER_BOT}"),
                             Button.url(f"{EMOJI_HELP} INSTAGRAM {EMOJI_HELP} ",
