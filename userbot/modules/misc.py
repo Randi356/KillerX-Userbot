@@ -76,7 +76,7 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting RAM-UBOT...`")
+    await event.edit("`Restarting VEGETA-USERBOT...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
