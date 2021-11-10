@@ -214,7 +214,7 @@ ALIVE_LOGO = os.environ.get(
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/ecafbc898739ec3a4452b.jpg"
+   "HELP_LOGO") or "https://telegra.ph/file/853c1834a8a19d85dee94.jpg"
 
 # Default .alive Instagram
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/yotteno"
