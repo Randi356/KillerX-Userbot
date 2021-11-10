@@ -222,9 +222,9 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("`Error Hacker`")
+    await alive.edit("`𝙴𝚁𝚁𝙾𝚁𝚁 𝙷𝙰𝙲𝙺𝙴𝚁`")
     await asyncio.sleep(1)
-    await alive.edit("⚡")
+    await alive.edit("🔥")
     await asyncio.sleep(3)
     output = (
         f"**     ۩  ⬚⃝⃟    {REPO_NAME} ⬚⃝⃟     ۩ ** \n\n"
