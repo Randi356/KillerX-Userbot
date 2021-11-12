@@ -51,9 +51,22 @@
 <br>
 </p>
   
+```
+HOW TO ADD MODULES PLUGIN COMMAD
+  
+@register(outgoing=True, pattern='^.hello(?: |$)(.*)')
+async def typewriter(typew):
+typew.pattern_match.group(1)
+await typew.edit("**hello.**")
+```
+
+    
+
+    
+
   
 
 ## Credit
 TERIMAKASIH UNTUK
 
-*   [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT) - RAM-UBOT
+*   [RAM-UBOT](https://github.com/ramadhani892) - RAM-UBOT
