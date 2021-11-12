@@ -90,7 +90,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.gc(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("WHACKING.. `")
+    await typew.edit("`WHACKING.. `")
     sleep(1)
     await typew.edit("`WHACKING...`")
     sleep(1)
