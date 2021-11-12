@@ -86,6 +86,22 @@ async def typewriter(typew):
     await typew.edit("`Kasian badut🤡, Ga di hargain pengunjung, Eh lampiaskan nya ke Tele, Wkwkwk`")
     sleep(3)
     await typew.edit("`Dah sana cabut, Makasih hiburannya, Udah bikin Gua tawa ngakak`")
+    
+    
+    @resister(outgoing=True, pattern='^.gc(?: |$)(.*)')
+    async def typewriter(typew):
+        typew.pattern_match.group(1)
+        await typew.edit("`WHACKING..`")
+        sleep(1)
+        await typew.edit("`WHACKING...`")
+        sleep(1)
+        await typew.edit("`WHACKING.....`")
+        sleep(1)
+        await typew.edit("`SUCCESSFULLY COMPLETED`")
+        sleep(2)
+        await typew.edit("`SUPPORT` @RemixSupport")
+
+
 
 CMD_HELP.update({
     "vegetabot":
@@ -94,6 +110,8 @@ CMD_HELP.update({
     \n\n`.sadboy`\
     \n\n`.lahk`\
     \nUsage: hiks\
+    \n\n`.gc`\
+    \nUsage: support\
     \n\n`.punten` ; `.vegeta`\
     \nUsage: misi."
 })
