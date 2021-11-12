@@ -52,7 +52,7 @@
 </p>
   
   
-  
+  # MODULES PLUGIN
 ```
 `HOW TO ADD MODULES PLUGIN COMMAD`
 
