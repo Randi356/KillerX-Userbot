@@ -12,7 +12,7 @@
 
 ![VIEWS](https://komarev.com/ghpvc/?username=Randi356)
 
-<a href="https://t.me/StaryWild"><img src="https://img.shields.io/badge/KODE%20PENILAIAN-A+-blue.svg?style=for-the-badge&logo=Factor.">
+<a href="https://t.me/RemixSupport"><img src="https://img.shields.io/badge/KODE%20PENILAIAN-A+-blue.svg?style=for-the-badge&logo=Factor.">
   
   [![GitHub issues](https://img.shields.io/github/issues/Randi356/VEGETA-USERBOT?&style=plastic&logo=github)](https://github.com/Randi356/VEGETA-USERBOT/issues)
 
@@ -23,7 +23,7 @@
 <p align="center">
 
 ## PEMILIK REPO
-* **Vegeta**🔘
+* 🔘**Vegeta**🔘
 [<img src="https://telegra.ph/file/312dc9f0067b8b7a39728.jpg">](https://t.me/FlashProSpeed)
 
   
@@ -79,4 +79,5 @@ await typew.edit("**hello.**")
 ## Credit
 TERIMAKASIH UNTUK
 
-*   [RAM-UBOT](https://github.com/ramadhani892) - RAM-UBOT
+*   [LANDAK RAMA](https://github.com/ramadhani892) - RAM-UBOT
+*   [RENDY](https://github.com/Randi356) - VEGETA-USERBOT / MAGISK
