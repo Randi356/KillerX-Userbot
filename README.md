@@ -51,9 +51,11 @@
 <br>
 </p>
   
-```
-HOW TO ADD MODULES PLUGIN COMMAD
   
+  
+```
+`HOW TO ADD MODULES PLUGIN COMMAD`
+
 @register(outgoing=True, pattern='^.hello(?: |$)(.*)')
 async def typewriter(typew):
 typew.pattern_match.group(1)
