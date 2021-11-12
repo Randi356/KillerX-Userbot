@@ -13,6 +13,14 @@
 ![VIEWS](https://komarev.com/ghpvc/?username=Randi356)
 
 <a href="https://t.me/StaryWild"><img src="https://img.shields.io/badge/KODE%20PENILAIAN-A+-blue.svg?style=for-the-badge&logo=Factor.">
+  
+  [![GitHub issues](https://img.shields.io/github/issues/Randi356/VEGETA-USERBOT?&style=plastic&logo=github)](https://github.com/Randi356/VEGETA-USERBOT/issues)
+
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Randi356/VEGETA-USERBOY?&style=plastic&logo=github)](https://github.com/Randi356/VEGETA-USERBOT/graphs/commit-activity)
+
+[![GitHub contributors](https://img.shields.io/github/contributors/Randi356/VEGETA-USERBOT?&style=plastic&logo=github)](https://GitHub.com/Randi356/VEGETA-USERBOT/graphs/contributors/)
+
+<p align="center">
 
 ## PEMILIK REPO
 * **Vegeta**🔘
