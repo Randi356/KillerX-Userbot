@@ -65,11 +65,11 @@ async def set_afk(afk_e):
         AFKREASON = string
         await afk_e.edit(f"{REPO_NAME}\n╭✠╼━━━━━━❖━━━━━━━✠╮\n┣ {ALIVE_NAME} __𝐋𝐚𝐠𝐢 𝐀𝐅𝐊__\n┣ ᴀʟᴀꜱᴀɴ : {AFKREASON}\n╰✠╼━━━━━━❖━━━━━━━✠╯")
     else:
-        await afk_e.edit("⭐ 𝘼 𝙁 𝙆\n╭✠╼━━━━━━❖━━━━━━━✠╮ \n┣ __𝐋𝐚𝐠𝐢 𝐀𝐅𝐊__ \n╰✠╼━━━━━━❖━━━━━━━✠╯")
+        await afk_e.edit("🔥 𝘼 𝙁 𝙆\n╭✠╼━━━━━━❖━━━━━━━✠╮ \n┣ __𝐋𝐚𝐠𝐢 𝐀𝐅𝐊__ \n╰✠╼━━━━━━❖━━━━━━━✠╯")
     if user.last_name:
-        await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name + " 💫𝐀 𝐅 𝐊💫 "))
+        await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name + " 🔥𝐀 𝐅 𝐊🔥 "))
     else:
-        await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=" 💫𝐀 𝐅 𝐊💫 "))
+        await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=" 🔥𝐀 𝐅 𝐊🔥 "))
     if BOTLOG:
         await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\n__𝐋𝐚𝐠𝐢 𝐀𝐅𝐊 𝐓𝐎𝐓__")
     ISAFK = True
@@ -90,7 +90,7 @@ async def type_afk_is_not_true(notafk):
     global afk_end
     user = await bot.get_me()  # pylint:disable=E0602
     last = user.last_name
-    if last and last.endswith(" 💫𝐀 𝐅 𝐊💫 "):
+    if last and last.endswith(" 🔥𝐀 𝐅 𝐊🔥 "):
         last1 = last[:-12]
     else:
         last1 = ""
@@ -98,7 +98,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = back_alive.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.respond("⭐𝐎𝐍𝐋𝐈𝐍𝐄")
+        msg = await notafk.respond("🔥𝐎𝐍𝐋𝐈𝐍𝐄")
         time.sleep(3)
         await msg.delete()
         await notafk.client(UpdateProfileRequest(first_name=user.first_name, last_name=last1))
@@ -166,7 +166,7 @@ async def mention_afk(mention):
                 afk_since = f"`{int(seconds)} Detik`"
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await mention.reply(f"💫 𝐀 𝐅 𝐊\n╭✠╼━━━━━━━━━━━━ \n┣ {ALIVE_NAME} ꜱᴇᴅᴀɴɢ ᴀꜰᴋ\n┣ ꜱᴇᴊᴀᴋ: {afk_since}\n┣ ᴀʟᴀꜱᴀɴ: {AFKREASON}\n╰✠╼━━━━━━━━━")
+                    await mention.reply(f"🔥 𝐀 𝐅 𝐊\n╭✠╼━━━━━━━━━━━━ \n┣ {ALIVE_NAME} ꜱᴇᴅᴀɴɢ ᴀꜰᴋ\n┣ ꜱᴇᴊᴀᴋ: {afk_since}\n┣ ᴀʟᴀꜱᴀɴ: {AFKREASON}\n╰✠╼━━━━━━━━━")
                 else:
                     await mention.reply(str(choice(AFKSTR)))
                 USERS.update({mention.sender_id: 1})
