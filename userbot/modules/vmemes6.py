@@ -46,7 +46,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.rp(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("WOI ANAK RP NGENTOT, DENGER NI YA PLASTIK MAH UDAH PLASTIK AJA!!!**")
+    await typew.edit("**WOI ANAK RP NGENTOT, DENGER NI YA PLASTIK MAH UDAH PLASTIK AJA!!!**")
     sleep(2)
     await typew.edit("**GOBLOK KOK DI RAWAT, UDAH NGEMBAH PLASTIK SAMPAH LAGI HAHAHA**")
     sleep(2)
