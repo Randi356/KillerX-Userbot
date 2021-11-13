@@ -16,7 +16,7 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**SAYA GANTENG HEKEL BOS YAHAHAHA KONTOL.**")
     
-@register(outgoing=True, pattern=='W(?: |$)(.*)')
+@register(outgoing=True, pattern='W(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**WAR WAR PALAK BAPAK KAU WAR, SOK KERAS BANGET GOBLOK DI TONGKRONGAN JADI BABU DI TELE SOK JAGOAN.**")
