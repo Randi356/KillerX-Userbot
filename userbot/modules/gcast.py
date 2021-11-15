@@ -2,7 +2,7 @@ from userbot.events import register
 from userbot import CMD_HELP, bot
 
 
-@register(outgoing=True, pattern="^.gcast (.*)")
+@register(outgoing=True, pattern="^.guck (.*)")
 async def gcast(event):
     xx = event.pattern_match.group(1)
     if not xx:
@@ -23,7 +23,7 @@ async def gcast(event):
     await kk.edit(f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**")
 
 
-@register(outgoing=True, pattern=r"^\.gucast(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.gpm(?: |$)(.*)")
 async def gucast(event):
     xx = event.pattern_match.group(1)
     if not xx:
@@ -46,12 +46,12 @@ async def gucast(event):
 
 CMD_HELP.update(
     {
-        "gcast": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gcast`\
+        "gcast": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.guck`\
          \n↳ : Mengirim Pesan Group Secara Global."})
 
 CMD_HELP.update(
     {
-         "gucast": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gucast`\
+         "gucast": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gpm`\
          \n↳ : Mengirim Pesan Pribadi Secara Global."
     }
 )
