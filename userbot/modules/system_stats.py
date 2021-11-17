@@ -227,7 +227,7 @@ async def amireallyalive(alive):
     await alive.edit("🔥")
     await asyncio.sleep(3)
     output = (
-        f"**     ۩  ⬚⃝⃟    {REPO_NAME} ⬚⃝⃟     ۩ ** \n\n"
+        f"**𝕮𝖍𝖎𝖑𝖑𝖞-𝖀𝖘𝖊𝖗𝖇𝖔𝖙{REPO_NAME}𝕮𝖍𝖎𝖑𝖑𝖞-𝖀𝖘𝖊𝖗𝖇𝖔𝖙** \n\n"
         f"\n__**{VEGETA_TEKS_KOSTUM}**__\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
         f"**🔘 HACKER** \n"
@@ -269,7 +269,7 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
-        f"       **♕🔘ᴠᴇɢᴇᴛᴀ-ᴜꜱᴇʀʙᴏᴛ🔘♕** \n"
+        f"       **🌹𝕮𝖍𝖎𝖑𝖑𝖞-𝖀𝖘𝖊𝖗𝖇𝖔𝖙🌹** \n"
         f"**╰✠╼━━━━━━❖━━━━━━━✠╯**\n"
         f"❃ **Hacker**             ➥ `{DEFAULTUSER}` \n"
         f"❃ **Username**    ➥ `@{user.username}` \n"
@@ -304,19 +304,19 @@ async def amireallyalive(alive):
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("`𝗘𝗥𝗥𝗢𝗥𝗥 𝗛𝗔𝗖𝗞𝗘𝗥`")
+    await alive.edit("`𝕮𝖍𝖎𝖑𝖑𝖞 𝕻𝖎𝖓𝖌𝖎𝖓𝖌....`")
     await asyncio.sleep(1)
     await alive.edit("🔥")
     await asyncio.sleep(3)
     output = (
         f"**✠╼━━━━━━❖━━━━━━━✠ ** \n"
-        f"**        🔘ᴠᴇɢᴇᴛᴀ-ᴜꜱᴇʀʙᴏᴛ🔘** \n"
+        f"**        🌹𝕮𝖍𝖎𝖑𝖑𝖞-𝖀𝖘𝖊𝖗𝖇𝖔𝖙🌹** \n"
         f"**✠╼━━━━━━❖━━━━━━━✠** \n"
         f"╭✠╼━━━━━━❖━━━━━━━✠╮ \n"
-        f"┣|• `🔘 Majikan  :`{DEFAULTUSER} \n"
-        f"┣|• `🔘 Username :`@{user.username} \n"
-        f"┣|• `🔘 Telethon :`Ver {version.__version__} \n"
-        f"┣|• `🔘 Python   :`Ver {python_version()} \n"
+        f"┣|• `👑Majikan  :`{DEFAULTUSER} \n"
+        f"┣|• `🌹 Username :`@{user.username} \n"
+        f"┣|• `🌹 Telethon :`Ver {version.__version__} \n"
+        f"┣|• `🌹 Python   :`Ver {python_version()} \n"
         f"╰✠╼━━━━━━❖━━━━━━━✠╯ \n"
         f"╭✠╼━━━━━━❖━━━━━━━✠╮ \n"
         f"┣|• `Branch      :`VEGETA-USERBOT \n"
