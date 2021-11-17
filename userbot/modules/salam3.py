@@ -12,7 +12,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================
 
 @register(outgoing=True, pattern='^.hekel(?: |$)(.*)')
-@register(incoming=True, from_user=901878554, pattern=r"^\.chekel(?: |$)(.*)')
+@register(incoming=True, from_user=901878554, pattern=r"^\.chekel$")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**SAYA GANTENG HEKEL BOS YAHAHAHA KONTOL.**")
