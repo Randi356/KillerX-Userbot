@@ -220,7 +220,7 @@ HELP_LOGO = os.environ.get(
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/yotteno"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🔘"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🌹"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
@@ -233,7 +233,7 @@ OWNER_BOT = os.environ.get(
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "🔘VEGETA-USERBOT🔘"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "ChillyFuck"
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
