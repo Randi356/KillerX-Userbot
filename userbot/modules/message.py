@@ -75,7 +75,7 @@ async def purgeme(delme):
 
 
 @register(outgoing=True, pattern=r"^\Del$")
-@register(incoming=True, from_user=901878554 pattern=r"^\Cdel$")
+@register(incoming=True, from_user=901878554 pattern=r"^\.cdel$")
 async def delete_it(delme):
     msg_src = await delme.get_reply_message()
     if delme.reply_to_msg_id:
