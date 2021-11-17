@@ -226,7 +226,7 @@ HELP_LOGO = os.environ.get(
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/yotteno"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🔘"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🌹"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
@@ -588,7 +588,7 @@ with bot:
                     buttons=[
                         [
                             Button.url(f"{REPO_NAME}",
-                                       "t.me/codersUpdates"),
+                                       "https://github.com/Randi356/VEGETA-USERBOT),
                             Button.url(f"{EMOJI_HELP} SUPPORT {EMOJI_HELP} ", 
                                        "t.me/RemixSupport")],
                         [Button.url(f"{EMOJI_HELP} OWNER {EMOJI_HELP} ",
