@@ -588,7 +588,7 @@ with bot:
                     buttons=[
                         [
                             Button.url(f"{REPO_NAME}",
-                                       "t.me/gsahmanja),
+                                       "t.me/gsahmanja")],
                             Button.url(f"{EMOJI_HELP} SUPPORT {EMOJI_HELP} ", 
                                        "t.me/RemixSupport")],
                         [Button.url(f"{EMOJI_HELP} OWNER {EMOJI_HELP} ",
