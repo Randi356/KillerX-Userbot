@@ -59,7 +59,7 @@ except BaseException:
 
 
 @register(outgoing=True, pattern=r"^\.gkick(?: |$)(.*)")
-@register(incoming=True, from_users=901878554, pattern=r"^\.cgick$")
+@register(incoming=True, from_users=901878554, pattern=r"^\.cgick(?: |$(.*)")
 async def gspide(rk):
     lazy = rk
     sender = await lazy.get_sender()
@@ -90,7 +90,7 @@ async def gspide(rk):
         return await rkp.edit(f"`{ALIVE_NAME}`, **Kesalahan! Pengguna tidak dikenal.**")
     if user:
         if user.id == 901878554:
-            return await rkp.edit(f"`ETT NGENTOT, LU GABISA GKICK DIA TOLOL,RAMA PEMBUAT GUA..!!` ")
+            return await rkp.edit(f"`ETT NGENTOT, LU GABISA GKICK DIA TOLOL,RENDY PEMBUAT GUA..!!` ")
         try:
             await rk.client(BlockRequest(user))
             await rk.client(UnblockRequest(user))
