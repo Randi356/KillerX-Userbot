@@ -16,15 +16,15 @@
   
   [![GitHub issues](https://img.shields.io/github/issues/Randi356/VEGETA-USERBOT?&style=plastic&logo=github)](https://github.com/Randi356/VEGETA-USERBOT/issues)
 
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Randi356/VEGETA-USERBOY?&style=plastic&logo=github)](https://github.com/Randi356/VEGETA-USERBOT/graphs/commit-activity)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Randi356/VEGETA-USERBOT?&style=plastic&logo=github)](https://github.com/Randi356/VEGETA-USERBOT/graphs/commit-activity)
 
 [![GitHub contributors](https://img.shields.io/github/contributors/Randi356/VEGETA-USERBOT?&style=plastic&logo=github)](https://GitHub.com/Randi356/VEGETA-USERBOT/graphs/contributors/)
 
 <p align="center">
 
 ## PEMILIK REPO
-* 🔘**Vegeta**🔘
-[<img src="https://telegra.ph/file/312dc9f0067b8b7a39728.jpg">](https://t.me/FlashProSpeed)
+* 🌹**Chilly-Userbot**🌹
+[<img src="https://telegra.ph/file/14137518c2d79ef7781db.jpg">](https://t.me/FlashProSpeed)
 
   
   
