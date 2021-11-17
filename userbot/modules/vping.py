@@ -123,7 +123,7 @@ async def redis(pong):
 @register(outgoing=True, pattern="^Speed$")
 async def speedtst(spd):
     """ For .speed command, use SpeedTest to check server speeds. """
-    await spd.edit("`Menjalankan Tes Kecepatan Jaringan, Mohon Tunggu...✨`")
+    await spd.edit("`Menjalankan Tes Kecepatan Jaringan, Mohon Tunggu...🔥`")
     test = Speedtest()
 
     test.get_best_server()
@@ -242,7 +242,7 @@ async def redis(pong):
     await pong.edit("__Loading...__")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**🔥vegeta -Userbot🔥**\n"
+    await pong.edit(f"**🔥𝕮𝖍𝖎𝖑𝖑𝖞-𝖀𝖘𝖊𝖗𝖇𝖔𝖙🔥**\n"
                     f"➾ __Signal__    __:__ "
                     f"`%sms` \n"
                     f"➾ __Uptime__ __:__ "
@@ -263,7 +263,7 @@ async def redis(pong):
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**🔥Vegeta-UserBot🔥**\n\n"
+    await pong.edit(f"**🔥𝕮𝖍𝖎𝖑𝖑𝖞-𝖀𝖘𝖊𝖗𝖇𝖔𝖙🔥**\n\n"
                     f"** ▹  Sɪɢɴᴀʟ   :** "
                     f"`%sms` \n"
                     f"** ▹  Uᴘᴛɪᴍᴇ  :** "
@@ -281,7 +281,7 @@ async def redis(pong):
     await pong.edit("**◕‿- PONG!!**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**🔥 Vegeta Ping 🔥**\n"
+    await pong.edit(f"**🔥𝕮𝖍𝖎𝖑𝖑𝖞-𝖀𝖘𝖊𝖗𝖇𝖔𝖙🔥**\n"
                     f"❊ **Ping:** "
                     f"`%sms` \n"
                     f"❊ **Uptime:** "
@@ -366,7 +366,7 @@ async def pingme(pong):
     await pong.edit("`Pinging...`")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**Vegeta** - {ALIVE_NAME}\n\n"
+    await pong.edit(f"**OWNER** - {ALIVE_NAME}\n\n"
                     f"**Pong !!** "
                     f"`%sms` \n"
                     f"**Uptime** - "
