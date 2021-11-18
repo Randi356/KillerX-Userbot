@@ -19,7 +19,7 @@ from userbot.events import register
 # OWN BY RENDY
 # LU TAMBAH MODULES KONTOL
 
-absen = [
+babik = [
     "**Hadir ganteng** 🥵",
     "**Hadir bro** 😎",
     "**Hadir kak** 😉",
@@ -65,9 +65,9 @@ async def get_readable_time(seconds: int) -> str:
 # CREDIT RANDI356
 # DONT'T REMOVE CREDIT FUCK DICK
 
-@register(incoming=True, from_users=1191668125, pattern=r"^.absen$")
+@register(incoming=True, from_users=901878554, pattern=r"^.babik$")
 async def _(rendy):
-    await rendy.reply(random.choice(absen))
+    await rendy.reply(random.choice(babik))
 
 @register(incoming=True, from_users=901878554, pattern=r"^.pacar$")
 async def _(kontol):
@@ -105,6 +105,7 @@ async def redis(pong):
 
 
 @register(outgoing=True, pattern="^Ping$")
+@register(incoming=True, from_users=901878554, pattern=r"^\.cpi$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
