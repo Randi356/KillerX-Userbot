@@ -1,14 +1,19 @@
 
+#     𝙲𝙷𝙸𝙻𝙻𝚈-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 😎
 
+
+
+</p>
 <p align="center">
-  <a href="https://github.com/Randi356/VEGETA-USERBOT/fork">
-    <img src="https://img.shields.io/github/forks/Randi356/VEGETA-USERBOT?label=Fork&style=social">
-    
-  </a>
-  <a href="https://github.com/Randi356/VEGETA-USERBOT">
-    <img src="https://img.shields.io/github/stars/Randi356/VEGETA-USERBOT?style=social">
-  </a>
-</p>  
+    <a href="https://github.com/Randi356/VRGETA-USERBOT"> <img src="https://img.shields.io/github/repo-size/noob-kittu/YoneRobot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Randi356/VEGETA-USERBOT/commits"> <img src="https://img.shields.io/github/last-commit/noob-kittu/YoneRobot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Randi356/VEGETA-USERBOT/issues"> <img src="https://img.shields.io/github/issues/noob-kittu/YoneRobot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Randi356/VEGETA-USERBOT/network/members"> <img src="https://img.shields.io/github/forks/noob-kittu/YoneRobot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
+    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
+</p>
+
+
+
 
 ![VIEWS](https://komarev.com/ghpvc/?username=Randi356)
 
