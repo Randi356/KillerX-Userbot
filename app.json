@@ -1,7 +1,7 @@
 {
   "name": "VEGETA-USERBOT",
   "description": "[VEGETA-USERBOT] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
-  "logo": "https://telegra.ph/file/312dc9f0067b8b7a39728.jpg",
+  "logo": "https://telegra.ph/file/42e679c5b472a949f3223.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -88,7 +88,7 @@
     },
     "S_PACK_NAME": {
       "description": "Nama Sticker Pack Mu",
-      "value": "gblk",
+      "value": "kang",
       "required": false
     },
     "G_BAN_LOGGER_GROUP": {
