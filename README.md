@@ -70,4 +70,4 @@ TERIMAKASIH UNTUK
 
 *   [LANDAK RAMA](https://github.com/ramadhani892) - RAM-UBOT
 *   [RENDY](https://github.com/Randi356) - VEGETA-USERBOT / MAGISK
-* - THANKS ALL
+*- THANKS ALL
