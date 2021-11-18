@@ -74,7 +74,7 @@ async def _(kontol):
     await kontol.reply(random.choice(pacar))
 
 @register(outgoing=True, pattern="^.pings$")
-@register(incoming=True, from_users=DEVS pattern=r"^\.cpings$")
+
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
