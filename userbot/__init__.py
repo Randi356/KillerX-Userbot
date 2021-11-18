@@ -210,11 +210,11 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/312dc9f0067b8b7a39728.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/42e679c5b472a949f3223.jpg"
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/312dc9f0067b8b7a39728.jpg"
+   "HELP_LOGO") or "https://telegra.ph/file/42e679c5b472a949f3223.jpg"
 
 # Default .alive Instagram
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/yotteno"
@@ -224,7 +224,7 @@ EMOJI_HELP = os.environ.get("EMOJI_HELP") or "⚡"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/StaryWild"
+    "GROUP_LINK") or "t.me/RemixSupport"
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
@@ -494,7 +494,7 @@ with bot:
                              Button.url(f"{EMOJI_HELP} 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 {EMOJI_HELP}",
                                         "t.me/codersUpdates"),
                              Button.url(f"{EMOJI_HELP} 𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 {EMOJI_HELP}",
-                                        "t.me/StaryWild")],
+                                        "t.me/RemixSupport")],
                              [Button.url("👤 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 👤",
                                         "t.me/FlashProSpeed")],
                     ]
@@ -582,9 +582,9 @@ with bot:
                     buttons=[
                         [
                             Button.url(f"{REPO_NAME}",
-                                       "t.me/codersUpdates"),
+                                       "t.me/gsahmanja"),
                             Button.url(f"{EMOJI_HELP} SUPPORT {EMOJI_HELP} ", 
-                                       "t.me/StaryWild")],
+                                       "t.me/RemixSupport")],
                         [Button.url(f"{EMOJI_HELP} OWNER {EMOJI_HELP} ",
                                     f"{OWNER_BOT}"),
                             Button.url(f"{EMOJI_HELP} INSTAGRAM {EMOJI_HELP} ",
