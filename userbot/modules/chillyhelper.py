@@ -12,8 +12,8 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def usit(e):
     await e.edit(
         f"**Hai {DEFAULTUSER} Kalau Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `.rhelp` Atau Bisa `.help` atau Minta Bantuan Ke:\n"
-        "\n[XSVSHACKER😈](t.me/gsahmanja)"
-        "\n\n[SUPPORT](https://t.me/StaryWild)"
+        "\n[GSAHMANJA](t.me/gsahmanja)"
+        "\n\n[SUPPORT](https://t.me/RemixSupport)"
         "\n\n[CHANNEL](https://t.me/codersUpdates)")
 
 
@@ -25,7 +25,7 @@ async def var(m):
 
 
 CMD_HELP.update({
-    "vegetahelper":
+    "chillyhelper":
     "`.helpmy`\
 \nPenjelasan: Bantuan Untuk VEGETA-USERBOT.\
 \n`.rvars`\
