@@ -120,7 +120,7 @@ async def typewriter(typew):
 
 
 CMD_HELP.update({
-    "salam3":
+    "toxic1":
     ".p\
 \nUsage:\
 \n\n.l\
@@ -138,7 +138,7 @@ CMD_HELP.update({
 })
 
 CMD_HELP.update({
-    "salam4":
+    "toxic2":
     ".gbgn\
 \nUsage:\
 \n\n.bsl\
