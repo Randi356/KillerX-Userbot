@@ -214,7 +214,7 @@ async def typewriter(typew):
 
 CMD_HELP.update(
     {
-        "toxic4": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: .sok\
+        "toxic5": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: .sok\
          \n↳ : ngatain orang yang sok keras\
          \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: .bk\
          \n↳ : ngatain bocah hina\
@@ -237,7 +237,7 @@ CMD_HELP.update(
 # FILE BY RENDY
 
 CMD_HELP.update({
-    "toxic5":
+    "toxic6":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ngentot`\
     \n↳ : Lu Coba Sendiri Aja."
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.goblok`\
