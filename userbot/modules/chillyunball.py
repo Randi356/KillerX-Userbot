@@ -8,7 +8,7 @@ from userbot.events import register
 from userbot import CMD_HELP
 
 
-@register(outgoing=True, pattern=r"^\.uball(?: |$)(.*)", groups_only=True)
+@register(outgoing=True, pattern=r"^\.unball(?: |$)(.*)", groups_only=True)
 async def _(event):
     await event.edit("`Sedang Mencari List Banning.`")
     p = 0
@@ -28,7 +28,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "cukup2": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.uball\
+        "unball": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.unball\
     \n↳ : Membatalkan semua Ban Di Anggota Grup."
     }
 )
