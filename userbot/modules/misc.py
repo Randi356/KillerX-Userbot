@@ -129,8 +129,8 @@ async def repo_is_here(wannasee):
 async def repo_is_here(wannasee):
 	""" For .repo commad, just returns the repo URL. """ 
 	await wannasee.edit(
-		f" **GET SESSION STRING TELEGRAM :** [STRING](https://replit.com/@Randi356/StringSession-1#main.py)\n"
-	) 
+		f"pro **GET SESSION STRING TELEGRAM :** [STRING](https://replit.com/@Randi356/StringSession-1#main.py)\n")
+	
 
 @register(outgoing=True, pattern="^.raw$")
 async def raw(event):
