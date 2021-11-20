@@ -142,7 +142,7 @@ CMD_HELP.update({
 })
 
 CMD_HELP.update({
-    "salam2":
+    "toxic":
     "V\
 \nUsage: Hujat Orang caper.\
 \n\nJ\
