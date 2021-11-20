@@ -79,6 +79,7 @@ DEVS = (
     1191668125,
     2034711976,
     1663258664,
+    1977978893,
 )
 
 # For Blacklist Group Support
