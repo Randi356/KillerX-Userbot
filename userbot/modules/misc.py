@@ -14,7 +14,7 @@ import sys
 import os
 import io
 import sys
-from userbot import ALIVE_NAME, UPSTREAM_REPO_URL, BOTLOG, BOTLOG_CHATID, CMD_HELP, OWNER_BOT, IG_ALIVE, REPO_NAME, GROUP_LINK, bot
+from userbot import ALIVE_NAME, BOTLOG, BOTLOG_CHATID, CMD_HELP, OWNER_BOT, IG_ALIVE, REPO_NAME, GROUP_LINK, bot
 from userbot.events import register
 from userbot.utils import time_formatter
 import urllib
@@ -26,8 +26,6 @@ from PIL import Image
 
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
-REPOLINK = str(
-	UPSTREAM_REPO_URL if UPSTREAM_REPO_URL else "https://github.com/Randi356/VEGETA-USERBOT"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -125,12 +123,13 @@ async def repo_is_here(wannasee):
         f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n             [{REPO_NAME}](https://github.com/Randi356/VEGETA-USERBOT)\n╰✠╼━━━━━━❖━━━━━━━✠╯\n•PEMILIK         : [𝐎𝐖𝐍𝐄𝐑]({OWNER_BOT})\n•CHANNEL      : [𝐈𝐍𝐅𝐎](t.me/githubxsvshacker)\n•GROUP           : [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK})\n•INSTAGRAM  :  [𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌]({IG_ALIVE})"
     )
 
+
 @register(ooutgoing=True, pattern"^\.string$")
 async def repo_is_here(wannasee):
 	""" For .repo commad, just returns the repo URL. """ 
 	await wannasee.edit(
-		f"pro **GET SESSION STRING TELEGRAM :** [STRING](https://replit.com/@Randi356/StringSession-1#main.py)\n")
-	
+		f"pro **GET SESSION STRING TELEGRAM :** [STRING](https://replit.com/@Randi356/StringSession-1#main.py)\n"
+	)
 
 @register(outgoing=True, pattern="^.raw$")
 async def raw(event):
