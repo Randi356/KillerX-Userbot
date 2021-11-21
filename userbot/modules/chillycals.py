@@ -21,8 +21,8 @@ NO_ADMIN = "`LU BUKAN ADMIN NGENTOT!!`"
 
 
 async def get_call(event):
-    vegetabot = await event.client(getchat(event.chat_id))
-    ren = await event.client(getvc(vegetabot.full_chat.call))
+    e = await event.client(getchat(event.chat_id))
+    ren = await event.client(getvc(e.full_chat.call))
     return ren.call
 
 
@@ -32,35 +32,35 @@ def user_list(l, n):
 
 
 @register(outgoing=True, pattern=r"^\.startvc$", groups_only=True)
-async def _(vegetabot):
-    chat = await vegetabot.get_chat()
+async def _(e):
+    chat = await e.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
     if not admin and not creator:
-        return await vegetabot.edit(NO_ADMIN)
+        return await e.edit(NO_ADMIN)
     new_rights = ChatAdminRights(invite_users=True)
     try:
-        await vegetabot.client(startvc(vegetabot.chat_id))
-        await vegetabot.edit("`OBROLAN SUARA DIMULAI, YANG ONCAM LO NGENTOT...`")
+        await e.client(startvc(e.chat_id))
+        await e.edit("`Voice Chat Started...`")
     except Exception as ex:
-        await vegetabot.edit(f"`{str(ex)}`")
+        await e.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
-async def _(vegetabot):
-    chat = await vegetabot.get_chat()
+async def _(e):
+    chat = await e.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
     if not admin and not creator:
-        return await vegetabot.edit(NO_ADMIN)
+        return await e.edit(NO_ADMIN)
     new_rights = ChatAdminRights(invite_users=True)
     try:
-        await vegetabot.client(stopvc(await get_call(vegetabot)))
-        await vegetabot.edit("`OBROLAN SUARA DIHENTIKAN, TYPING AJAYA NGENTOT...`")
+        await e.client(stopvc(await get_call(e)))
+        await e.edit("`Voice Chat Stopped...`")
     except Exception as ex:
-        await vegetabot.edit(f"`{str(ex)}`")
+        await e.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
