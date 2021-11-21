@@ -392,6 +392,38 @@ async def pingme(pong):
                     f"⚡ **uptime:** "
                     f"`{uptime}` \n" % (duration))
 
+# Credits Rendy
+# dont't remove credits
+# from https://github.com/Randi356/VEGETA-USERBOT
+
+@register(outgoing=True, pattern="^.pink$")
+async def pingme(pong):
+    """ For .ping command, ping the userbot from any chat.  """
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    await pong.edit("🔥")
+    await pong.edit("__**🔥LOADING.🔥**__")
+    await pong.edit("__**🔥LOADING..🔥**__")
+    await pong.edit("__**🔥LOADING...🔥**__")
+    await pong.edit("__**🔥LOADING....🔥**__")
+    await pong.edit("__**🔥LACKPINK**__")
+    await pong.edit("__**B🔥ACKPINK**__")
+    await pong.edit("__**BL🔥CKPINK**__")
+    await pong.edit("__**BLA🔥KPINK**__")
+    await pong.edit("__**BLAC🔥PINK**__")
+    await pong.edit("__**BLACK🔥INK**__")
+    await pong.edit("__**BLACKP🔥NK**__")
+    await pong.edit("__**BLACKPI🔥K**__")
+    await pong.edit("__**BLACKPIN🔥**__")
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    await pong.edit(f"**🔥BLACKPINK KONTOL🔥**\n"
+                    f"⚡ **Pong !!:** "
+                    f"`%sms` \n"
+                    f"⚡ **uptime:** "
+                    f"`{uptime}` \n" % (duration))
+
+
 
 CMD_HELP.update({
     "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` or `.pings` or `.crot` or `.hacker` or `.xping` or `.vping` or `.punk` `!uping` `.peler`\
@@ -400,3 +432,10 @@ CMD_HELP.update({
          \n↳ : Untuk Menunjukkan Kecepatan Jaringan Anda.\
          \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Pong`\
          \n↳ : Sama Seperti Perintah Ping."})
+
+
+CMD_HELP.update({
+    "ping2": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pink`\
+         \n↳ : Untuk Menunjukkan Pink Bot Anda."})
+
+
