@@ -5,7 +5,7 @@ from userbot.events import register
 from userbot import bot, TEMP_DOWNLOAD_DIRECTORY, CMD_HELP
 
 
-@register(outgoing=True, pattern=r'^.jurus(:? |$)([1-8])?')
+@register(outgoing=True, pattern=r'^.jelek(:? |$)([1-8])?')
 async def _(fry):
     await fry.edit("`Muka udh jelek, Gua acak acak lagi ah...😋`")
     level = fry.pattern_match.group(2)
@@ -130,7 +130,7 @@ async def _(fry):
 
 
 CMD_HELP.update({
-    "jurus":
-    "`.jurus` or `.jurus` [level(1-8)]"
+    "jelek":
+    "`.jelek` or `.dr` [level(1-8)]"
     "\nUsage: untuk mengubah foto/sticker."
 })
