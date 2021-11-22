@@ -48,6 +48,7 @@ CMD_HELP.update(
         \n\n  •  Perintah : `.truth2`\
         \n  •  Function : Untuk mengirim pesan truth\
         \n\n  •  Perintah : `.dare2`\
-        \n  •  Function : Untuk mengirim pesan dare\"
+        \n  •  Function : Untuk mengirim pesan dare\
+"
     }
 )
