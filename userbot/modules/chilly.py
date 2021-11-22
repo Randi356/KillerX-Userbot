@@ -417,7 +417,7 @@ async def pingme(pong):
     await pong.edit("__**BLACKPIN🔥**__")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**🔥BLACKPINK KONTOL🔥**\n"
+    await pong.edit(f"**🔥BLACKPINK🔥**\n"
                     f"⚡ **Pong !!:** "
                     f"`%sms` \n"
                     f"⚡ **uptime:** "
@@ -426,7 +426,7 @@ async def pingme(pong):
 
 
 CMD_HELP.update({
-    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` or `.pings` or `.crot` or `.hacker` or `.xping` or `.vping` or `.punk` `!uping` `.peler`\
+    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` or `.pings` or `.crot` or `.xping` or `.vping` or `.punk` `!uping` `.peler`\
          \n↳ : Untuk Menunjukkan Ping Bot Anda.\
          \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Speed` or `.sping` or `.sinyal` or `.bping`\
          \n↳ : Untuk Menunjukkan Kecepatan Jaringan Anda.\
