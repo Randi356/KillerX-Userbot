@@ -26,7 +26,7 @@ async def _(event):
 CMD_HELP.update(
     {
         "spill2": "** Plugin :** spill2\
-        \n\n  •  Perintah : `.spill`\
+        \n\n  •  Perintah : `.spill2`\
         \n  •  Function : Untuk Pertanyaan\
     "
     }
