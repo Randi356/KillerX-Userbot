@@ -269,14 +269,14 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
-        f"       **🌹𝕮𝖍𝖎𝖑𝖑𝖞-𝖀𝖘𝖊𝖗𝖇𝖔𝖙🌹** \n"
+        f"       **🌹𝙲𝙷𝙸𝙻𝙻𝚈-𝚄𝚂𝙴𝚁𝙱𝙾𝚃🌹** \n"
         f"**╰✠╼━━━━━━❖━━━━━━━✠╯**\n"
-        f"❃ **Owner**             ➥ `{DEFAULTUSER}` \n"
-        f"❃ **Username**    ➥ `@{user.username}` \n"
-        f"❃ **Telethon**       ➥ `Versi {version.__version__}` \n"
-        f"❃ **Python**          ➥ `Versi {python_version()}` \n"
-        f"❃ **Versi Bot**      ➥ `7.1` \n"
-        f"❃ **Modul**           ➥ `{len(modules)}` \n\n"
+        f"❃ **👑Owner**             ➥ `{DEFAULTUSER}` \n"
+        f"❃ **🐸Username**    ➥ `@{user.username}` \n"
+        f"❃ **😁Telethon**       ➥ `Versi {version.__version__}` \n"
+        f"❃ **😭Python**          ➥ `Versi {python_version()}` \n"
+        f"❃ **🤖Versi Bot**      ➥ `7.1` \n"
+        f"❃ **🐼Modul**           ➥ `{len(modules)}` \n\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
         f"[{REPO_NAME}](https://github.com/Randi356/VEGETA-USERBOT) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ **")
