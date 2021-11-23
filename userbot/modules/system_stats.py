@@ -14,7 +14,7 @@ import time
 from datetime import datetime
 import psutil
 
-from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, VEGETA_TEKS_KOSTUM, IG_ALIVE, REPO_NAME, GROUP_LINK, StartTime, bot
+from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, VEGETA_TEKS_KOSTUM, IG_ALIVE, REPO_NAME, UPSTREAM_REPO_BRANCH, StartTime, bot
 from userbot.events import register
 
 
@@ -222,7 +222,7 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("`𝙴𝚁𝚁𝙾𝚁𝚁 𝙷𝙰𝙲𝙺𝙴𝚁`")
+    await alive.edit("`PINGING.....`")
     await asyncio.sleep(1)
     await alive.edit("🔥")
     await asyncio.sleep(3)
@@ -230,7 +230,7 @@ async def amireallyalive(alive):
         f"**𝕮𝖍𝖎𝖑𝖑𝖞-𝖀𝖘𝖊𝖗𝖇𝖔𝖙{REPO_NAME}𝕮𝖍𝖎𝖑𝖑𝖞-𝖀𝖘𝖊𝖗𝖇𝖔𝖙** \n\n"
         f"\n__**{VEGETA_TEKS_KOSTUM}**__\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
-        f"**🔘 HACKER** \n"
+        f"**🔘 owner** \n"
         f" ➥ `{DEFAULTUSER}` \n"
         f"**🔘 Username** \n"
         f" ➥ `@{user.username}` \n"
@@ -241,7 +241,7 @@ async def amireallyalive(alive):
         f"┣• `🔘 Modules  :`{len(modules)} \n"
         f"╰✠╼━━━━━━❖━━━━━━━✠╯\n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-        f"[🔘ᴠᴇɢᴇᴛᴀ-ᴜꜱᴇʀʙᴏᴛ🔘]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/Randi356/VEGETA-USERBOT) || [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK}) \n"
+        f"[🔘ᴠᴇɢᴇᴛᴀ-ᴜꜱᴇʀʙᴏᴛ🔘]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/Randi356/VEGETA-USERBOT) || [𝐆𝐑𝐎𝐔𝐏](t.me/RemixSupport) \n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰")
     if ALIVE_LOGO:
         try:
@@ -271,14 +271,14 @@ async def amireallyalive(alive):
         f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
         f"       **🌹𝕮𝖍𝖎𝖑𝖑𝖞-𝖀𝖘𝖊𝖗𝖇𝖔𝖙🌹** \n"
         f"**╰✠╼━━━━━━❖━━━━━━━✠╯**\n"
-        f"❃ **Hacker**             ➥ `{DEFAULTUSER}` \n"
+        f"❃ **Owner**             ➥ `{DEFAULTUSER}` \n"
         f"❃ **Username**    ➥ `@{user.username}` \n"
         f"❃ **Telethon**       ➥ `Versi {version.__version__}` \n"
         f"❃ **Python**          ➥ `Versi {python_version()}` \n"
         f"❃ **Versi Bot**      ➥ `7.1` \n"
         f"❃ **Modul**           ➥ `{len(modules)}` \n\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
-        f"[{REPO_NAME}](https://github.com/Randi356/VEGETA-USERBOT) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
+        f"[{REPO_NAME}](https://github.com/Randi356/VEGETA-USERBOT) || [𝗚𝗥𝗢𝗨𝗣](t.me/RemixSupport) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ **")
     if ALIVE_LOGO:
         try:
@@ -310,22 +310,25 @@ async def amireallyalive(alive):
     await asyncio.sleep(3)
     output = (
         f"**✠╼━━━━━━❖━━━━━━━✠ ** \n"
-        f"**        🌹𝕮𝖍𝖎𝖑𝖑𝖞-𝖀𝖘𝖊𝖗𝖇𝖔𝖙🌹** \n"
+        f"**     🔥𝙲𝙷𝙸𝙻𝙻𝚈-𝚄𝚂𝙴𝚁𝙱𝙾𝚃🔥** \n"
         f"**✠╼━━━━━━❖━━━━━━━✠** \n"
-        f"╭✠╼━━━━━━❖━━━━━━━✠╮ \n"
-        f"┣|• `👑Majikan  :`{DEFAULTUSER} \n"
-        f"┣|• `🌹 Username :`@{user.username} \n"
-        f"┣|• `🌹 Telethon :`Ver {version.__version__} \n"
-        f"┣|• `🌹 Python   :`Ver {python_version()} \n"
-        f"╰✠╼━━━━━━❖━━━━━━━✠╯ \n"
-        f"╭✠╼━━━━━━❖━━━━━━━✠╮ \n"
-        f"┣|• `Branch      :`VEGETA-USERBOT \n"
-        f"┣|• `Bot Ver     :`7.1 \n"
-        f"┣|• `Modules     :`{len(modules)} Modules \n"
-        f"╰✠╼━━━━━━❖━━━━━━━✠╯ \n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-        f"[{REPO_NAME}](https://github.com/Randi356/VEGETA-USERBOT) || [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK}) || [𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌]({IG_ALIVE}) \n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰")
+        f"╭╼════════════════════╾╮ \n"
+        f"│  ⇱ **SISTEM ALIVE USERBOT** ⇲ \n"
+        f"┟╼════════════════════╾┤ \n"
+        f"╟◈ 🤴 `Remix     :` {DEFAULTUSER} \n"
+        f"╟◈ 🔎 `Username :` @{user.username} \n"
+        f"╟◈ ⚙️ `Telethon :` v.{version.__version__} \n"
+        f"╟◈ 🐍 `Python   :` v.{python_version()} \n"
+        f"╟◈ 🛠️ `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
+        f"╟◈ 👾 `Bot Ver  :` v{BOT_VER} \n"
+        f"╟◈ 📂 `Plugins  :` {len(modules)} Plugin \n"
+        f"┞╼════════════════════╾┤ \n"
+        f"├◈ **{VEGETA_TEKS_KUSTOM}** \n"
+        f"│                         \n"
+        f"│   **USERBOT TELEGRAM**  \n"
+        f"╰╼════════════════════╾╯ \n"
+        f"[License](https://github.com/Randi356/VEGETA-USERBOT/blob/VEGETA-USERBOT/LICENSE) | [Support Chat](t.me/RemixSupport)\n"
+        f"[Support Channel](t.me/githubxsvshacker)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
