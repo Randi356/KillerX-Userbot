@@ -301,7 +301,7 @@ async def amireallyalive(alive):
 
 
 @register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
-async def redis(alive):
+async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     await alive.edit("__𝐄 𝐑 𝐑 𝐎 𝐑.__")
@@ -324,13 +324,13 @@ async def redis(alive):
         f"╭╼════════════════════╾╮ \n"
         f"│  ⇱ **SISTEM ALIVE USERBOT** ⇲ \n"
         f"┟╼════════════════════╾┤ \n"
-        f"╟◈ 🤴 `Remix     :` {DEFAULTUSER} \n"
+        f"╟◈ 🤴 `Owner     :` {DEFAULTUSER} \n"
         f"╟◈ 🔎 `Username :` @{user.username} \n"
         f"╟◈ ⚙️ `Telethon :` v.{version.__version__} \n"
         f"╟◈ 🐍 `Python   :` v.{python_version()} \n"
         f"╟◈ 🛠️ `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
         f"╟◈ 👾 `Bot Ver  :` v{BOT_VER} \n"
-        f"╟◈ 📂 `Plugins  :` {len(plugins)} Plugin \n"
+        f"╟◈ 📂 `Plugins  :` {len(modules)} Plugin \n"
         f"┞╼════════════════════╾┤ \n"
         f"├◈ **{VEGETA_TEKS_KUSTOM}** \n"
         f"│                         \n"
