@@ -1,8 +1,9 @@
 # Thanks Full To Team Ultroid
-# Ported By Vcky @VckyouuBitch + @MaafGausahSokap
+# Ported By Vcky @VckyouuBitch 
 # Copyright (c) 2021 Geez - Projects
 # Geez - Projects https://github.com/Vckyou/Geez-UserBot
 # VEGETA-USERBOT https://github.com/Randi356/VEGETA-USERBOT
+# fixed by rendy
 # Ini Belum Ke Fix Ya Bg :')
 # Ambil aja gapapa tp Gaguna kaya hidup lu Woakkakaka
 
