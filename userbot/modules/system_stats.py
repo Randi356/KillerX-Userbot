@@ -322,13 +322,9 @@ async def amireallyalive(alive):
         f"**╟◈ 🛠️ `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
         f"**╟◈ 👾 `Bot Ver  :` v{BOT_VER} \n"
         f"**╟◈ 📂 `Plugins  :` {len(modules)} Plugin \n"
-        f"**┞╼════════════════════╾┤** \n"
-        f"**├◈ **{VEGETA_TEKS_KUSTOM}** \n"
-        f"**│                         \n"
-        f"**│   **USERBOT TELEGRAM**  \n"
-        f"**╰╼════════════════════╾╯** \n"
-        f"**[License](https://github.com/Randi356/VEGETA-USERBOT/blob/VEGETA-USERBOT/LICENSE) | [Support Chat](t.me/RemixSupport)\n"
-        f"**[Support Channel](t.me/githubxsvshacker)")
+        f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
+        f"[{REPO_NAME}](https://github.com/Randi356/VEGETA-USERBOT) || [𝗚𝗥𝗢𝗨𝗣](t.me/RemixSupport) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
+        f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ **")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
