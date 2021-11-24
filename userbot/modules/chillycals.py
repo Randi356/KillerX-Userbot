@@ -47,8 +47,8 @@ async def _(e):
         await e.edit(f"`{str(ex)}`")
 
 
-@register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
-async def _(e):
+@register(outgoing=True, groups_only=True, pattern=r"^\.stopvc$")
+async def stop_voice(e):
     chat = await e.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
@@ -64,21 +64,21 @@ async def _(e):
 
 
 @register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
-async def _(vegetaot):
-    await vegetabot.edit("`Memulai Invite member group...`")
+async def _(e):
+    await e.edit("`Memulai Invite member group...`")
     users = []
     z = 0
-    async for x in vegetabot.client.iter_participants(vegetabot.chat_id):
+    async for x in e.client.iter_participants(e.chat_id):
         if not x.bot:
             users.append(x.id)
     hmm = list(user_list(users, 6))
     for p in hmm:
         try:
-            await vegetabot.client(invitetovc(call=await get_call(vegetabot), users=p))
+            await e.client(invitetovc(call=await get_call(e), users=p))
             z += 6
         except BaseException:
             pass
-    await vegetabot.edit(f"`Menginvite {z} Member`")
+    await e.edit(f"`Menginvite {z} Member`")
 
 
 CMD_HELP.update(
