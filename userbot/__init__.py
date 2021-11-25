@@ -622,7 +622,7 @@ with bot:
                 )
 
        @tgbot.on(events.CallbackQuery(data=b"close"))
-        async def close(event):
+          async def close(event):
             buttons [
                 (custom.button.inline("Open Menu", data="open_plugin"),),
             ]
@@ -678,7 +678,6 @@ with bot:
                 reply_pop_up_alert = f"WOI NGENTOT!! JANGAN PAKE PUNYA {DEFAULTUSER} DONG BABI."
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-
 
     except BaseException:
         LOGS.info(
