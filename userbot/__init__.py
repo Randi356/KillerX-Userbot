@@ -620,7 +620,7 @@ with bot:
             buttons = [
                 (custom.Button.inline("Buka Menu", data="open"),),
             ]
-            await event.edit("**𝙱𝚄𝙺𝙰 𝙼𝙴𝙽𝚄!**", file=renlogo, buttons=buttons)
+            await event.edit("**𝙱𝚄𝙺𝙰 𝙼𝙴𝙽𝚄!**", file=ramlogo, buttons=buttons)
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
