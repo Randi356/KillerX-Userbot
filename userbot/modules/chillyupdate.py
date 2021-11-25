@@ -65,7 +65,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy RAM-UBOT dyno.`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy VEGETA-UBOT dyno.`'
             )
             return repo.__del__()
         await event.edit(f'`{REPO_NAME}:'
@@ -196,7 +196,7 @@ async def upstream(event):
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f"**Pembaruan Untuk {REPO_NAME} [{REPO_NAME}]:\n\n✨Pembaruan:**\n`{changelog}`"
+        changelog_str = f"**Pembaruan Untuk {REPO_NAME} [{REPO_NAME}]:\n\n🛠Pembaruan:**\n`{changelog}`"
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
