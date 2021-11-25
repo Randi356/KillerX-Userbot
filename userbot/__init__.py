@@ -621,13 +621,6 @@ with bot:
                        ]
                 )
 
-       @tgbot.on(events.CallbackQuery(data=b"close"))
-          async def close(event):
-            buttons = [
-                (custom.button.inline("Open Menu", data="open_plugin"),),
-            ]
-            await event.edit(f"Menu Tutup! ", buttons=buttons)
-
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"helpme_prev\((.+?)\)")
@@ -678,6 +671,13 @@ with bot:
                 reply_pop_up_alert = f"WOI NGENTOT!! JANGAN PAKE PUNYA {DEFAULTUSER} DONG BABI."
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
+
+       @tgbot.on(events.CallbackQuery(data=b"close"))
+          async def close(event):
+            buttons = [
+                (custom.button.inline("Open Menu", data="open_plugin"),),
+            ]
+            await event.edit(f"Menu Tutup! ", buttons=buttons)
 
     except BaseException:
         LOGS.info(
