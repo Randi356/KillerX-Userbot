@@ -1,12 +1,9 @@
 # Thanks Full To Team Ultroid
-# Ported By Vcky @VckyouuBitch 
+# Ported By Vcky @VckyouuBitch
 # Copyright (c) 2021 Geez - Projects
 # Geez - Projects https://github.com/Vckyou/Geez-UserBot
-# VEGETA-USERBOT https://github.com/Randi356/VEGETA-USERBOT
-# fixed by rendy
-# Ini Belum Ke Fix Ya Bg :')
-# Ambil aja gapapa tp Gaguna kaya hidup lu Woakkakaka
-
+# by fix rendy
+# from https://github.com/Randi356/VEGETA-USERBOT 
 
 from telethon.tl.functions.channels import GetFullChannelRequest as getchat
 from telethon.tl.functions.phone import CreateGroupCallRequest as startvc
@@ -18,13 +15,13 @@ from telethon.tl.types import ChatAdminRights
 from userbot import CMD_HELP
 from userbot.events import register
 
-NO_ADMIN = "`LU BUKAN ADMIN NGENTOT!!`"
+NO_ADMIN = "`Sorry you are not admin :)`"
 
 
 async def get_call(event):
-    e = await event.client(getchat(event.chat_id))
-    ren = await event.client(getvc(e.full_chat.call))
-    return ren.call
+    chilly = await event.client(getchat(event.chat_id))
+    rendy = await event.client(getvc(chilly.full_chat.call))
+    return vcky.call
 
 
 def user_list(l, n):
@@ -48,8 +45,8 @@ async def _(e):
         await e.edit(f"`{str(ex)}`")
 
 
-@register(outgoing=True, groups_only=True, pattern=r"^\.stopvc$")
-async def stop_voice(e):
+@register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
+async def _(e):
     chat = await e.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
@@ -66,7 +63,7 @@ async def stop_voice(e):
 
 @register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
 async def _(e):
-    await e.edit("`Memulai Invite member group...`")
+    await e.edit("`Inviting Members to Voice Chat...`")
     users = []
     z = 0
     async for x in e.client.iter_participants(e.chat_id):
@@ -79,16 +76,16 @@ async def _(e):
             z += 6
         except BaseException:
             pass
-    await e.edit(f"`Menginvite {z} Member`")
+    await e.edit(f"`Invited {z} users`")
 
 
 CMD_HELP.update(
     {
-        "vegetacalls": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.startvc`\
-         \n↳ : Memulai Obrolan Suara dalam Group.\
+        "calls": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.startvc`\
+         \n↳ : Start Group Call in a group.\
          \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stopvc`\
-         \n↳ : `Menghentikan Obrolan Suara Pada Group.`\
+         \n↳ : `Stop Group Call in a group.`\
          \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vcinvite`\
-         \n↳ : Invite semua member yang berada di group. (Kadang bisa kadang kaga)."
+         \n↳ : Invite all members of group in Group Call. (You must be joined)."
     }
 )
