@@ -626,7 +626,7 @@ with bot:
             buttons [
                 (custom.button.inline("Open Menu", data="open_plugin"),),
             ]
-            await event.edit("Menu Tutup! ", buttons=Buttons)
+            await event.edit("Menu Tutup! ", buttons=buttons)
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
