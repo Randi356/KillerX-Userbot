@@ -614,6 +614,8 @@ with bot:
                                         "t.me/restareasini")],
                             [Button.url(f"{EMOJI_HELP} SUPPORT NARAXMUSIC {EMOJI_HELP} ",
                                         "t.me/naraxmusic")],
+                        [custom.button.indline(
+                            "°ᴄʟᴏꜱᴇ ɪɴʟɪɴᴇ°", data="open_plugin")],
                         [custom.Button.inline(
                             f"{EMOJI_HELP} 𝗘𝗫𝗜𝗧 {EMOJI_HELP}", b"close")],
                        ]
@@ -672,7 +674,9 @@ with bot:
 
         @tgbot.on(events.CallbackQuery(data=b"close"))
         async def close(event):
-            await event.edit("Menu di tutup!\nUntuk Melihat Menu, Silahkan Ketik `.xhelp`", buttons=Button.clear())
+            buttons [
+                (custom.button.inline("Open Menu", data="open_plugin"),),
+            await event.edit("Menu Tutup!", buttons=Buttons)
 
 
     except BaseException:
