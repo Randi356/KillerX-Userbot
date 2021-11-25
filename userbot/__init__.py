@@ -672,12 +672,12 @@ with bot:
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
             
-@ tgbot.on(events.CallbackQuery(data=b"close"))
+ @tgbot.on(events.CallbackQuery(data=b"close"))
         async def close(event):
             buttons = [
                 (custom.Button.inline("Open Menu", data="open_plugin"),),
             ]
-            await event.edit(f"Menu Ditutup! ", buttons=buttons)
+            await event.edit(f"Menu Ditutup!", buttons=buttons)
             
     except BaseException:
         
