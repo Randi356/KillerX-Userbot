@@ -624,7 +624,7 @@ with bot:
                 @tgbot.on(events.CallBackQuery(data=b"close"))
                 async def close(event):
                     buttons = [
-                        [custom.Button.inline("Open Menu", data="open_plugin"),),
+                        [custom.Button.inline("Open Menu", data="open_plugin")"),
                     ]
                         await event.edit(f"Open Tutup! ", buttons=buttons)
 
