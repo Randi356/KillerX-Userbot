@@ -488,7 +488,6 @@ async def _(event):
 
 
 @register(outgoing=True, pattern="^.clone(?: |$)(.*)")
-@register(incoming=True, from_users=DEVS, pattern="^.cclone(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
