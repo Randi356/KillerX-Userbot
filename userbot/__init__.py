@@ -615,18 +615,18 @@ with bot:
                             [Button.url(f"{EMOJI_HELP} SUPPORT NARAXMUSIC {EMOJI_HELP} ",
                                         "t.me/naraxmusic")],
                         [custom.button.indline(
-                            "°ᴄʟᴏꜱᴇ ɪɴʟɪɴᴇ°", data="open_plugin")],
+                            "°ᴄʟᴏꜱᴇ ɪɴʟɪɴᴇ°", data="nepo")],
                         [custom.Button.inline(
                             f"{EMOJI_HELP} 𝗘𝗫𝗜𝗧 {EMOJI_HELP}", b"close")],
                        ]
                 )
 
-                @tgbot.on(events.CallBackQuery(data=b"close"))
-                async def close(event):
-                    buttons = [
-                        [custom.Button.inline("Open Menu", data="open_plugin")")
-                    ]
-                        await event.edit(f"Open Tutup! ", buttons=buttons)
+      @tgbot.on(events.CallbackQuery(data=b"close"))
+        async def close(event):
+            buttons = [
+                (custom.Button.inline("Open Menu", data="nepo"),),
+            ]
+            await event.edit("Menu Ditutup!", buttons=Button.clear())
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
