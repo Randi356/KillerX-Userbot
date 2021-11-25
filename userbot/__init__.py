@@ -612,7 +612,7 @@ with bot:
                                         "t.me/gsahmanja"),
                              Button.url(f"{EMOJI_HELP} GROUP RESTA AREA {EMOJI_HELP} ",
                                         "t.me/restareasini")],
-                            [Button.url(f"{EMOJI_HELP SUPPORT NARAXMUSIC {EMOJI_HELP} ",
+                            [Button.url(f"{EMOJI_HELP} SUPPORT NARAXMUSIC {EMOJI_HELP} ",
                                         "t.me/naraxmusic")],
                         [custom.Button.inline(
                             f"{EMOJI_HELP} 𝗘𝗫𝗜𝗧 {EMOJI_HELP}", b"close")],
