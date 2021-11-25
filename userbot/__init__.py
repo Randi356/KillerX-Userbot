@@ -600,15 +600,19 @@ with bot:
                     link_preview=True,
                     buttons=[
                         [
-                            Button.url(f"{REPO_NAME}",
-                                       "t.me/gsahmanja"),
+                            Button.url(f"{EMOJI_HELP} CHANNEL UPDATES {EMOJI_HELP} ",
+                                       "t.me/githubxsvshacker"),
                             Button.url(f"{EMOJI_HELP} SUPPORT {EMOJI_HELP} ", 
                                        "t.me/RemixSupport")],
                         [Button.url(f"{EMOJI_HELP} OWNER {EMOJI_HELP} ",
                                     f"{OWNER_BOT}"),
                             Button.url(f"{EMOJI_HELP} INSTAGRAM {EMOJI_HELP} ",
                                    f"{IG_ALIVE}")],
-                            [Button.url(f"{EMOJI_HELP} GRUP NARAX {EMOJI_HELP} ", 
+                            [Button.url(f"{EMOJI_HELP} GROUP GSAHMANJA {EMOJI_HELP} ", 
+                                        "t.me/gsahmanja"),
+                             Button.url(f"{EMOJI_HELP} GROUP RESTA AREA {EMOJI_HELP} ",
+                                        "t.me/restareasini")],
+                            [Button.url(f"{EMOJI_HELP SUPPORT NARAXMUSIC {EMOJI_HELP} ",
                                         "t.me/naraxmusic")],
                         [custom.Button.inline(
                             f"{EMOJI_HELP} 𝗘𝗫𝗜𝗧 {EMOJI_HELP}", b"close")],
