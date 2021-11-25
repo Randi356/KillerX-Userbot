@@ -676,6 +676,7 @@ with bot:
         async def close(event):
             buttons [
                 (custom.button.inline("Open Menu", data="open_plugin"),),
+            ]
             await event.edit("Menu Tutup!", buttons=Buttons)
 
 
