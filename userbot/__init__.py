@@ -562,7 +562,7 @@ with bot:
                                 f"{REPO_NAME}",
                                 "https://github.com/Randi356/VEGETA-USERBOT"),
                             custom.Button.url(
-                                "XSVSHACKER",
+                                "GSAHMANJA",
                                 f"{OWNER_BOT}")] 
                     ],
                     link_preview=False,
@@ -608,11 +608,19 @@ with bot:
                                     f"{OWNER_BOT}"),
                             Button.url(f"{EMOJI_HELP} INSTAGRAM {EMOJI_HELP} ",
                                    f"{IG_ALIVE}")],
+                            [Button.url(f"{EMOJI_HELP} GRUP NARAX {EMOJI_HELP} ", 
+                                       "t.me/naraxmusic")],
                         [custom.Button.inline(
                             f"{EMOJI_HELP} 𝗘𝗫𝗜𝗧 {EMOJI_HELP}", b"close")],
                        ]
                 )
 
+       @tgbot.on(events.CallbackQuery(data=b"close"))
+        async def close(event):
+            buttons = [
+                (custom.Button.inline("Buka Menu", data="open"),),
+            ]
+            await event.edit("**𝙱𝚄𝙺𝙰 𝙼𝙴𝙽𝚄!**", file=renlogo, buttons=buttons)
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
