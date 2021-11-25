@@ -185,20 +185,17 @@ async def dyno_usage(dyno):
             AppMinutes = math.floor(AppQuotaUsed % 60)
 
             await dyno.edit(
-                f"𝗜𝗡𝗙𝗢 𝗞𝗘𝗞𝗨𝗔𝗧𝗔𝗡 {REPO_NAME}!!\n\n"
-                "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
-                "┣•𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡 𝗦𝗔𝗔𝗧 𝗜𝗡𝗜 : \n"
-                f"┣•   ▸ {AppHours} ᴊᴀᴍ - {AppMinutes} ᴍᴇɴɪᴛ. \n"
-                f"┣•   ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {AppPercentage}% \n"
-                "╰✠╼━━━━━━❖━━━━━━━✠╯\n"
-                "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-                "╭✠╼━━━━━━❖━━━━━━━✠╮ \n"
-                "┣•𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡 𝗕𝗨𝗟𝗔𝗡 𝗜𝗡𝗜 : \n"
-                f"┣•  ▸ {hours} ᴊᴀᴍ - {minutes} ᴍᴇɴɪᴛ. \n"
-                f"┣•  ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {percentage}%. \n"
-                "╰✠╼━━━━━━❖━━━━━━━✠╯\n"
-                f"• 𝗣𝗘𝗠𝗜𝗟𝗜𝗞  : {ALIVE_NAME} \n"
-                f"**•JOIN•** : [MY GROUP]({GROUP_LINK}) \n"
+                f"★ **🐼INFO KUOTA CHILLY** ★\n╔══════━━━━━━━══════╗ \n"
+                f" ➠ **🐭Penggunaan Kuota :** `{app.name}` \n"
+                f"• **🐸Hasil** :  `{AppHours}` **Jam** - `{AppMinutes}` **Menit**\n"
+                f"• **🐵Persen** : `{AppPercentage}`**%**\n"
+                f"◖═══════════════════◗ \n"
+                f" ➠ **📚Sisa Kuota Bulan Ini :**\n"
+                f"• **🍀Sisa** :  `{hours}` **Jam** - `{minutes}` **Menit**\n"
+                f"• **🌻Persen** :  `{percentage}`**%**\n"
+                f"╚══════━━━━━━━══════╝ \n"
+                f"◈ **👑OWNER**  : {ALIVE_NAME} \n"
+                f"◈ **🛠REPO** : [Vegeta-Userbot](https://github.com/Randi356/VEGETA-USERBOT) \n"
             )
             await asyncio.sleep(5)
             await event.delete()
