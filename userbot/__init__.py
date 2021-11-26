@@ -607,8 +607,9 @@ with bot:
                                     f"{OWNER_BOT}"),
                             Button.url(f"{EMOJI_HELP} INSTAGRAM {EMOJI_HELP} ",
                                    f"{IG_ALIVE}")],
+                        [custon.inline("Open Menu", data="nepo")], 
                         [custom.Button.inline(
-                            f"{EMOJI_HELP} 𝗘𝗫𝗜𝗧 {EMOJI_HELP}", b"close")],
+                           "Close", b"close")],
                        ]
                 )
 
@@ -666,7 +667,10 @@ with bot:
 
         @tgbot.on(events.CallbackQuery(data=b"close"))
         async def close(event):
-            await event.edit("Menu di tutup!\nUntuk Melihat Menu, Silahkan Ketik `.rhelp`", buttons=Button.clear())
+            buttons = [
+               [custom.Button.inline("Open Menu", data="nepo")],
+               ]
+            await event.edit("Menu di tutup!", buttons=buttons.clear())
 
 
     except BaseException:
