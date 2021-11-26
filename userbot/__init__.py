@@ -561,7 +561,7 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"**⚡ inline VEGETA-USERBOT ⚡**\n\n⭐ **Owner** [RENDY](t.me/CuteInspire)\n⚡ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**⚡ inline VEGETA-USERBOT ⚡**\n\n⚡ **Owner** [RENDY](t.me/CuteInspire)\n⚡ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
