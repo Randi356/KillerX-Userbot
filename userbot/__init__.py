@@ -72,6 +72,24 @@ if CONFIG_CHECK:
     )
     quit(1)
 
+# KALO NGEFORK ID DEVS SAMA ID BLACKLIST_CHAT NYA GA USAH DI HAPUS YA GOBLOK 😡
+# Credits Man-Userbot
+DEVS = (
+    901878554,
+    1191668125,
+    2034711976,
+    1663258664,
+    1977978893,
+)
+
+# For Blacklist Group Support
+# Credits Man-Userbot
+BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
+if not BLACKLIST_CHAT:
+    BLACKLIST_CHAT = [-1001273141346]
+# JANGAN DI HAPUS GOBLOK 😡 LU COPY/EDIT AJA TINGGAL TAMBAHIN PUNYA LU
+# DI HAPUS GUA GBAN YA 🥴 GUA TANDAIN LU AKUN TELENYA 😡
+
 # Telegram App KEY and HASH
 API_KEY = os.environ.get("API_KEY", "")
 API_HASH = os.environ.get("API_HASH", "")
