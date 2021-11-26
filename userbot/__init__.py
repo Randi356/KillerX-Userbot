@@ -620,13 +620,14 @@ with bot:
                             f"{EMOJI_HELP} 𝗘𝗫𝗜𝗧 {EMOJI_HELP}", b"close")],
                        ]
                 )
+                
+                @tgbot.on(events.CallBackQuery(data=b"close"))
+                async def close(event):
+                   buttons = [
+                       [custom.Button.inline("Open Menu", data="nepo"),),
+                       ]
+                       await event.edit("Menu Tutup!", buttons=button.clear())
 
-      @tgbot.on(events.CallbackQuery(data=b"close"))
-        async def close(event):
-            buttons = [
-                (custom.Button.inline("Open Menu", data="nepo"),),
-            ]
-            await event.edit("Menu Ditutup!", buttons=Button.clear())
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
