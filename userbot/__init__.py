@@ -599,7 +599,7 @@ with bot:
                     link_preview=True,
                     buttons=[
                         [
-                            Button.url(f"{REPO_NAME}",
+                            Button.url(f"{EMOJI_HELP} GSAHMANJA {EMOJI_HELP} ",
                                        "t.me/gsahmanja"),
                             Button.url(f"{EMOJI_HELP} SUPPORT {EMOJI_HELP} ", 
                                        "t.me/RemixSupport")],
