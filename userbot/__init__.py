@@ -526,7 +526,7 @@ with bot:
                 f"**Hey**, __I am using__  **🔥VEGETA-USERBOT🔥** \n\n"
                 f"       __Thanks For Using me__\n\n"
                 f"⚡ **Group Support :** [REMIX](t.me/RemixSupport)\n"
-                f"⚡ **Owner Repo :** [RENDY](t.me/maafgausahsokap)\n"
+                f"⚡ **Owner Repo :** [RENDY](t.me/CuteInspire)\n"
                 f"⚡ **Repo :** [VEGETA-USERBOT](https://github.com/Randi356/VEGETA-USERBOT)\n"
             )
             await tgbot.send_file(
@@ -629,7 +629,7 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ⚡𝗚𝗲𝗲𝘇-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ",
+                    "Bantuan Dari ⚡𝚅𝙴𝙶𝙴𝚃𝙰-𝚄𝚂𝙴𝚁𝙱𝙾𝚃⚡ ",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
