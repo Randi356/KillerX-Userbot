@@ -683,6 +683,8 @@ with bot:
                                        "t.me/githubxsvshacker"),
                             Button.url("👥 Group support",
                                        "t.me/RemixSupport")],
+                        [Button.url("📚Manager📚",
+                                    "t.me/RemixRobot")],
                         [Button.inline("Open Menu", data="nepo")],
                         [custom.Button.inline(
                             "Close", b"close")],
