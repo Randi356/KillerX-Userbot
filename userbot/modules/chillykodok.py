@@ -11,7 +11,7 @@ from userbot.events import register
 from userbot import CMD_HELP, bot
 
 
-@register(outgoing=True, pattern=r"^\.prg (.*)")
+@register(outgoing=True, pattern=r"^\.prog (.*)")
 async def honkasays(event):
     await event.edit("`Sedang Memprosess!!!`")
     text = event.pattern_match.group(1)
@@ -48,5 +48,5 @@ async def honkasays(event):
         await event.edit("Maaf bos, saya tidak bisa mengirim stiker ke sini !!")
 
 
-CMD_HELP.update({"prog": "`.prg`\
-    \nPenjelasan: .prg <kata kata>. Biar bisa lihat kodok bentuk badut"})
+CMD_HELP.update({"prog": "`.prog`\
+    \nPenjelasan: .prog <kata kata>. Biar bisa lihat kodok bentuk badut"})
