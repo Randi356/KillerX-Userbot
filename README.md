@@ -27,6 +27,15 @@
 
 <p align="center">
 
+```
+             ⚠️ PERINGATAN UNTUK ANDA ⚠️ ️
+  Vegeta-Userbot digunakan untuk membantu aktifitas akun anda di telegram
+   Kami tidak bertanggung jawab atas apa yang anda salah gunakan pada repository ini
+      ! Hati hati dalam penggunaan pada repository ini !
+   Jika salah satu member salah gunakan repository ini , kami terpaksa harus meng gban anda 
+  Jangan pernah sekali sekali menyalah gunakan repository ini
+```
+
 ## PEMILIK REPO
 * 🌹**Chilly-Userbot**🌹
 [<img src="https://telegra.ph/file/14137518c2d79ef7781db.jpg">](https://t.me/FlashProSpeed)
