@@ -29,17 +29,17 @@ from userbot.events import register
 # LU TAMBAH MODULES KONTOL
 
 absen = [
-    "**Hadir ganteng** 🥵",
-    "**Hadir bro** 😎",
+    "**Hadir cakep dinda** 🥵",
+    "**Hadir bang Rendy** 😎",
     "**Hadir kak** 😉",
-    "**Hadir bang Rendy** 😁",
+    "**Hadir bro** 😁",
     "**Hadir kak maap telat** 🥺",
 ]
 
 pacar = [
     "**Kamu mau jadi pacar aku ga?** 💘",
     "**mmk mending sama aku** 😎",
-    "**Hai ganteng** 🐷",
+    "**Hai ganteng** 😍",
     "**Mau ga bang jadi pacar aku?** 😁",
     "**Mending pc aku bang** 🥺",
 ]
