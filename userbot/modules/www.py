@@ -7,17 +7,27 @@
     Information Superhighway (yes, Internet). """
 
 import asyncio
+import random
 import time
 import redis
 
 from datetime import datetime
 
 from speedtest import Speedtest
-from userbot import CMD_HELP, DEVS, StartTime, ALIVE_NAME, REPO_NAME
+
+from userbot import (
+    CMD_HELP, 
+    DEVS, 
+    StartTime, 
+    ALIVE_NAME, 
+    REPO_NAME,
+)
+    
 from userbot.events import register
 
 # OWN BY RENDY
 # LU TAMBAH MODULES KONTOL
+
 absen = [
     "**Hadir ganteng** 🥵",
     "**Hadir bro** 😎",
@@ -66,7 +76,7 @@ async def get_readable_time(seconds: int) -> str:
 
 @register(incoming=True, from_users=DEVS, pattern=r"^.absen$")
 async def _(rendy):
-    await rendy.reply(random.choice(babik))
+    await rendy.reply(random.choice(absen))
 
 @register(incoming=True, from_users=DEVS, pattern=r"^.pacar$")
 async def _(kontol):
