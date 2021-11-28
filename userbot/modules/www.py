@@ -121,7 +121,7 @@ async def redis(pong):
         f"`%sms` \n"
         f"🎈 **𝐔𝐏𝐓𝐈𝐌𝐄𝐒 :** "
         f"`{upime}` \n"
-        f"👑 **𝐎𝐖𝐍𝐄𝐑 :** `{ALIVE_NAME}` % (duration)
+        f"👑 **𝐎𝐖𝐍𝐄𝐑 :** `{ALIVE_NAME}`" % (duration)
        )
 
 
