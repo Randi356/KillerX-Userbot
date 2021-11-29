@@ -1,5 +1,5 @@
 # Using Python Slim-Buster
-FROM hackinguserbot/vegeta-userbot:buster
+FROM xluxz/geezproject:buster
 # VEGETA-USERBOT
 # CuteInspire
 
