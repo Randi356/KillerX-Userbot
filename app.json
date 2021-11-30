@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Randi356/VEGETA-USERBOT",
+  "repository": "https://github.com/Randi356/Vegeta-Userbot",
   "telegram": "https://t.me/FlashProSpeed",
   "success_url": "https://t.me/gsahmanja",
   "stack": "container",
@@ -46,7 +46,7 @@
       "required": true
     },
     "BOTLOG_CHATID": {
-      "description": "Masuk @spambotVegeta atau Buatlah sebuah grup private/public masukan @goku_isbot lalu ketik /id, Salin dan hapus id dibawah ini, Lalu tempel.",
+      "description": "Masuk @spambotVegeta atau Buatlah sebuah grup private/public masukan @kazukoRobot lalu ketik /id, Salin dan hapus id dibawah ini, Lalu tempel.",
       "value": "-1001689681361",
       "required": true
     },
@@ -92,7 +92,7 @@
       "required": false
     },
     "G_BAN_LOGGER_GROUP": {
-      "description": "Masuk @spambotVegeta Atau Buatlah Sebuah Grup Private/Public Lalu Masukkan @goku_isbot Lalu Ketik /id, Salin dan hapus id dibawah ini lalu tempel.",
+      "description": "Masuk @spambotVegeta Atau Buatlah Sebuah Grup Private/Public Lalu Masukkan @KazukoRobot Lalu Ketik /id, Salin dan hapus id dibawah ini lalu tempel.",
       "value": "-1001689681361",
       "required": false
     },
