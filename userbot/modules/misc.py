@@ -93,7 +93,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's something for you to read:\n"
-        "\n[VEGETA-USERBOT Repo](https://github.com/Randi356/VEGETA-USERBOT/blob/VEGETA-USERBOT/README.md)"
+        "\n[VEGETA-USERBOT Repo](https://github.com/Randi356/Vegeta-Userbot/blob/Vegeta-Userbot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-GDrive-11-02)"
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
@@ -120,7 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n             [{REPO_NAME}](https://github.com/Randi356/VEGETA-USERBOT)\n╰✠╼━━━━━━❖━━━━━━━✠╯\n•PEMILIK         : [𝐎𝐖𝐍𝐄𝐑]({OWNER_BOT})\n•CHANNEL      : [𝐈𝐍𝐅𝐎](t.me/githubxsvshacker)\n•GROUP           : [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK})\n•INSTAGRAM  :  [𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌]({IG_ALIVE})"
+        f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n             [{REPO_NAME}](https://github.com/Randi356/Vegeta-Userbot)\n╰✠╼━━━━━━❖━━━━━━━✠╯\n•PEMILIK         : [𝐎𝐖𝐍𝐄𝐑]({OWNER_BOT})\n•CHANNEL      : [𝐈𝐍𝐅𝐎](t.me/githubxsvshacker)\n•GROUP           : [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK})\n•INSTAGRAM  :  [𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌]({IG_ALIVE})"
     )
 
 
