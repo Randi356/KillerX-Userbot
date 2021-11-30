@@ -128,9 +128,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Randi356/VEGETA-USERBOT")
+    "https://github.com/Randi356/Vegeta-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "VEGETA-USERBOT")
+    "UPSTREAM_REPO_BRANCH", "Vegeta-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -524,11 +524,11 @@ with bot:
         async def handler(event):
             await event.message.get_sender()
             text = (
-                f"**Hey**, __I am using__  **🔥VEGETA-USERBOT🔥** \n\n"
+                f"**Hey**, __I am using__  **🔥Vegeta-Userbot🔥** \n\n"
                 f"       __Thanks For Using me__\n\n"
                 f"⚡ **Group Support :** [REMIX](t.me/RemixSupport)\n"
                 f"⚡ **Owner Repo :** [RENDY](t.me/CuteInspire)\n"
-                f"⚡ **Repo :** [VEGETA-USERBOT](https://github.com/Randi356/VEGETA-USERBOT)\n"
+                f"⚡ **Repo :** [VEGETA-USERBOT](https://github.com/Randi356/Vegeta-Userbot)\n"
             )
             await tgbot.send_file(
                 event.chat_id,
@@ -538,7 +538,7 @@ with bot:
                     [
                         custom.Button.url(
                             text="⚡ REPO VEGETA-USERBOT ⚡",
-                            url="https://github.com/Randi356/VEGETA-USERBOT",
+                            url="https://github.com/Randi356/Vegeta-Userbot",
                         )
                     ],
                     [
@@ -570,12 +570,12 @@ with bot:
                     title="Repository",
                     description="Repository ⚡VEGETA-USERBOT⚡",
                     url="https://t.me/RemixSupport",
-                    text="**⚡VEGETA-USERBOT⚡**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **Owner :** [RENDY](https://t.me/CuteInspire)\n⚡**Support :** @RemixSupport\n⚡ **Repository :** [🔥VEGETA-USERBOT](https://github.com/Randi356/VEGETA-USERBOT)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**⚡VEGETA-USERBOT⚡**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **Owner :** [RENDY](https://t.me/CuteInspire)\n⚡**Support :** @RemixSupport\n⚡ **Repository :** [🔥VEGETA-USERBOT](https://github.com/Randi356/Vegeta-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/RemixSupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Randi356/VEGETA-USERBOT"
+                                "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
                             ),
                         ],
                     ],
@@ -591,7 +591,7 @@ with bot:
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/RemixSupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Randi356/VEGETA-USERBOT"
+                                "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
                             ),
                         ],
                     ],
@@ -642,7 +642,7 @@ with bot:
                         [
                             custom.Button.url(
                                 "⚡𝙲𝙷𝙸𝙻𝙻𝚈-𝚄𝚂𝙴𝚁𝙱𝙾𝚃⚡",
-                                "https://github.com/Randi356/VEGETA-USERBOT"),
+                                "https://github.com/Randi356/Vegeta-Userbot"),
                             custom.Button.url(
                                 "OWNER",
                                 "t.me/CuteInspire")]],
