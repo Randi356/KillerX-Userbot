@@ -9,6 +9,7 @@
 # Recode by @mrismanaziz
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
 # t.me/SharingUserbot & t.me/Lunatic0de
+# by fix rendy
 
 from userbot import CMD_HELP
 from userbot.events import register
@@ -77,7 +78,11 @@ async def gucast(event):
         if x.is_user and not x.entity.bot:
             chat = x.id
             try:
+                if chat not in DEVS
+                await event.client.send_message(chat, msg)
                 done += 1
+            except FloodWaitError as e:
+                await asyncio.sleep(e.x)
                 await event.client.send_message(chat, msg)
             except BaseException:
                 er += 1
