@@ -78,7 +78,7 @@ async def gucast(event):
         if x.is_user and not x.entity.bot:
             chat = x.id
             try:
-                if chat not in DEVS
+                if chat not in DEVS:
                 await event.client.send_message(chat, msg)
                 done += 1
             except FloodWaitError as e:
