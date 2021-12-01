@@ -11,7 +11,7 @@
 # t.me/SharingUserbot & t.me/Lunatic0de
 # by fix rendy
 
-from userbot import CMD_HELP
+from userbot import CMD_HELP, DEVS
 from userbot.events import register
 
 GCAST_BLACKLIST = [
