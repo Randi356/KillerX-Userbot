@@ -40,8 +40,8 @@
 * 🌹**Chilly-Userbot**🌹
 [<img src="https://telegra.ph/file/14137518c2d79ef7781db.jpg">](https://t.me/FlashProSpeed)
   
-# STRESS USERBOT😎
-[<img src="https://telegra.ph/file/42e679c5b472a949f3223.jpg">](https://t.me/RemixSupport) 
+# NEW USERBOT😎
+[<img src="https://telegra.ph/file/79afc152bb1d7620ceb0c.jpg">](https://t.me/RemixSupport) 
   
 ### JOIN DULU TOT!!:
 
