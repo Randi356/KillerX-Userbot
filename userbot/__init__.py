@@ -230,11 +230,11 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/8e78ea85e5266e664df1f.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/79afc152bb1d7620ceb0c.jpg"
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/8e78ea85e5266e664df1f.jpg"
+   "HELP_LOGO") or "https://telegra.ph/file/79afc152bb1d7620ceb0c.jpg"
 
 # Default .alive Instagram
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/yotteno"
