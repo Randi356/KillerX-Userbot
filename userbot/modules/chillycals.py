@@ -19,64 +19,64 @@ NO_ADMIN = "`Sorry you are not admin :)`"
 
 
 async def get_call(event):
-    chilly = await event.client(getchat(event.chat_id))
-    rendy = await event.client(getvc(chilly.full_chat.call))
+    geez = await event.client(getchat(event.chat_id))
+    vcky = await event.client(getvc(geez.full_chat.call))
     return vcky.call
 
 
 def user_list(l, n):
     for i in range(0, len(l), n):
-        yield l[i: i + n]
+        yield l[i : i + n]
 
 
 @register(outgoing=True, pattern=r"^\.startvc$", groups_only=True)
-async def _(e):
-    chat = await e.get_chat()
+async def start_voice(pro):
+    chat = await pro.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
     if not admin and not creator:
-        return await e.edit(NO_ADMIN)
+        return await pro.edit(NO_ADMIN)
     new_rights = ChatAdminRights(invite_users=True)
     try:
-        await e.client(startvc(e.chat_id))
-        await e.edit("`Voice Chat Started...`")
+        await pro.client(startvc(e.chat_id))
+        await pro.edit("`Voice Chat Started...`")
     except Exception as ex:
-        await e.edit(f"`{str(ex)}`")
+        await pro.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
-async def _(e):
-    chat = await e.get_chat()
+async def stop_voice(pro):
+    chat = await pro.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
     if not admin and not creator:
-        return await e.edit(NO_ADMIN)
+        return await pro.edit(NO_ADMIN)
     new_rights = ChatAdminRights(invite_users=True)
     try:
-        await e.client(stopvc(await get_call(e)))
-        await e.edit("`Voice Chat Stopped...`")
+        await pro.client(stopvc(await get_call(e)))
+        await pro.edit("`Voice Chat Stopped...`")
     except Exception as ex:
-        await e.edit(f"`{str(ex)}`")
+        await pro.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
-async def _(e):
-    await e.edit("`Inviting Members to Voice Chat...`")
+async def vc_invite(pro):
+    await pro.edit("`Inviting Members to Voice Chat...`")
     users = []
     z = 0
-    async for x in e.client.iter_participants(e.chat_id):
+    async for x in pro.client.iter_participants(pro.chat_id):
         if not x.bot:
             users.append(x.id)
     hmm = list(user_list(users, 6))
     for p in hmm:
         try:
-            await e.client(invitetovc(call=await get_call(e), users=p))
+            await pro.client(invitetovc(call=await get_call(pro), users=p))
             z += 6
         except BaseException:
             pass
-    await e.edit(f"`Invited {z} users`")
+    await pro.edit(f"`Invited {z} users`")
 
 
 CMD_HELP.update(
