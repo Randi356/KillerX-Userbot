@@ -79,8 +79,8 @@ async def carbon_api(e):
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="Created by [XSVSHACKER 😈](https://t.me/FlashProSpeed/)\
-        \nGroup [SUPPORT](https://t.me/StaryWild/)",
+        caption="Created by [Owner](https://t.me/FlashProSpeed/)\
+        \nGroup [SUPPORT](https://t.me/RemixSupport/)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -145,8 +145,8 @@ async def carbon_api(e):
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="created by [XSVSHACKER 😈](https://t.me/FlashProSpeed/)\
-        \nGroup Support [Dawn Labs](https://t.me/StaryWild/)",
+        caption="created by [Owner](https://t.me/FlashProSpeed/)\
+        \nGroup Support [Dawn Labs](https://t.me/RemixSupport/)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -211,8 +211,8 @@ async def carbon_api(e):
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="Created By [XSVSHACKER 😈](https://t.me/FlashProSpeed/)\
-        \nGroup Support [Support](https://t.me/StaryWild/)",
+        caption="Created By [Owner](https://t.me/FlashProSpeed/)\
+        \nGroup Support [Support](https://t.me/RemixSupport/)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -277,8 +277,8 @@ async def carbon_api(e):
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="Created by [XSVSHACKER 😈](https://t.me/FlashProSpeed/),\
-        \nGroup Support [Group Support](https://t.me/StaryWild)",
+        caption="Created by [Owner](https://t.me/FlashProSpeed/),\
+        \nGroup Support [Group Support](https://t.me/RemixSupport)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -343,8 +343,8 @@ async def carbon_api(e):
     await e.client.send_file(
         e.chat_id,
         file,
-        caption="Created by [XSVSHACKER 😈](https://t.me/FlashProSpeed/),\
-        \nGroup Support [Support](https://t.me/StaryWild/)",
+        caption="Created by [Owner](https://t.me/FlashProSpeed/),\
+        \nGroup Support [Support](https://t.me/RemixSupport/)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
