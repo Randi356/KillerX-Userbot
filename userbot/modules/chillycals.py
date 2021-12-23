@@ -30,35 +30,35 @@ def user_list(l, n):
 
 
 @register(outgoing=True, pattern=r"^\.startvc$", groups_only=True)
-async def start_voice(pro):
-    chat = await pro.get_chat()
+async def start_voice(pler):
+    chat = await pler.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
     if not admin and not creator:
-        return await pro.edit(NO_ADMIN)
+        return await pler.edit(NO_ADMIN)
     new_rights = ChatAdminRights(invite_users=True)
     try:
-        await pro.client(startvc(e.chat_id))
-        await pro.edit("`Voice Chat Started...`")
+        await pler.client(startvc(pler.chat_id))
+        await pler.edit("`Voice Chat Started...`")
     except Exception as ex:
-        await pro.edit(f"`{str(ex)}`")
+        await pler.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
-async def stop_voice(pro):
-    chat = await pro.get_chat()
+async def stop_voice(pler):
+    chat = await pler.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
     if not admin and not creator:
-        return await pro.edit(NO_ADMIN)
+        return await pler.edit(NO_ADMIN)
     new_rights = ChatAdminRights(invite_users=True)
     try:
-        await pro.client(stopvc(await get_call(e)))
-        await pro.edit("`Voice Chat Stopped...`")
+        await pler.client(stopvc(await get_call(pler)))
+        await pler.edit("`Voice Chat Stopped...`")
     except Exception as ex:
-        await pro.edit(f"`{str(ex)}`")
+        await pler.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
