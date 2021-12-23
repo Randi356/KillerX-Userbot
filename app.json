@@ -28,7 +28,7 @@
       "required": true
      },
      "STRING_SESSION": {
-      "description": "Ambil String Session di link https://t.me/githubxsvshacker/602.",
+      "description": "Ambil String Session di link https://replit.com/@Randi356/StringSession-1#main.py",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -83,7 +83,7 @@
     },
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
-      "value": "ChillyFucky",
+      "value": "nama lu",
       "required": true
     },
     "S_PACK_NAME": {
@@ -102,7 +102,7 @@
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "Untuk menampilkam mode tombol .rhelp, Ambil token di @BotFather",
+      "description": "Untuk menampilkam mode tombol .xhelp, Ambil token di @BotFather",
       "required": true
     },
     "BOT_USERNAME": {
