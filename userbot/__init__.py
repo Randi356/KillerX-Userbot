@@ -73,7 +73,7 @@ if CONFIG_CHECK:
     quit(1)
 
 # KALO NGEFORK ID DEVS SAMA ID BLACKLIST_CHAT NYA GA USAH DI HAPUS YA GOBLOK 😡
-# Credits Man-Userbot
+
 DEVS = (
     901878554,
     1191668125,
@@ -84,7 +84,7 @@ DEVS = (
 )
 
 # For Blacklist Group Support
-# Credits Man-Userbot
+
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001273141346]
@@ -526,7 +526,7 @@ with bot:
             text = (
                 f"**Hey**, __I am using__  **🔥Vegeta-Userbot🔥** \n\n"
                 f"       __Thanks For Using me__\n\n"
-                f"⚡ **Group Support :** [REMIX](t.me/RemixSupport)\n"
+                f"⚡ **Group Support :** [REMIX](t.me/UserbotSupportGroup)\n"
                 f"⚡ **Owner Repo :** [RENDY](t.me/CuteInspire)\n"
                 f"⚡ **Repo :** [VEGETA-USERBOT](https://github.com/Randi356/Vegeta-Userbot)\n"
             )
@@ -543,10 +543,10 @@ with bot:
                     ],
                     [
                         custom.Button.url(
-                            text="GROUP", url="https://t.me/RemixSupport"
+                            text="GROUP", url="https://t.me/UserbotSupportGroup"
                         ),
                         custom.Button.url(
-                            text="CHANNEL", url="https://t.me/githubxsvshacker"
+                            text="CHANNEL", url="https://t.me/StoryKalem"
                         ),
                     ],
                 ],
@@ -569,11 +569,11 @@ with bot:
                 result = builder.article(
                     title="Repository",
                     description="Repository ⚡VEGETA-USERBOT⚡",
-                    url="https://t.me/RemixSupport",
+                    url="https://t.me/UserbotSupportGroup",
                     text="**⚡VEGETA-USERBOT⚡**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **Owner :** [RENDY](https://t.me/CuteInspire)\n⚡**Support :** @RemixSupport\n⚡ **Repository :** [🔥VEGETA-USERBOT](https://github.com/Randi356/Vegeta-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/RemixSupport"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/UserbotSupportGroup"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
                             ),
@@ -585,11 +585,11 @@ with bot:
                 result = builder.article(
                     title="⚡ VEGETA-USERBOT ⚡",
                     description="VEGETA-USERBOT | Telethon",
-                    url="https://t.me/RemixSupport",
-                    text=f"**VEGETA-USERBOT**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **OWNER:** [RENDY](t.me/CuteInspire)\n⚡ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @githubxsvshacker\n➖➖➖➖➖➖➖➖➖➖",
+                    url="https://t.me/UserbotSupportGroup",
+                    text=f"**VEGETA-USERBOT**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **OWNER:** [RENDY](t.me/CuteInspire)\n⚡ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @StoryKalem\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/RemixSupport"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/UserbotSupportGroup"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
                             ),
@@ -681,9 +681,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
-                                       "t.me/githubxsvshacker"),
+                                       "t.me/StoryKalem"),
                             Button.url("👥 Group support",
-                                       "t.me/RemixSupport")],
+                                       "t.me/UserbotSupportGroup")],
                         [Button.url("📚Manager📚",
                                     "t.me/RemixRobot")],
                         [Button.inline("Open Menu", data="nepo")],
