@@ -409,6 +409,12 @@ async def amireallyaliveuser(alive):
             )
             await asyncio.sleep(100)
             await alive.delete()
+    else:
+        await.edit(output)
+        await asyncio.sleep(100)
+        await alive.delete()
+        
+    
 
     
         
