@@ -397,7 +397,7 @@ async def amireallyalive(alive):
     await alive.edit("8✊===D")
     await asyncio.sleep(1)
     output = (
-        f"**🐼Vegeta Userbot is actived!😎** \n\n"
+        f"**🐼Vegeta Userbot is actived!🐼** \n\n"
         f"┣❏😎 **Master**: {DEFAULTUSER} \n"
         f"┣❏🧐 **Username**: **@{user.username}** \n"
         f"┣❏🐍 **Python**:  Versi {python_version()} \n"
