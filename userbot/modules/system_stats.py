@@ -361,13 +361,13 @@ async def amireallyalive(alive):
     await alive.edit("**Prossing** **Boost**")
     await alive.edit("**Prossing** **Boostin**")
     await alive.edit("**Prossing** **Boosting**")
-    sleep(1)
+    await asyncio.sleep(1)
     await alive.edit("**Prossing Boosting** **V**")
     await alive.edit("**Prossing Boosting** **Ve**")
     await alive.edit("**Prossing Boosting** **Veg**")
     await alive.edit("**Prossing Boosting** **Veget**")
     await alive.edit("**Prossing Boosting** **Vegeta**")
-    sleep(1)
+    await asyncio.sleep(1)
     await alive.edit("**Proses Boosting** **Vegeta U**")
     await alive.edit("**Proses Boosting** **Vegeta Us**")
     await alive.edit("**Proses Boosting** **Vegeta Use**")
@@ -375,7 +375,7 @@ async def amireallyalive(alive):
     await alive.edit("**Proses Boosting** **Vegeta Userb**")
     await alive.edit("**Proses Boosting** **Vegeta Userbo**")
     await alive.edit("**Proses Boosting** **Vegeta Userbot**")
-    sleep(1)
+    await asyncio.sleep(1)
     await alive.edit("8✊===D")
     await alive.edit("8=✊==D")
     await alive.edit("8==✊=D")
@@ -395,7 +395,7 @@ async def amireallyalive(alive):
     await alive.edit("8==✊=D")
     await alive.edit("8=✊==D")
     await alive.edit("8✊===D")
-    sleep(1)
+    await asyncio.sleep(1)
     output = (
         f"**🐼Vegeta Userbot is actived!😎** \n\n"
         f"┣❏😎 **Master**: {DEFAULTUSER} \n"
@@ -410,18 +410,18 @@ async def amireallyalive(alive):
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(1)
+            await asyncio.sleep(50)
             await msg.delete()
         except BaseException:
             await alive.edit(
                 output + "\n\n *`Logo Yang Disediakan Tidak Valid."
                 "\nPastikan Tautan Yang Anda Gunakan Valid`"
             )
-            await asyncio.sleep(1)
+            await asyncio.sleep(100)
             await alive.delete()
     else:
         await alive.edit(output)
-        await asyncio.sleep(1)
+        await asyncio.sleep(100)
         await alive.delete()
       
 
