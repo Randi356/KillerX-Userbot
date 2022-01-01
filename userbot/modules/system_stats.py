@@ -344,7 +344,74 @@ async def amireallyalive(alive):
         await asyncio.sleep(100)
         await alive.delete()
 
+        
+@register(outgoing=True, pattern=r"^\.(?:boost|fast)\s?(.)?")
+async def amireallyaliveuser(alive):
+    user = await bot.get_me()
+    await get_readable_time((time.time() - StartTime))
+    await alive.edit("**P** **B**")
+    await alive.edit("**Pr** **Bo**")
+    await alive.edit("**Pro** **Boo**")
+    await alive.edit("**Pros** **Boos**")
+    await alive.edit("**Pross** **Boost**")
+    await alive.edit("**Prossi** **Boosti**")
+    await alive.edit("**Prossin** **Boostin**")
+    await alive.edit("**Prossing** **Boosting")
+    sleep(1)
+    await alive.edit("**Prossing** **Boosting** **V**")
+    await alive.edit("**Prossing** **Boosting** **Ve**")
+    await alive.edit("**Prossing** **Boosting** **Veg**")
+    await alive.edit("**Prossing** **Boosting** **Vege**")
+    await alive.edit("**Prossing** **Boosting** **Veget**")
+    await alive.edit("**Prossing** **Boosting** **Vegeta**")
+    sleep(1)
+    await alive.edit("**Prossing** **Boosting** **Vegeta** **U**")
+    await alive.edit("**Prossing** **Boosting** **Vegeta** **Us**")
+    await alive.edit("**Prossing** **Boosting** **Vegeta** **User**")
+    await alive.edit("**Prossing** **Boosting** **Vegeta** **Userb**")
+    await alive.edit("**Prossing** **Boosting** **Vegeta** **Userbo**")
+    await alive.edit("**Prossing** **Boosting** **Vegeta** **Userbot**")
+    sleep(1)
+    await alive.edit("8✊===D")
+    await alive.edit("8=✊==D")
+    await alive.edit("8==✊=D")
+    await alive.edit("8===✊D")
+    await alive.edit("8==✊=D")
+    await alive.edit("8=✊==D")
+    await alive.edit("8✊===D")
+    await alive.edit("8=✊==D")
+    await alive.edit("8==✊=D")
+    await alive.edit("8===✊D") 
+    await alive.edit("8==✊=D")
+    await alive.edit("8=✊==D")
+    await alive.edit("8✊===D")
+    sleep(1)
+    output = (
+        f"**🐼Vegeta Userbot is actived🐼** \n\n"
+        f">>😎 **Master**: {DEFAULTUSER} \n"
+        f">>🧐 **Username**: **@{user.username}** \n"
+        f">>🐍 **Python**: Versi {python_version()} \n"
+        f">>🤖 **Bot Versi**: {BOT_VER} \n"
+        f">>📂 **Plugins**: {len(modules)} Plugins \n"
+        f">>🔮 **Telethon**: Versi {version._version_} \n\n"
+        f">>❄️ REPO [REPO VEGETA](https://github.com/Randi356/Vegeta-Userbot)\n")
+    if ALIVE_LOGO:
+        try:
+            logo = ALIVE_LOGO
+            await alive.delete()
+            msg = await bot.send_file(alive.chat.id, logo caption=output)
+            await asyncio.sleep(500)
+            await msg.delete()
+         except BaseException:
+            await alive.edit(
+                output + "\n\n *`Logo Yang Disedikan Tidak Valid."
+                "\nPastikan Tautan Anda Gunakan Valid`"
+            )
+            await asyncio.sleep(100)
+            await alive.delete()
 
+    
+        
 @register(outgoing=True, pattern=r"^\.aliveu")
 async def amireallyaliveuser(username):
     message = username.text
