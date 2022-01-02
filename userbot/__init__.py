@@ -39,7 +39,7 @@ StartTime = time.time()
 
 CMD_LIST = {}
 # for later purposes
-COUNT_MSG =
+COUNT_MSG = {}
 SUDO_LIST = {}
 USERS = {}
 CMD_HELP = {}
