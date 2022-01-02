@@ -113,7 +113,7 @@ PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 # Custom Handler
 CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 
-SUDO_USERS = os.environ.get("SUDO_USERS", or r"$")
+SUDO_USERS = os.environ.get("SUDO_USERS", r"$")
 
 # Send .chatid in any group with all your administration bots (added)
 G_BAN_LOGGER_GROUP = os.environ.get("G_BAN_LOGGER_GROUP", "")
