@@ -58,7 +58,7 @@ def ren_cmd(
             ren_reg = re.compile(ren_ + pattern)
             sudo_reg = re.compile(sudo_ + pattern)
             if command is not None:
-                cmd1 = man_ + command
+                cmd1 = ren_ + command
                 cmd2 = sudo_ + command
             else:
                 cmd1 = (
