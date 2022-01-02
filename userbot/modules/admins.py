@@ -36,7 +36,7 @@ from userbot.events import register
 from userbot.utils import (
     edit_delete,
     edit_or_reply,
-    ren_man,
+    ren_cmd,
     ren_handler,
 )
 
