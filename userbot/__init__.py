@@ -39,6 +39,8 @@ StartTime = time.time()
 
 CMD_LIST = {}
 # for later purposes
+SUDO_LIST = {}
+USERS = {}
 CMD_HELP = {}
 INT_PLUG = ""
 LOAD_PLUG = {}
@@ -107,6 +109,11 @@ LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
+
+# Custom Handler
+CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
+
+SUDO_USERS = os.environ.get("SUDO_USERS", or r"$")
 
 # Send .chatid in any group with all your administration bots (added)
 G_BAN_LOGGER_GROUP = os.environ.get("G_BAN_LOGGER_GROUP", "")
