@@ -81,7 +81,7 @@ TERIMAKASIH UNTUK😎
 
 *   [LANDAK RAMA](https://github.com/ramadhani892) - RAM-UBOT
 *   [RENDY](https://github.com/Randi356) - VEGETA-USERBOT
-*   [MRISMANAZIZ(https://github.com/mrismanaziz/Man-Userbot) - MAN-USERBOT
+*   [MRISMANAZIZ](https://github.com/mrismanaziz/Man-Userbot) - MAN-USERBOT
     
 ## Find me on telegram 
 [![Telegram](https://img.shields.io/badge/Rendy-1b77FF.svg?style=for-the-badge&logo=telegram)](https://t.me/CuteInspire)
