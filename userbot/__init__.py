@@ -14,7 +14,7 @@ import io
 import random
 
 from datetime import datetime
-
+from pathlib import Path
 from sys import version_info
 from logging import basicConfig, getLogger, INFO, DEBUG
 from distutils.util import strtobool as sb
@@ -39,11 +39,14 @@ StartTime = time.time()
 
 CMD_LIST = {}
 # for later purposes
+COUNT_MSG =
 SUDO_LIST = {}
 USERS = {}
 CMD_HELP = {}
 INT_PLUG = ""
 LOAD_PLUG = {}
+
+
 
 # Bot Logs setup:
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
