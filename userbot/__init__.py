@@ -49,22 +49,22 @@ LOAD_PLUG = {}
 
 
 # Bot Logs setup:
-logging.basicConfig(
-    format="[%(name)s] - [%(levelname)s] - %(message)s",
-    level=logging.INFO,
-)
-logging.getLogger("asyncio").setLevel(logging.ERROR)
-logging.getLogger("pytgcalls").setLevel(logging.ERROR)
-logging.getLogger("telethon.network.mtprotosender").setLevel(logging.ERROR)
-logging.getLogger("telethon.network.connection.connection").setLevel(logging.ERROR)
+CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
+
+if CONSOLE_LOGGER_VERBOSE:
+    basicConfig(
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        level=DEBUG,
+    )
+else:
+    basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+                level=INFO)
 LOGS = getLogger(__name__)
 
-if version_info[0] < 3 or version_info[1] < 9:
-    LOGS.info(
-        "Anda HARUS memiliki python setidaknya versi 7.1."
-        "Beberapa fitur tergantung versi python ini. Bot berhenti."
-    )
-    sys.exit(1)
+if version_info[0] < 3 or version_info[1] < 8:
+    LOGS.info("You MUST have a python version of at least 3.8."
+              "Multiple features depend on this. Bot quitting.")
+    quit(1)
 
 # Check if the config was edited by using the already used variable.
 # Basically, its the 'virginity check' for the config file ;)
