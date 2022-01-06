@@ -194,8 +194,9 @@ async def dyno_usage(dyno):
                 f"◈ **🍀Sisa🍀** :  `{hours}` **Jam** - `{minutes}` **Menit**\n"
                 f"◈ **🌻Persen🌻** :  `{percentage}`**%**\n"
                 f"╚══════━━━━━━━══════╝ \n"
-                f"◈ **👑OWNER👑**  : {ALIVE_NAME} \n"
-                f"◈ **🛠REPO🛠** : [Vegeta-Userbot](https://github.com/Randi356/Vegeta-Userbot) \n"
+                f"◈ **👑Ganteng👑**  : {ALIVE_NAME} \n"
+                f"◈ **🌸Delevopers** : [Rendy](https://t.me/CuteInspire) \n"
+                f"◈ **🛠Repo🛠** : [Vegeta-Userbot](https://github.com/Randi356/Vegeta-Userbot) \n"
             )
             await asyncio.sleep(5)
             await event.delete()
