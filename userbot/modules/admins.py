@@ -222,7 +222,7 @@ async def ban(bon):
         )
 
 
-@@register(outgoing=True, pattern=r"^\.unban(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.unban(?: |$)(.*)")
 @register(incoming=True, from_users=DEVS, pattern=r"^\.cunban$")
 async def nothanos(unbon):
     chat = await unbon.get_chat()
