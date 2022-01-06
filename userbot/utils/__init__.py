@@ -15,16 +15,22 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 from .format import parse_pre
 from .chrome import chrome, options
+from .events import checking, get_user_from_event
 from .google_images_download import googleimagesdownload
 from .progress import progress, CancelProcess
 from .tools import (
    humanbytes, 
-   time_formatter, 
+   check_media,
+   time_formatter,
+   extract_time,
    human_to_bytes, 
    run_cmd, 
    md5,
    edit_delete,
    edit_or_reply,
+   media_to_pic,
+   media_type,
+   reply_id,
    post_to_telegraph, 
    take_screen_shot, 
    runcmd,
