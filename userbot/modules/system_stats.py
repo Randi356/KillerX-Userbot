@@ -241,7 +241,7 @@ async def amireallyalive(alive):
         f"┣• `📕 Modules  :`{len(modules)} \n"
         f"╰✠╼━━━━━━❖━━━━━━━✠╯\n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-        f"[🌹𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼🌹]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/Randi356/Vegeta-Userbot) || [𝐆𝐑𝐎𝐔𝐏](t.me/RemixSupport) \n"
+        f"[🌹𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼🌹]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/Randi356/Vegeta-Old) || [𝐆𝐑𝐎𝐔𝐏](t.me/RemixSupport) \n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰")
     if ALIVE_LOGO:
         try:
@@ -278,7 +278,7 @@ async def amireallyalive(alive):
         f"❃ **😎Versi Bot**      ➥ `7.1` \n"
         f"❃ **📕Modul**           ➥ `{len(modules)}` \n\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
-        f"[{REPO_NAME}](https://github.com/Randi356/Vegeta-Userbot) || [𝗚𝗥𝗢𝗨𝗣](t.me/RemixSupport) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
+        f"[{REPO_NAME}](https://github.com/Randi356/Vegeta-Old) || [𝗚𝗥𝗢𝗨𝗣](t.me/RemixSupport) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ **")
     if ALIVE_LOGO:
         try:
@@ -323,7 +323,7 @@ async def amireallyalive(alive):
         f"**╟◈ 👾 **Bot Ver  :** v{BOT_VER} \n"
         f"**╟◈ 📂 **Plugins  :** {len(modules)} Plugin \n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
-        f"[{REPO_NAME}](https://github.com/Randi356/Vegeta-Userbot) || [𝗚𝗥𝗢𝗨𝗣](t.me/RemixSupport) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
+        f"[{REPO_NAME}](https://github.com/Randi356/Vegeta-Old) || [𝗚𝗥𝗢𝗨𝗣](t.me/RemixSupport) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ **")
     if ALIVE_LOGO:
         try:
@@ -404,7 +404,7 @@ async def amireallyalive(alive):
         f"┣❏🤖 **Bot Versi**: {BOT_VER} \n"
         f"┣❏📂 **Plugins**: {len(modules)} Plugins \n"
         f"┣❏🔮 **Telethon**: Versi {version.__version__} \n\n"
-        f"📍 REPO [VEGETA USERBOT](https://github.com/Randi356/Vegeta-Userbot)\n")
+        f"📍 REPO [VEGETA USERBOT](https://github.com/Randi356/Vegeta-Old)\n")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
