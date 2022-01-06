@@ -243,7 +243,7 @@ EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🔺"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/RemixSupport"
+    "GROUP_LINK") or "t.me/NaraXMusic"
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
@@ -516,7 +516,7 @@ with bot:
         user = bot.get_me()
         uid = user.id
         logo = ALIVE_LOGO
-        ramlogo = HELP_LOGO
+        renlogo = HELP_LOGO
         tgbotusername = BOT_USERNAME
 
         @tgbot.on(events.NewMessage(pattern="/start"))
@@ -609,7 +609,7 @@ with bot:
             current_page_number = int(looters)
             buttons = paginate_help(current_page_number, dugmeler, "helpme")
             await event.edit(
-                file=ramlogo,
+                file=renlogo,
                 buttons=buttons,
                 link_preview=False,
             )
