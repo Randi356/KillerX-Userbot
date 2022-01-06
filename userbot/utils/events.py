@@ -7,10 +7,10 @@ LOGS = logging.getLogger("userbot")
 
 
 async def get_user_from_event(
-    event, kyyevent=None, secondgroup=None, nogroup=False, noedits=False
+    event, renevent=None, secondgroup=None, nogroup=False, noedits=False
 ):  # sourcery no-metrics
-    if kyyevent is None:
-        kyyevent = event
+    if renevent is None:
+        renevent = event
     if nogroup is False:
         if secondgroup:
             args = event.pattern_match.group(2).split(" ", 1)
@@ -58,11 +58,11 @@ async def get_user_from_event(
         elif not args:
             if not noedits:
                 await edit_delete(
-                    kyyevent, "`Pass the user's username, id or reply!`", 5
+                    renevent, "`Pass the user's username, id or reply!`", 5
                 )
             return None, None
     except Exception as e:
         LOGS.error(str(e))
     if not noedits:
-        await edit_delete(kyyevent, "__Couldn't fetch user to proceed further__")
+        await edit_delete(renevent, "__Couldn't fetch user to proceed further__")
     return None, None
