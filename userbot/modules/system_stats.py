@@ -14,7 +14,19 @@ import time
 from datetime import datetime
 import psutil
 
-from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, VEGETA_TEKS_KOSTUM, IG_ALIVE, REPO_NAME, UPSTREAM_REPO_BRANCH, StartTime, bot
+from userbot import (
+   ALIVE_LOGO, 
+   ALIVE_NAME,
+   GROUP_LIMK,
+   BOT_VER, 
+   CMD_HELP, 
+   VEGETA_TEKS_KOSTUM, 
+   IG_ALIVE, 
+   REPO_NAME, 
+   UPSTREAM_REPO_BRANCH, 
+   StartTime, 
+   bot,
+)
 from userbot.events import register
 
 
@@ -241,7 +253,7 @@ async def amireallyalive(alive):
         f"┣• `📕 Modules  :`{len(modules)} \n"
         f"╰✠╼━━━━━━❖━━━━━━━✠╯\n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-        f"[🌹𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼🌹]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/Randi356/Vegeta-Old) || [𝐆𝐑𝐎𝐔𝐏](t.me/RemixSupport) \n"
+        f"[🌹𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼🌹]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/Randi356/Vegeta-Old) || [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK}) \n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰")
     if ALIVE_LOGO:
         try:
@@ -269,7 +281,7 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
-        f"       **🌹𝙲𝙷𝙸𝙻𝙻𝚈-𝚄𝚂𝙴𝚁𝙱𝙾𝚃🌹** \n"
+        f"       **🌹VEGETA-USERBOT🌹** \n"
         f"**╰✠╼━━━━━━❖━━━━━━━✠╯**\n"
         f"❃ **👑Owner**             ➥ `{DEFAULTUSER}` \n"
         f"❃ **🤠Username**    ➥ `@{user.username}` \n"
@@ -278,7 +290,7 @@ async def amireallyalive(alive):
         f"❃ **😎Versi Bot**      ➥ `7.1` \n"
         f"❃ **📕Modul**           ➥ `{len(modules)}` \n\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
-        f"[{REPO_NAME}](https://github.com/Randi356/Vegeta-Old) || [𝗚𝗥𝗢𝗨𝗣](t.me/RemixSupport) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
+        f"[{REPO_NAME}](https://github.com/Randi356/Vegeta-Old) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ **")
     if ALIVE_LOGO:
         try:
@@ -323,7 +335,7 @@ async def amireallyalive(alive):
         f"**╟◈ 👾 **Bot Ver  :** v{BOT_VER} \n"
         f"**╟◈ 📂 **Plugins  :** {len(modules)} Plugin \n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
-        f"[{REPO_NAME}](https://github.com/Randi356/Vegeta-Old) || [𝗚𝗥𝗢𝗨𝗣](t.me/RemixSupport) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
+        f"[{REPO_NAME}](https://github.com/Randi356/Vegeta-Old) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ **")
     if ALIVE_LOGO:
         try:
@@ -404,6 +416,7 @@ async def amireallyalive(alive):
         f"┣❏🤖 **Bot Versi**: {BOT_VER} \n"
         f"┣❏📂 **Plugins**: {len(modules)} Plugins \n"
         f"┣❏🔮 **Telethon**: Versi {version.__version__} \n\n"
+        f"🌸 SUPPORT [SUPPORT]({GROUP_LINK})\n")
         f"📍 REPO [VEGETA USERBOT](https://github.com/Randi356/Vegeta-Old)\n")
     if ALIVE_LOGO:
         try:
