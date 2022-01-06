@@ -127,9 +127,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Randi356/Vegeta-Userbot")
+    "https://github.com/Randi356/Vegeta-Old")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Vegeta-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Vegeta-Old")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -527,7 +527,7 @@ with bot:
                 f"       __Thanks For Using me__\n\n"
                 f"⚡ **Group Support :** [REMIX](t.me/RemixSupport)\n"
                 f"⚡ **Owner Repo :** [RENDY](t.me/CuteInspire)\n"
-                f"⚡ **Repo :** [VEGETA-USERBOT](https://github.com/Randi356/Vegeta-Userbot)\n"
+                f"⚡ **Repo :** [VEGETA-USERBOT](https://github.com/Randi356/Vegeta-Old)\n"
             )
             await tgbot.send_file(
                 event.chat_id,
@@ -537,7 +537,7 @@ with bot:
                     [
                         custom.Button.url(
                             text="⚡ REPO VEGETA-USERBOT ⚡",
-                            url="https://github.com/Randi356/Vegeta-Userbot",
+                            url="https://github.com/Randi356/Vegeta-Old",
                         )
                     ],
                     [
@@ -559,7 +559,7 @@ with bot:
             if event.query.user_id == uid and query.startswith("@Ram_ubot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=ramlogo,
+                    file=renlogo,
                     link_preview=False,
                     text=f"**⚡ inline VEGETA-USERBOT ⚡**\n\n⚡ **Owner** [RENDY](t.me/CuteInspire)\n⚡ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
@@ -574,7 +574,7 @@ with bot:
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/RemixSupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
+                                "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Old"
                             ),
                         ],
                     ],
@@ -590,7 +590,7 @@ with bot:
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/RemixSupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
+                                "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Old"
                             ),
                         ],
                     ],
@@ -622,7 +622,7 @@ with bot:
             if event.query.user_id == uid and query.startswith("@Ram_ubot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=ramlogo,
+                    file=renlogo,
                     link_preview=False,
                     text=f"⚡𝙲𝙷𝙸𝙻𝙻𝚈-𝚄𝚂𝙴𝚁𝙱𝙾𝚃⚡\n\n⚡**Owner : {DEFAULTUSER}**\n\n⚡ **Bot Ver :** `7.1`\n⚡ **𝗠odules :** `{len(dugmeler)}",
                     buttons=buttons,
@@ -641,7 +641,7 @@ with bot:
                         [
                             custom.Button.url(
                                 "⚡𝙲𝙷𝙸𝙻𝙻𝚈-𝚄𝚂𝙴𝚁𝙱𝙾𝚃⚡",
-                                "https://github.com/Randi356/Vegeta-Userbot"),
+                                "https://github.com/Randi356/Vegeta-Old"),
                             custom.Button.url(
                                 "OWNER",
                                 "t.me/CuteInspire")]],
@@ -675,7 +675,7 @@ with bot:
             if event.query.user_id == uid:  # @Ram_ubot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
-                    file=ramlogo,
+                    file=renlogo,
                     link_preview=True,
                     buttons=[
                         [
