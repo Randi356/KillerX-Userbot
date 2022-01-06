@@ -1,9 +1,8 @@
 # Copyright (C) 2019 The Raphielscape Company LLC.
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
-# Credits @keselekpermen69 / @Ultroid / @RAM-UBOT
-# Ported @MaafGausahSokap / JANGAN DI APUS BABI
-# by rendy @ChillySkilly
+# Credits @keselekpermen69 / @Ultroid / @MaafGausahSokap / @CuteInspire
+# Ported @Rendy PLEASE DON'T REMOVE CREDITS
 """Userbot initialization."""
 
 import os
@@ -14,7 +13,7 @@ import io
 import random
 
 from datetime import datetime
-from pathlib import Path
+
 from sys import version_info
 from logging import basicConfig, getLogger, INFO, DEBUG
 from distutils.util import strtobool as sb
@@ -39,14 +38,9 @@ StartTime = time.time()
 
 CMD_LIST = {}
 # for later purposes
-COUNT_MSG = {}
-SUDO_LIST = {}
-USERS = {}
 CMD_HELP = {}
 INT_PLUG = ""
 LOAD_PLUG = {}
-
-
 
 # Bot Logs setup:
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -78,7 +72,7 @@ if CONFIG_CHECK:
     quit(1)
 
 # KALO NGEFORK ID DEVS SAMA ID BLACKLIST_CHAT NYA GA USAH DI HAPUS YA GOBLOK 😡
-
+# Credits Man-Userbot
 DEVS = (
     901878554,
     1191668125,
@@ -88,13 +82,13 @@ DEVS = (
     1829051306,
 )
 
-SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
-BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
-
 # For Blacklist Group Support
+# Credits Man-Userbot
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001273141346]
+# JANGAN DI HAPUS GOBLOK 😡 LU COPY/EDIT AJA TINGGAL TAMBAHIN PUNYA LU
+# DI HAPUS GUA GBAN YA 🥴 GUA TANDAIN LU AKUN TELENYA 😡
 
 # Telegram App KEY and HASH
 API_KEY = os.environ.get("API_KEY", "")
@@ -112,11 +106,6 @@ LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
-
-# Custom Handler
-CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
-
-SUDO_USERS = os.environ.get("SUDO_USERS", r"$")
 
 # Send .chatid in any group with all your administration bots (added)
 G_BAN_LOGGER_GROUP = os.environ.get("G_BAN_LOGGER_GROUP", "")
@@ -536,7 +525,7 @@ with bot:
             text = (
                 f"**Hey**, __I am using__  **🔥Vegeta-Userbot🔥** \n\n"
                 f"       __Thanks For Using me__\n\n"
-                f"⚡ **Group Support :** [REMIX](t.me/UserbotSupportGroup)\n"
+                f"⚡ **Group Support :** [REMIX](t.me/RemixSupport)\n"
                 f"⚡ **Owner Repo :** [RENDY](t.me/CuteInspire)\n"
                 f"⚡ **Repo :** [VEGETA-USERBOT](https://github.com/Randi356/Vegeta-Userbot)\n"
             )
@@ -553,10 +542,10 @@ with bot:
                     ],
                     [
                         custom.Button.url(
-                            text="GROUP", url="https://t.me/UserbotSupportGroup"
+                            text="GROUP", url="https://t.me/RemixSupport"
                         ),
                         custom.Button.url(
-                            text="CHANNEL", url="https://t.me/StoryKalem"
+                            text="CHANNEL", url="https://t.me/githubxsvshacker"
                         ),
                     ],
                 ],
@@ -579,11 +568,11 @@ with bot:
                 result = builder.article(
                     title="Repository",
                     description="Repository ⚡VEGETA-USERBOT⚡",
-                    url="https://t.me/UserbotSupportGroup",
+                    url="https://t.me/RemixSupport",
                     text="**⚡VEGETA-USERBOT⚡**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **Owner :** [RENDY](https://t.me/CuteInspire)\n⚡**Support :** @RemixSupport\n⚡ **Repository :** [🔥VEGETA-USERBOT](https://github.com/Randi356/Vegeta-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/UserbotSupportGroup"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/RemixSupport"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
                             ),
@@ -595,11 +584,11 @@ with bot:
                 result = builder.article(
                     title="⚡ VEGETA-USERBOT ⚡",
                     description="VEGETA-USERBOT | Telethon",
-                    url="https://t.me/UserbotSupportGroup",
-                    text=f"**VEGETA-USERBOT**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **OWNER:** [RENDY](t.me/CuteInspire)\n⚡ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @StoryKalem\n➖➖➖➖➖➖➖➖➖➖",
+                    url="https://t.me/RemixSupport",
+                    text=f"**VEGETA-USERBOT**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **OWNER:** [RENDY](t.me/CuteInspire)\n⚡ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @githubxsvshacker\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/UserbotSupportGroup"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/RemixSupport"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
                             ),
@@ -691,9 +680,9 @@ with bot:
                     buttons=[
                         [
                             Button.url("📢 Channel Support",
-                                       "t.me/StoryKalem"),
+                                       "t.me/githubxsvshacker"),
                             Button.url("👥 Group support",
-                                       "t.me/UserbotSupportGroup")],
+                                       "t.me/RemixSupport")],
                         [Button.url("📚Manager📚",
                                     "t.me/RemixRobot")],
                         [Button.inline("Open Menu", data="nepo")],
