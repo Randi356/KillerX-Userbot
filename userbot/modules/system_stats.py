@@ -416,7 +416,7 @@ async def amireallyalive(alive):
         f"┣❏🤖 **Bot Versi**: {BOT_VER} \n"
         f"┣❏📂 **Plugins**: {len(modules)} Plugins \n"
         f"┣❏🔮 **Telethon**: Versi {version.__version__} \n\n"
-        f"🌸 SUPPORT [SUPPORT]({GROUP_LINK})
+        f"🌸 SUPPORT [SUPPORT]({GROUP_LINK}) \n"
         f"📍 REPO [VEGETA USERBOT](https://github.com/Randi356/Vegeta-Old)\n")
     if ALIVE_LOGO:
         try:
