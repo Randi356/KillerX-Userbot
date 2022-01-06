@@ -35,8 +35,6 @@ from userbot.events import register
 from userbot.utils import (
     edit_delete,
     edit_or_reply,
-    ren_cmd,
-    ren_handler,
 )
 
 # =================== CONSTANT ===================
@@ -83,7 +81,7 @@ UNMUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
 # ================================================
 
 
-@ren_cmd(pattern="setgpic( -s| -d)$")
+@register(outgoing=True, pattern=r"^\.setgpic$")
 async def set_group_photo(event):
     "For changing Group dp"
     flag = (event.pattern_match.group(1)).strip()
@@ -118,8 +116,8 @@ async def set_group_photo(event):
             return await edit_delete(event, f"**ERROR : **`{e}`")
         await edit_delete(event, "**Foto Profil Grup Berhasil dihapus.**", 30)
 
-@ren_cmd(outgoing=True, pattern=r"^\.promote(?: |$)(.*)")
-@ren_cmd(incoming=True, from_users=DEVS, pattern=r"^\.cpromote$")
+@register(outgoing=True, pattern=r"^\.promote(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^\.cpromote$")
 async def promote(event):
     new_rights = ChatAdminRights(
         add_admins=False,
@@ -142,8 +140,8 @@ async def promote(event):
         return await eventren.edit(NO_PERM)
     await edit_delete(eventren, "`Promoted Successfully!`", 30)
 
-@ren_cmd(pattern="demote(?:\s|$)([\s\S]*)")
-@ren_cmd(incoming=True, from_users=DEVS, pattern=r"^\.cdemote$")
+register(outgoing=True, pattern=r"^\.demote(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^\.cdemote$")
 async def demote(dmod):
     # Admin right check
     chat = await dmod.get_chat()
@@ -192,8 +190,8 @@ async def demote(dmod):
         )
 
 
-@ren_cmd(pattern="ban(?:\s|$)([\s\S]*)")
-@ren_cmd(incoming=True, from_users=DEVS, pattern=r"^\.cban$")
+@register(outgoing=True, pattern=r"^\.ban(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^\.cban$")
 async def ban(bon):
     chat = await bon.get_chat()
     admin = chat.admin_rights
@@ -224,8 +222,8 @@ async def ban(bon):
         )
 
 
-@ren_cmd(pattern="unban(?:\s|$)([\s\S]*)")
-@ren_cmd(incoming=True, from_users=DEVS, pattern=r"^\.cunban$")
+@@register(outgoing=True, pattern=r"^\.unban(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^\.cunban$")
 async def nothanos(unbon):
     chat = await unbon.get_chat()
     admin = chat.admin_rights
@@ -244,8 +242,8 @@ async def nothanos(unbon):
         await edit_delete(unbon, "`Sepertinya Terjadi ERROR!`")
 
 
-@ren_cmd(pattern="mute(?: |$)(.*)")
-@ren_cmd(incoming=True, from_users=DEVS, pattern=r"^\.cmute$")
+@register(outgoing=True, pattern=r"^\.mute(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^\.cmute$")
 async def spider(spdr):
     try:
         from userbot.modules.sql_helper.spam_mute_sql import mute
@@ -296,8 +294,8 @@ async def spider(spdr):
     except UserIdInvalidError:
         return await edit_delete(spdr, "**Terjadi ERROR!**")
 
-@ren_cmd(outgoing=True, pattern=r"^\.unmute(?: |$)(.*)")
-@ren_cmd(incoming=True, from_users=DEVS, pattern=r"^\.cunmute$")
+@register(outgoing=True, pattern=r"^\.unmute(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^\.cunmute$")
 async def unmoot(unmot):
     chat = await unmot.get_chat()
     admin = chat.admin_rights
@@ -323,7 +321,7 @@ async def unmoot(unmot):
         return await edit_delete(unmot, "**Terjadi ERROR!**")
 
 
-@ren_cmd(incoming=True)
+@register(incoming=True)
 async def muter(moot):
     try:
         from userbot.modules.sql_helper.gmute_sql import is_gmuted
@@ -354,8 +352,8 @@ async def muter(moot):
             await moot.delete()
 
 
-@ren_cmd(outgoing=True, pattern=r"^\.ungmute(?: |$)(.*)")
-@ren_cmd(incoming=True, from_users=DEVS, pattern=r"^\.cungmute$")
+@register(outgoing=True, pattern=r"^\.ungmute(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^\.cungmute$")
 async def ungmoot(un_gmute):
     # Admin or creator check
     chat = await un_gmute.get_chat()
@@ -397,8 +395,8 @@ async def ungmoot(un_gmute):
             )
 
 
-@ren_cmd(outgoing=True, pattern=r"^\.gmute(?: |$)(.*)")
-@ren_cmd(incoming=True, from_users=DEVS, pattern=r"^\.cgmute$")
+@register(outgoing=True, pattern=r"^\.gmute(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^\.cgmute$")
 async def gspider(gspdr):
     # Admin or creator check
     chat = await gspdr.get_chat()
@@ -438,7 +436,7 @@ async def gspider(gspdr):
             )
 
 
-@ren_cmd(outgoing=True, pattern=r"^\.zombies(?: |$)(.*)", groups_only=False)
+@register(outgoing=True, pattern=r"^\.zombies(?: |$)(.*)", groups_only=False)
 async def rm_deletedacc(show):
 
     con = show.pattern_match.group(1).lower()
@@ -506,7 +504,7 @@ async def rm_deletedacc(show):
         )
 
 
-@ren_cmd(outgoing=True, pattern=r"^\.admins$")
+@register(outgoing=True, pattern=r"^\.admins$")
 async def get_admin(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "Grup Ini"
@@ -525,7 +523,7 @@ async def get_admin(show):
     await show.edit(mentions, parse_mode="html")
 
 
-@ren_cmd(outgoing=True, pattern=r"^\.pin(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.pin(?: |$)(.*)")
 async def pin(msg):
     # Admin or creator check
     chat = await msg.get_chat()
@@ -569,7 +567,7 @@ async def pin(msg):
         )
 
 
-@ren_cmd(outgoing=True, pattern=r"^\.kick(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.kick(?: |$)(.*)")
 async def kick(usr):
     # Admin or creator check
     chat = await usr.get_chat()
@@ -610,7 +608,7 @@ async def kick(usr):
         )
 
 
-@ren_cmd(outgoing=True, pattern=r"^\.users ?(.*)")
+@register(outgoing=True, pattern=r"^\.users ?(.*)")
 async def get_users(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "Grup Ini"
@@ -700,7 +698,7 @@ async def get_user_from_id(user, event):
     return user_obj
 
 
-@ren_cmd(outgoing=True, pattern=r"^\.usersdel ?(.*)")
+@register(outgoing=True, pattern=r"^\.usersdel ?(.*)")
 async def get_usersdel(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "Grup Ini"
@@ -792,7 +790,7 @@ async def get_userdel_from_id(user, event):
     return user_obj
 
 
-@ren_cmd(outgoing=True, pattern=r"^\.bots$", groups_only=True)
+@register(outgoing=True, pattern=r"^\.bots$", groups_only=True)
 async def get_bots(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "Grup Ini"
