@@ -24,3 +24,10 @@ async def _(event):
             await event.edit("Harap unblock `@SangMataInfo_Bot` dan coba lagi")
             return
         await event.reply(f"**Usernames**\n\n{response.message.message}")
+
+
+CMD_HELP.update({
+    "sangmata2":
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sg`\
+          \n↳ : Mendapatkan Riwayat Username Pengguna selama di telegram."
+})
