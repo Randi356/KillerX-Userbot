@@ -28,6 +28,6 @@ async def _(event):
 
 CMD_HELP.update({
     "sangmata2":
-        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sg`\
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sgu`\
           \n↳ : Mendapatkan Riwayat Username Pengguna selama di telegram."
 })
