@@ -13,4 +13,4 @@ Userbot Telegram yang di buat untuk bersenang senang
 
 # Credits
 
-from Vegeta-Old[Credits](https://github.com/Randi356/Vegeta-Old)
+from Vegeta-Old [Credits](https://github.com/Randi356/Vegeta-Old) Vegeta-Userbot
