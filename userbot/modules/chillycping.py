@@ -13,7 +13,6 @@ import redis
 from datetime import datetime
 
 from userbot import (
-    CMD_HELP, 
     DEVS, 
     StartTime,
 )
