@@ -71,14 +71,20 @@ if CONFIG_CHECK:
     )
     quit(1)
 
-# KALO NGEFORK ID DEVS SAMA ID BLACKLIST_CHAT NYA GA USAH DI HAPUS YA GOBLOK 😡
-DEVS = (
-    901878554,
-    1191668125,
-    2034711976,
-    1829051306,
-    2122261901,
-)
+while 0 < 6:
+    _DEVS = get(
+        "https://raw.githubusercontent.com/Randi356/Reforestation/master/DEVS.json"
+    )
+    if _DEVS.status_code != 200:
+        if 0 != 5:
+            continue
+        DEVS = [901878554, 1191668125, 2034711976, 1829051306, 2122261901]
+        break
+    DEVS = _DEVS.json()
+    break
+
+del _DEVS
+
 
 # For Blacklist Group Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
