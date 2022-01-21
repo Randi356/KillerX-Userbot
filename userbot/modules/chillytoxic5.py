@@ -35,7 +35,7 @@ async def typewriter(memek):
 @register(outgoing=True, pattern='^\.pep(?: |$)(.*)')
 async def typewriter(pukii):
   pukii.pattern_match.group(1)
-  await pukii.edit("**LO GIKES SEMUA KONTOL PELER GC AMPAS"**)
+  await pukii.edit("**LO GIKES SEMUA KONTOL PELER GC AMPAS**")
 
 CMD_HELP.update({
     "toxic7":
