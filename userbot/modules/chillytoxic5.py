@@ -33,7 +33,7 @@ async def typewriter(memek):
     await memek.edit("**BERISIK GUA MAU NONTON BOKEP DULU BYE NGTOD**")
 
 @register(outgoing=True, pattern='^\.pep(?: |$)(.*)')
-async drf typewriter(pukii):
+async def typewriter(pukii):
   pukii.pattern_match.group(1)
   await pukii.edit("**LO GIKES SEMUA KONTOL PELER GC AMPAS"**)
 
