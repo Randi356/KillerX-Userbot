@@ -32,6 +32,11 @@ async def typewriter(memek):
     memek.pattern_match.group(1)
     await memek.edit("**BERISIK GUA MAU NONTON BOKEP DULU BYE NGTOD**")
 
+@register(outgoing=True, pattern='^\.pep(?: |$)(.*)')
+async drf typewriter(pukii):
+  pukii.pattern_match.group(1)
+  await pukii.edit("**LO GIKES SEMUA KONTOL PELER GC AMPAS"**)
+
 CMD_HELP.update({
     "toxic7":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.dor`\
@@ -46,6 +51,7 @@ CMD_HELP.update({
     \n↳ : lu kepo sia"
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.brsk`\
     \n↳ : lu kepo sia"
-    
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pep`\
+    \n↳ : liat gikes"
 
 })
