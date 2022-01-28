@@ -138,9 +138,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Randi356/Vegeta-Userbot")
+    "https://github.com/Randi356/Vegeta-deploy-old")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Vegeta-Userbot")
+    "UPSTREAM_REPO_BRANCH", "devs")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -305,7 +305,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "```║DAH AKTIF YA NGENTOT!!🔥🔥║\n\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\nJika Tidak Bisa Di .ping\nSilahkan Anda\nCek viewlogs\nPada heroku Anda.\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰```"
+    "BOTLOG_MSG") or "```║DAH AKTIF YA FIX!!║\n\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\nJika Tidak Bisa Di .ping\nSilahkan Anda\nCek viewlogs\nPada heroku Anda.\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰```"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
@@ -553,7 +553,7 @@ with bot:
                     ],
                     [
                         custom.Button.url(
-                            text="GROUP", url="https://t.me/UserbotSupportGroup"
+                            text="GROUP", url="https://t.me/HomeSupport"
                         ),
                         custom.Button.url(
                             text="CHANNEL", url="https://t.me/StoryKalem"
@@ -583,7 +583,7 @@ with bot:
                     text="**⚡VEGETA-USERBOT⚡**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **Owner :** [RENDY](https://t.me/CuteInspire)\n⚡**Support :** @RemixSupport\n⚡ **Repository :** [🔥VEGETA-USERBOT](https://github.com/Randi356/Vegeta-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/UserbotSupportGroup"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/HomeSupport"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
                             ),
@@ -599,7 +599,7 @@ with bot:
                     text=f"**VEGETA-USERBOT**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **OWNER:** [RENDY](t.me/CuteInspire)\n⚡ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @StoryKalem\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/UserbotSupportGroup"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/HomeSupport"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
                             ),
@@ -693,7 +693,7 @@ with bot:
                             Button.url("📢 Channel Support",
                                        "t.me/StoryKalem"),
                             Button.url("👥 Group support",
-                                       "t.me/UserbotSupportGroup")],
+                                       "t.me/HomeSupport")],
                         [Button.url("📚Manager📚",
                                     "t.me/RemixRobot")],
                         [Button.inline("Open Menu", data="nepo")],
