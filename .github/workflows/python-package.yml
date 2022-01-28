@@ -2,9 +2,9 @@
 
 on:
   push:
-    branches: [ Vegeta-Userbot ]
+    branches: [ devs ]
   pull_request:
-    branches: [ Vegeta-Userbot ]
+    branches: [ devs ]
 
 jobs:
   build:
