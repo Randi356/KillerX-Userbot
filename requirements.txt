@@ -49,7 +49,7 @@ qrcode
 requests>=2.18.4
 search-engine-parser>=0.6.1
 speedtest-cli>=2.0.2
-sqlalchemy<1.4.29
+sqlalchemy
 telethon
 telethon-session-sqlalchemy
 urbandict>=0.5
@@ -64,6 +64,7 @@ pyDownload
 beautifulsoup4>=4.8.1
 youtube-dl
 youtube_dl
+yt_dlp
 PyGithub
 bs4
 covid>=2.2.9
