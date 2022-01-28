@@ -111,6 +111,12 @@
       "reguired": true
       
     },
+    "UPSTREAM_REPO_BRANCH": {
+      "description": "Your can change repo branch here",
+      "value": "devs",
+      "reguired": true
+      
+    },
     "BOT_USERNAME": {
       "description": "isi username bot mu yang dari @BotFather",
       "required": true
