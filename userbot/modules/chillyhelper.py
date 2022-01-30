@@ -21,7 +21,7 @@ async def usit(e):
 async def var(m):
     await m.edit(
         f"**Disini Daftar Vars Dari {DEFAULTUSER}:**\n"
-        "\n[DAFTAR VARS](https://raw.githubusercontent.com/Randi356/Vegeta-Userbot/Vegeta-deploy-old/varshelper.txt)")
+        "\n[DAFTAR VARS](https://raw.githubusercontent.com/Randi356/Vegeta-deploy-old/Vegeta-Userbot/varshelper.txt)")
 
 
 CMD_HELP.update({
