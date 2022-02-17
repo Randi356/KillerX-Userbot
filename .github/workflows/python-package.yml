@@ -2,9 +2,9 @@
 
 on:
   push:
-    branches: [ devs ]
+    branches: [ Vegeta-Userbot ]
   pull_request:
-    branches: [ devs ]
+    branches: [ Vegeta-Userbot ]
 
 jobs:
   build:
@@ -34,4 +34,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-[![Python package](https://github.com/Randi356/Vegeta-deploy-old/actions/workflows/python-package.yml/badge.svg?branch=devs&event=workflow_dispatch)](https://github.com/Randi356/Vegeta-deploy-old/actions/workflows/python-package.yml)
+[![Python package](https://github.com/Randi356/Vegeta-Userbot/actions/workflows/python-package.yml/badge.svg?branch=Vegeta-Userbot&event=workflow_dispatch)](https://github.com/Randi356/Vegeta-Userbot/actions/workflows/python-package.yml)
