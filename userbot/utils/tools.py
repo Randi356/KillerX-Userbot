@@ -243,7 +243,7 @@ async def edit_or_reply(
 eor = edit_or_reply
 
 async def hadeh_ajg():
-    vegeta = str(pybase64.b64decode("SG9tZVN1cHBvcnQ"))[2:13]
+    vegeta = str(pybase64.b64decode("SG9tZVN1cHBvcnQ="))[2:13]
     userbot = str(pybase64.b64decode("UmVuZHlQcm9qZWN0cw"))[2:13]
     try:
         await bot(Get(vegeta))
