@@ -103,7 +103,7 @@
     },
     "BOT_TOKEN": {
       "description": "Untuk menampilkam mode tombol .xhelp, Ambil token di @BotFather",
-      "required": true
+      "required": false
     },
     "UPSTREAM_REPO_URL": {
       "description": "your fork vegeta userbot repo link",
@@ -119,7 +119,7 @@
     },
     "BOT_USERNAME": {
       "description": "isi username bot mu yang dari @BotFather",
-      "required": true
+      "required": false
     }
   },
   "addons": [
