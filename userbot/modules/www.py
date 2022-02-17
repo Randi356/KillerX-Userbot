@@ -28,7 +28,7 @@ from userbot.events import register
 # OWN BY RENDY
 # LU TAMBAH MODULES KONTOL
 
-mamakk = [
+absen = [
     "**Hadir cakep dinda** 🥵",
     "**Hadir bang Rendy** 😎",
     "**Hadir kak** 😉",
@@ -36,7 +36,7 @@ mamakk = [
     "**Hadir kak maap telat** 🥺",
 ]
 
-gayy = [
+pacar = [
     "**Kamu mau jadi pacar aku ga?** 💘",
     "**mmk mending sama aku** 😎",
     "**Hai ganteng** 😍",
@@ -74,13 +74,13 @@ async def get_readable_time(seconds: int) -> str:
 # CREDIT RANDI356
 # DONT'T REMOVE CREDIT FUCK DICK
 
-@register(incoming=True, from_users=DEVS, pattern=r"^mamakk$")
+@register(incoming=True, from_users=DEVS, pattern=r"^absen$")
 async def _(rendy):
-    await rendy.reply(random.choice(mamakk))
+    await rendy.reply(random.choice(absen))
 
-@register(incoming=True, from_users=DEVS, pattern=r"^gayy$")
+@register(incoming=True, from_users=DEVS, pattern=r"^pacar$")
 async def _(kontol):
-    await kontol.reply(random.choice(gayy))
+    await kontol.reply(random.choice(pacar))
 
 @register(outgoing=True, pattern="^.pings$")
 
