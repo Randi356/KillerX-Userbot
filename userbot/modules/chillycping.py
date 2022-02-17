@@ -29,6 +29,12 @@ cping = [
     "**Hadir pingers power** `789.669` ",
 ]
 
+brb = [
+    "**went AFK Now!** ",
+    "**punch owner AFK!** ",
+    "**why AFK idiot!** ",
+]
+
 async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
@@ -59,3 +65,9 @@ async def get_readable_time(seconds: int) -> str:
 @register(incoming=True, from_users=DEVS, pattern=r"^.cping$")
 async def _(rendy):
     await rendy.reply(random.choice(cping))
+    
+
+@register(incoming=True, from_users=DEVS, pattern=r"^brb$")
+async def _(rendy):
+    await rendy.reply(random.choice(brb))
+                      
