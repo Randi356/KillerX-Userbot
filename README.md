@@ -1,4 +1,4 @@
-# Userbot-Old
+# Vegeta-Userbot
 Userbot Telegram yang di buat untuk bersenang senang
 
 
@@ -12,7 +12,7 @@ Userbot Telegram yang di buat untuk bersenang senang
 ```
 
 
-# Heroku vegeta deploy old 
+# Heroku vegeta deploy
   
   
   <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Randi356/Vegeta-deploy-old">
