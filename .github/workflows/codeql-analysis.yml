@@ -13,10 +13,10 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ devs ]
+    branches: [ Vegeta-Userbot ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ devs ]
+    branches: [ Vegeta-Userbot ]
   schedule:
     - cron: '23 10 * * 3'
 
