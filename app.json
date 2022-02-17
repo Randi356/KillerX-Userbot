@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Randi356/Vegeta-deploy-old",
-  "telegram": "https://t.me/FlashProSpeed",
-  "success_url": "https://t.me/gsahmanja",
+  "repository": "https://github.com/Randi356/Vegeta-Userbot",
+  "telegram": "https://t.me/CuteInspire",
+  "success_url": "https://t.me/HomeSupport",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -107,13 +107,13 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "your fork vegeta userbot repo link",
-      "value": "https://github.com/Randi356/Vegeta-deploy-old",
+      "value": "https://github.com/Randi356/Vegeta-Userbot",
       "reguired": true
       
     },
     "UPSTREAM_REPO_BRANCH": {
       "description": "Your can change repo branch here",
-      "value": "devs",
+      "value": "Vegeta-Userbot",
       "reguired": true
       
     },
