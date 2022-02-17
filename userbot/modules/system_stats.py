@@ -17,7 +17,7 @@ import psutil
 from userbot import (
    ALIVE_LOGO, 
    ALIVE_NAME,
-   GROUP_LIMK,
+   GROUP_LINK,
    BOT_VER, 
    CMD_HELP, 
    VEGETA_TEKS_KOSTUM, 
