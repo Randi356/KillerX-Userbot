@@ -15,9 +15,9 @@ TELEGRAM_TOKEN=${BOT_API_KEY}
 export BOT_API_KEY TELEGRAM_TOKEN
 tg_sendinfo "<code>I am gonna merge staging into VEGETA-USERBOT</code>"
 cd
-git clone https://github.com/sahyam2019/oub-remix.git
+git clone https://github.com/Randi356/Vegeta-Userbot.git
 cd oub-remix
-git remote set-url origin https://${GH_USERNAME}:${GH_PERSONAL_TOKEN}@github.com/sahyam2019/oub-remix.git
+git remote set-url origin https://${GH_USERNAME}:${GH_PERSONAL_TOKEN}@github.com/Randi356/Vegeta-Userbot.git
 git fetch
 git checkout staging
 git pull origin staging
