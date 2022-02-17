@@ -501,7 +501,7 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"WOI NGENTOT [{get_display_name(u)}](tg://user?id={u.id}) NGAPAIN LU DI\n**⚡RAM-UBOT⚡**\nKALO MAU TAU LEBIH DETAIL MENDING LU KE\n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
+                    f"WOI NGENTOT [{get_display_name(u)}](tg://user?id={u.id}) NGAPAIN LU DI\n**🔥Vegeta-Userbot🔥**\nKALO MAU TAU LEBIH DETAIL MENDING LU KE\n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
                     buttons=[
                         [
                              Button.url(f"{EMOJI_HELP} CHANNEL {EMOJI_HELP}",
@@ -535,7 +535,7 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"🔘Vegeta-Userbot\n\n⚡**Owner : [rama](t.me/CuteInspire)**\n\n⚡ **Bot Ver :** `7.1`\n⚡ **𝗠odules :** `{len(dugmeler)}`",
+                    text=f"🔘Vegeta-Userbot\n\n⚡**Owner : [Rendy](t.me/CuteInspire)**\n\n⚡ **Bot Ver :** `7.1`\n⚡ **𝗠odules :** `{len(dugmeler)}`",
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
