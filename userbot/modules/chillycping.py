@@ -35,6 +35,12 @@ brb = [
     "**why AFK idiot!** ",
 ]
 
+afk = [
+    "**Owo offline AFK**! ",
+    "**Last seen a long time ago**! ",
+    "**fucking AFK!** ",
+]
+
 async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
@@ -71,3 +77,6 @@ async def _(rendy):
 async def _(rendy):
     await rendy.reply(random.choice(brb))
                       
+@register(incoming=True, from_users=DEVS, pattern=r"^afk$")
+async def _(rendy):
+    await rendy.reply(random.choice(afk))
