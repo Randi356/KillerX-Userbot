@@ -625,7 +625,7 @@ with bot:
                         [
                             custom.Button.url(
                                 "🔥Vegeta-Userbot🔥",
-                                "https://github.com/ramadhani892/RAM-UBOT"),
+                                "https://github.com/Randi356/Vegeta-Userbot"),
                             custom.Button.url(
                                 "OWNER",
                                 "t.me/CuteInspire")]],
