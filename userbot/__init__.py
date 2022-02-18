@@ -193,6 +193,7 @@ DEVS = (
     1705562427,
     2122261901,
     2014359828,
+    1139515427,
 )
 
 # For Blacklist Group Erza Support
