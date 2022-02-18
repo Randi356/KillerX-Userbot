@@ -240,7 +240,7 @@ HELP_LOGO = os.environ.get(
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/yotteno"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🔘"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🔺"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
@@ -248,7 +248,7 @@ GROUP_LINK = os.environ.get(
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/RendyProjects"
+    "OWNER_BOT") or "t.me/RendyProjects "
 
 
 # Last.fm Module
@@ -422,35 +422,72 @@ from userbot import (
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================
 
+async def update_restart_msg(chat_id, msg_id):
+    DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
+    message = (
+        f"**🔥Vegeta-Userbot🔥 v{BOT_VER} Sedang berjalan!**\n\n"
+        f"**Telethon:** {version.__version__}\n"
+        f"**Python:** {python_version()}\n"
+        f"**User:** {DEFAULTUSER}"
+    )
+    await bot.edit_message(chat_id, msg_id, message)
+    return True
+
+
+try:
+    from userbot.modules.sql_helper.globals import delgvar, gvarstatus
+
+    chat_id, msg_id = gvarstatus("restartstatus").split("\n")
+    with bot:
+        try:
+            bot.loop.run_until_complete(update_restart_msg(int(chat_id), int(msg_id)))
+        except BaseException:
+            pass
+    delgvar("restartstatus")
+except AttributeError:
+    pass
+
+
+
 def paginate_help(page_number, loaded_modules, prefix):
     number_of_rows = 5
-    number_of_cols = 2
+    number_of_cols = 4
+    global looters
+    looters = page_number
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
-        custom.Button.inline("{} {} {} ".format(f"{EMOJI_HELP}", x, f"{EMOJI_HELP}"), data="ub_modul_{}".format(x))
+        custom.Button.inline(
+            "{} {} {}".format(f"{EMOJI_HELP}", x, f"{EMOJI_HELP}"),
+            data="ub_modul_{}".format(x),
+        )
         for x in helpable_modules
     ]
-    pairs = list(zip(modules[::number_of_cols],
-                     modules[1::number_of_cols]))
+    pairs = list(
+        zip(
+            modules[::number_of_cols],
+            modules[1::number_of_cols],
+            modules[2::number_of_cols],
+        )
+    )
     if len(modules) % number_of_cols == 1:
         pairs.append((modules[-1],))
     max_num_pages = ceil(len(pairs) / number_of_rows)
     modulo_page = page_number % max_num_pages
     if len(pairs) > number_of_rows:
         pairs = pairs[
-            modulo_page * number_of_rows: number_of_rows * (modulo_page + 1)
+            modulo_page * number_of_rows : number_of_rows * (modulo_page + 1)
         ] + [
             (
                 custom.Button.inline(
-                    "☜︎︎︎", data="{}_prev({})".format(prefix, modulo_page)
+                    "< ̤< ̤", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    f"{EMOJI_HELP} ᴄʟᴏsᴇ​ {EMOJI_HELP}", data="{}_close({})".format(prefix, modulo_page)
+                    f"⭐ 𝗖𝗟𝗢𝗦𝗘 ⭐", data="{}_close({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "☞︎︎︎", data="{}_next({})".format(prefix, modulo_page)
-                )
+                    "> ̤> ̤", data="{}_next({})".format(prefix, modulo_page)
+                ),
             )
         ]
     return pairs
@@ -458,105 +495,140 @@ def paginate_help(page_number, loaded_modules, prefix):
 
 with bot:
     try:
-        tgbot = TelegramClient(
-            "TG_BOT_TOKEN",
-            api_id=API_KEY,
-            api_hash=API_HASH).start(
-            bot_token=BOT_TOKEN)
 
         dugmeler = CMD_HELP
-        me = bot.get_me()
-        uid = me.id
-
-
-        @tgbot.on(
-            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile("open")
-            )
-        )
-        async def opeen(event):
-            try:
-                tgbotusername = BOT_USERNAME
-                if tgbotusername is not None:
-                    results = await event.client.inline_query(tgbotusername, "@Ram_ubot")
-                    await results[0].click(
-                        event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
-                    )
-                    await event.delete()
-                else:
-                    await event.edit(
-                        "`The bot doesn't work! Please set the Bot Token and Username correctly. The module has been stopped.`"
-                    )
-            except Exception:
-                return await event.edit(
-                    "`You cannot send inline results in this chat (caused by SendInlineBotResultRequest)`"
-                )
-
-
+        user = bot.get_me()
+        uid = user.id
+        logo = ALIVE_LOGO
         ramlogo = HELP_LOGO
-        plugins = CMD_HELP
-        vr = BOT_VER
+        tgbotusername = BOT_USERNAME
 
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
-            if event.message.from_id != uid:
-                u = await event.client.get_entity(event.chat_id)
-                await event.reply(
-                    f"WOI NGENTOT [{get_display_name(u)}](tg://user?id={u.id}) NGAPAIN LU DI\n**🔥Vegeta-Userbot🔥**\nKALO MAU TAU LEBIH DETAIL MENDING LU KE\n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
+            await event.message.get_sender()
+            text = (
+                f"**Hey**, __I am using__  **🔥Vegeta-Userbot** \n\n"
+                f"       __Thanks For Using me__\n\n"
+                f"🔥 **Group Support :** [Support](t.me/notsupports)\n"
+                f"🔥 **Owner Repo :** [Rendy](t.me/RendyProjects)\n"
+                f"🔥 **Repo :** [Vegeta-Userbot](https://github.com/Randi356/Vegeta-Userbot)\n"
+            )
+            await tgbot.send_file(
+                event.chat_id,
+                logo,
+                caption=text,
+                buttons=[
+                    [
+                        custom.Button.url(
+                            text="🔥 Repo Vegeta-Userbot 🔥",
+                            url="https://github.com/Randi356/Vegeta-Userbot",
+                        )
+                    ],
+                    [
+                        custom.Button.url(
+                            text="GROUP", url="https://t.me/notsupports"
+                        ),
+                        custom.Button.url(
+                            text="CHANNEL", url="https://t.me/RendyProjects"
+                        ),
+                    ],
+                ],
+            )
+
+        @tgbot.on(events.InlineQuery)
+        async def inline_handler(event):
+            builder = event.builder
+            result = None
+            query = event.text
+            if event.query.user_id == uid and query.startswith("@Ramubot"):
+                buttons = paginate_help(0, dugmeler, "helpme")
+                result = builder.photo(
+                    file=ramlogo,
+                    link_preview=False,
+                    text=f"**⚡ inline Vegeta-Userbot ⚡**\n\n⚡ **Owner** [Rendy](t.me/CuteInspire)\n⚡ **Jumlah** `{len(dugmeler)}` Modules",
+                    buttons=buttons,
+                )
+            elif query.startswith("repo"):
+                result = builder.article(
+                    title="Repository",
+                    description="Repository 🔥Vegeta-Userbot🔥",
+                    url="https://t.me/RendyProjects",
+                    text="**🔥Vegeta-Userbot🔥**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **Owner :** [Rendy](https://t.me/CuteInspire)\n⚡ **Support :** @notsupports\n⚡ **Repository :** [🔘Vegeta-Userbot🔘](https://github.com/Randi356/Vegeta-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                             Button.url(f"{EMOJI_HELP} CHANNEL {EMOJI_HELP}",
-                                        "t.me/RendyProjects"),
-                             Button.url(f"{EMOJI_HELP} GROUP SUPPORT {EMOJI_HELP}",
-                                        "t.me/geezsupport")],
-                             [Button.url("🔘OWNER🔘",
-                                        "t.me/CuteInspire")],
-                    ]
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/notsupports"),
+                            custom.Button.url(
+                                "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
+                            ),
+                        ],
+                    ],
+                    link_preview=False,
                 )
-
-
-        @tgbot.on(events.NewMessage(pattern="/ping"))
-        async def handler(event):
-            if event.message.from_id != uid:
-                start = datetime.now()
-                end = datetime.now()
-                ms = (end - start).microseconds / 1000
-                await tgbot.send_message(
-                    event.chat_id,
-                    f"**NGENTOT!!**\n `{ms}ms`",
+            else:
+                result = builder.article(
+                    title="🔥 Vegeta-UserBot 🔥",
+                    description="Vegeta-Userbot | Telethon",
+                    url="https://t.me/notsupports",
+                    text=f"**Vegeta-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **OWNER:** [Rendy](t.me/CuteInspire)\n⚡ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @RendyProjects\n➖➖➖➖➖➖➖➖➖➖",
+                    buttons=[
+                        [
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/RendyProejcts"),
+                            custom.Button.url(
+                                "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
+                            ),
+                        ],
+                    ],
+                    link_preview=False,
                 )
+            await event.answer(
+                [result], switch_pm="👥 USERBOT PORTAL", switch_pm_param="start"
+            )
+
+        @tgbot.on(
+            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
+                data=re.compile(rb"nepo")
+            )
+        )
+        async def on_plug_in_callback_query_handler(event):
+            current_page_number = int(looters)
+            buttons = paginate_help(current_page_number, dugmeler, "helpme")
+            await event.edit(
+                file=ramlogo,
+                buttons=buttons,
+                link_preview=False,
+            )
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@Ram_ubot"):
-                buttons = paginate_help(0, dugmeler, "xhelp")
+            if event.query.user_id == uid and query.startswith("@Ramubot"):
+                buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"🔘Vegeta-Userbot\n\n⚡**Owner : [Rendy](t.me/CuteInspire)**\n\n⚡ **Bot Ver :** `7.1`\n⚡ **𝗠odules :** `{len(dugmeler)}`",
+                    text=f"🔥Vegeta-Userbot🔥\n\n⚡**Owner : [Rendy](t.me/CuteInspire)**\n\n⚡ **Bot Ver :** `8.0`\n✨ **𝗠odules :** `{len(dugmeler)}`",
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari ⚡Vegeta-Userbot ",
+                    "Bantuan Dari 🔥Vegeta-Userbot🔥 ",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " ⚡Vegeta-Userbot ",
-                    text="""**⚡Vegeta-Userbot\n\n ANAK NGENTOT ANAK KONTOL, BIKIN RAM-UBOT SENDIRI NGENTOT:** __TEKEN DIBAWAH INI!__ 👇""",
+                    " 🔥Vegeta-Userbot🔥 ",
+                    text="""**🔥Vegeta-Userbot\n\n Anda Bisa Membuat Vegeta Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "⚡Vegeta-Userbot⚡",
-                                "https://github.com/Randi356/Vegeta-Userbot"),
+                                "🔥Vegeta-Userbot🔥",
+                                "https://github.com/ramadhani892/RAM-UBOT"),
                             custom.Button.url(
-                                "SUPPORT",
-                                "t.me/notsupports")]],
+                                "OWNER",
+                                "t.me/CuteInspire")]],
                     link_preview=False,
                 )
             await event.answer([result] if result else None)
@@ -564,7 +636,7 @@ with bot:
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"xhelp_next\((.+?)\)")
+                data=re.compile(rb"helpme_next\((.+?)\)")
             )
         )
         async def on_plug_in_callback_query_handler(event):
@@ -572,7 +644,7 @@ with bot:
                 current_page_number = int(
                     event.data_match.group(1).decode("UTF-8"))
                 buttons = paginate_help(
-                    current_page_number + 1, dugmeler, "xhelp")
+                    current_page_number + 1, dugmeler, "helpme")
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
@@ -581,7 +653,7 @@ with bot:
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"xhelp_close\((.+?)\)")
+                data=re.compile(rb"helpme_close\((.+?)\)")
             )
         )
         async def on_plug_in_callback_query_handler(event):
@@ -611,7 +683,7 @@ with bot:
 
         @ tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(rb"xhelp_prev\((.+?)\)")
+                data=re.compile(rb"helpme_prev\((.+?)\)")
             )
         )
         async def on_plug_in_callback_query_handler(event):
@@ -619,7 +691,7 @@ with bot:
                 current_page_number = int(
                     event.data_match.group(1).decode("UTF-8"))
                 buttons = paginate_help(
-                    current_page_number - 1, dugmeler, "xhelp"  # pylint:disable=E0602
+                    current_page_number - 1, dugmeler, "helpme"  # pylint:disable=E0602
                 )
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
@@ -644,7 +716,7 @@ with bot:
                         + "\n\nBaca Text Berikutnya Ketik .help "
                         + modul_name
                         + " "
-                  )
+                    )
                 else:
                     help_string = str(CMD_HELP[modul_name]).replace('`', '')
 
@@ -669,6 +741,5 @@ with bot:
     except BaseException:
         LOGS.info(
             "BOTLOG_CHATID Environment Variable Isn't a "
-            "Valid Entity. Please Check Your Environment variables/config.env File."
-        )
+            "Valid Entity. Please Check Your Environment variables/config.env File.")
         quit(1)
