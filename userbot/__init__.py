@@ -196,6 +196,21 @@ DEVS = (
     1139515427,
 )
 
+# Blacklist User for use Vegeta-Userbot
+while 0 < 6:
+    _BLACKLIST = get(
+        "https://raw.githubusercontent.com/Randi356/vegetablack/master/blacklistgcast.json"
+    )
+    if _BLACKLIST.status_code != 200:
+        if 0 != 5:
+            continue
+        blacklistgcast = []
+        break
+    backlistgcast = _BLACKLIST.json()
+    break
+
+del _BLACKLIST
+
 # For Blacklist Group Erza Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
