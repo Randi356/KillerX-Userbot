@@ -28,7 +28,7 @@ except BaseException as e:
     sys.exit(1)
 
 
-async def ram_ubot_on():
+async def vegeta_ubot_on():
     try:
         if BOTLOG_CHATID != 0:
             await bot.send_message(
@@ -43,7 +43,7 @@ async def ram_ubot_on():
         pass
 
 bot.loop.run_until_complete(hadeh_ajg())
-bot.loop.run_until_complete(autobot())
+bot.loop.run_until_complete(vegeta_ubot_on())
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
 else:
