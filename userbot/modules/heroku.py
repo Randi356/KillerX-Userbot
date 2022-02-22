@@ -2,13 +2,12 @@
    Heroku manager for your userbot
 """
 
-import codecs
 import heroku3
 import aiohttp
 import math
 import os
-import requests
 import asyncio
+import urllib3
 
 from userbot import (
     HEROKU_APP_NAME,
@@ -21,6 +20,7 @@ from userbot import (
     GROUP_LINK)
 from userbot.events import register
 
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 heroku_api = "https://api.heroku.com"
 if HEROKU_APP_NAME is not None and HEROKU_API_KEY is not None:
     Heroku = heroku3.from_key(HEROKU_API_KEY)
@@ -134,7 +134,7 @@ async def dyno_usage(dyno):
     """
     await dyno.edit("`Memeriksa Dyno Heroku anda...`")
     await asyncio.sleep(3)
-    await dyno.edit("🌚")
+    await dyno.edit("🔥")
     await asyncio.sleep(2)
     useragent = (
         'Mozilla/5.0 (Linux; Android 10; SM-G975F) '
@@ -195,7 +195,7 @@ async def dyno_usage(dyno):
                 f"◈ **🌻Persen🌻** :  `{percentage}`**%**\n"
                 f"╚══════━━━━━━━══════╝ \n"
                 f"◈ **👑Ganteng👑**  : {ALIVE_NAME} \n"
-                f"◈ **🌸Delevopers** : [Rendy](https://t.me/CuteInspire) \n"
+                f"◈ **🌸Delevopers🌸** : [Rendy](https://t.me/CuteInspire) \n"
                 f"◈ **🛠Repo🛠** : [Vegeta-Userbot](https://github.com/Randi356/Vegeta-Userbot) \n"
             )
             await asyncio.sleep(5)
@@ -205,22 +205,17 @@ async def dyno_usage(dyno):
 
 @register(outgoing=True, pattern=r"^\.logs")
 async def _(dyno):
-    try:
-        Heroku = heroku3.from_key(HEROKU_API_KEY)
-        app = Heroku.app(HEROKU_APP_NAME)
-    except BaseException:
-        return await dyno.reply(
-            "`Please make sure your Heroku API Key, Your App name are configured correctly in the heroku var.`"
+    if app is None:
+        return await dyno.edit(
+            "**Harap Settings Var** `HEROKU_APP_NAME` **dan** `HEROKU_API_KEY`"
         )
     await dyno.edit("`Sedang Mengambil Logs Anda`")
     with open("logs.txt", "w") as log:
         log.write(app.get_log())
-    fd = codecs.open("logs.txt", "r", encoding="utf-8")
-    data = fd.read()
-    key = (requests.post("https://nekobin.com/api/documents",
-                         json={"content": data}) .json() .get("result") .get("key"))
-    url = f"https://nekobin.com/raw/{key}"
-    await dyno.edit(f"`Ini Logs Heroku Anda :`\n\nPaste Ke: [Nekobin]({url})")
+    await dyno.client.send_file(
+        entity=dyno.chat_id, file="logs.txt", caption="**Ini Logs Heroku anda**"
+    )
+    await dyno.delete()
     return os.remove("logs.txt")
 
 
@@ -228,7 +223,7 @@ CMD_HELP.update({"herokuapp": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Usage`"
                  "\n↳ : Check Quota Dyno Heroku"
                  "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.set var <NEW VAR> <VALUE>`"
                  "\n↳ : Tambahkan Variabel Baru Atau Memperbarui Variabel"
-                 "\nSetelah Menyetel Variabel Tersebut, Geez-Userbot Akan Di Restart."
+                 "\nSetelah Menyetel Variabel Tersebut, Vegeta-Userbot Akan Di Restart."
                  "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.get var atau .get var <VAR>`"
                  "\n↳ : Dapatkan Variabel Yang Ada, !!PERINGATAN!! Gunakanlah Di Grup Privasi Anda."
                  "\nIni Mengembalikan Semua Informasi Pribadi Anda, Harap berhati-hati."
