@@ -9,7 +9,7 @@ import sys
 from importlib import import_module
 
 from telethon.tl.functions.channels import InviteToChannelRequest
-from userbot import ALIVE_NAME, BOT_USERNAME, BOT_VER, BOTLOG_CHATID, LOGS, UPSTREAM_REPO_BRANCH, blacklistgcast, bot
+from userbot import ALIVE_NAME, BOT_USERNAME, BOT_VER, BOTLOG_CHATID, LOGS, bot, vegetablacklist
 from userbot.modules import ALL_MODULES
 from userbot.utils.tools import hadeh_ajg
 try:
@@ -17,7 +17,7 @@ try:
         imported_module = import_module("userbot.modules." + module_name)
     bot.start()
     user = bot.get_me()
-    if user.id in blacklistgcast:
+    if user.id in vegetablacklist:
         LOGS.warning(
             "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nCredits: @CuteInspire"
         )
