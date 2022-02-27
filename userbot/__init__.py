@@ -199,14 +199,14 @@ DEVS = (
 # Blacklist User for use Vegeta-Userbot
 while 0 < 6:
     _BLACKLIST = get(
-        "https://raw.githubusercontent.com/Randi356/vegetablack/master/blacklistgcast.json"
+        "https://raw.githubusercontent.com/Randi356/vegetablack/master/vegetablacklist.json"
     )
     if _BLACKLIST.status_code != 200:
         if 0 != 5:
             continue
-        blacklistgcast = []
+        vegetablacklist = []
         break
-    backlistgcast = _BLACKLIST.json()
+    vegetabacklist = _BLACKLIST.json()
     break
 
 del _BLACKLIST
