@@ -25,7 +25,7 @@ Userbot Telegram yang di buat untuk bersenang senang
  # Deploy via Bot
  
   <p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=UmFuZGkzNTYvVmVnZXRhLVVzZXJib3QgVmVnZXRhLVVzZXJib3Q">
-  <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
+  <img src="https://img.shields.io/badge/Deploy%20via%20Bot-blue?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
 
 ## SECURITY POLICY
 
