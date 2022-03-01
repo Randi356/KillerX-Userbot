@@ -25,4 +25,4 @@ CLICK [SECURITY](https://github.com/Randi356/Vegeta-Userbot/blob/Vegeta-Userbot/
 
 # Credits
 
-from Vegeta-Old [Credits](https://github.com/Randi356/Vegeta-Userbot) Vegeta-Userbot
+from Vegeta-Old [Credits](https://github.com/Randi356/Vegeta-deployV3) Vegeta-Userbot
