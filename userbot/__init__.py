@@ -189,6 +189,7 @@ DEVS = (
     1705562427, # skyzo
     2014359828, # kenzhu
     1139515427, # glitter
+    1826643972, # ram
 )
 
 
@@ -217,7 +218,7 @@ BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 TERM_ALIAS = os.environ.get("TERM_ALIAS", "Vegeta-Userbot")
 
 # Bot Version
-BOT_VER = os.environ.get("BOT_VER", "7.0")
+BOT_VER = os.environ.get("BOT_VER", "9.1")
 
 # Default .alive Username
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
@@ -241,11 +242,11 @@ EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🔺"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/notsupports"
+    "GROUP_LINK") or "t.me/VegetaSupports"
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/RendyProjects "
+    "OWNER_BOT") or "t.me/RendyProjects"
 
 
 # Last.fm Module
@@ -506,8 +507,8 @@ with bot:
             text = (
                 f"**Hey**, __I am using__  **🔥Vegeta-Userbot** \n\n"
                 f"       __Thanks For Using me__\n\n"
-                f"🔥 **Group Support :** [Support](t.me/notsupports)\n"
-                f"🔥 **Owner Repo :** [Rendy](t.me/RendyProjects)\n"
+                f"🔥 **Group Support :** [Support](t.me/VegetaSupports)\n"
+                f"🔥 **OWNER :** [Rendy](t.me/rencprx)\n"
                 f"🔥 **Repo :** [Vegeta-Userbot](https://github.com/Randi356/Vegeta-Userbot)\n"
             )
             await tgbot.send_file(
@@ -523,7 +524,7 @@ with bot:
                     ],
                     [
                         custom.Button.url(
-                            text="GROUP", url="https://t.me/notsupports"
+                            text="GROUP", url="https://t.me/VegetaSupports"
                         ),
                         custom.Button.url(
                             text="CHANNEL", url="https://t.me/RendyProjects"
@@ -542,7 +543,7 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"**⚡ inline Vegeta-Userbot ⚡**\n\n⚡ **Owner** [Rendy](t.me/CuteInspire)\n⚡ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**⚡ inline Vegeta-Userbot ⚡**\n\n⚡ **Owner** [Rendy](t.me/rencprx)\n⚡ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
@@ -550,10 +551,10 @@ with bot:
                     title="Repository",
                     description="Repository 🔥Vegeta-Userbot🔥",
                     url="https://t.me/RendyProjects",
-                    text="**🔥Vegeta-Userbot🔥**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **Owner :** [Rendy](https://t.me/CuteInspire)\n⚡ **Support :** @notsupports\n⚡ **Repository :** [🔘Vegeta-Userbot🔘](https://github.com/Randi356/Vegeta-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**🔥Vegeta-Userbot🔥**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **Owner :** [Rendy](https://t.me/rencprx)\n⚡ **Support :** @VegetaSupports\n⚡ **Repository :** [🔘Vegeta-Userbot🔘](https://github.com/Randi356/Vegeta-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/notsupports"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/VegetaSupports"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
                             ),
@@ -566,7 +567,7 @@ with bot:
                     title="🔥 Vegeta-UserBot 🔥",
                     description="Vegeta-Userbot | Telethon",
                     url="https://t.me/notsupports",
-                    text=f"**Vegeta-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **OWNER:** [Rendy](t.me/CuteInspire)\n⚡ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @RendyProjects\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Vegeta-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **OWNER:** [Rendy](t.me/rencprx)\n⚡ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @VegetaSupports\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/RendyProejcts"),
@@ -605,7 +606,7 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"🔥Vegeta-Userbot🔥\n\n⚡**Owner : [Rendy](t.me/CuteInspire)**\n\n⚡ **Bot Ver :** `8.0`\n✨ **𝗠odules :** `{len(dugmeler)}`",
+                    text=f"🔥Vegeta-Userbot🔥\n\n⚡**Owner : [Rendy](t.me/CuteInspire)**\n\n⚡ **Bot Ver :** `9.1`\n✨ **𝗠odules :** `{len(dugmeler)}`",
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
@@ -625,7 +626,7 @@ with bot:
                                 "https://github.com/Randi356/Vegeta-Userbot"),
                             custom.Button.url(
                                 "OWNER",
-                                "t.me/CuteInspire")]],
+                                "t.me/rencprx")]],
                     link_preview=False,
                 )
             await event.answer([result] if result else None)
@@ -664,7 +665,7 @@ with bot:
                             Button.url("📢 Channel Support",
                                        "t.me/RendyProjects"),
                             Button.url("👥 Group support",
-                                       "t.me/notsupports")],
+                                       "t.me/VegetaSupports")],
                         [Button.inline("Open Menu", data="nepo")],
                         [custom.Button.inline(
                             "Close", b"close")],
