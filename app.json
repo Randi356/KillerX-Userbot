@@ -40,35 +40,19 @@
       "value": "-1001689681361",
       "required": true
     },
-    "PM_AUTO_BAN": {
-      "description": "Ini berguna Untuk Mengaktifkan pesan otomatis di room chat anda.",
-      "value": "False",
-      "required": true
-    },
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
-      "value": "nama lu",
+      "value": "Vegeta-Userbot",
       "required": true
     },
     "S_PACK_NAME": {
       "description": "Nama Sticker Pack Mu",
-      "value": "kang",
+      "value": "Made by @rencprx",
       "required": false
     },
     "BOT_TOKEN": {
       "description": "Untuk menampilkam mode tombol .xhelp, Ambil token di @BotFather",
       "required": true
-    },
-    "UPSTREAM_REPO_URL": {
-      "description": "your fork vegeta userbot repo link",
-      "value": "https://github.com/Randi356/Vegeta-Userbot",
-      "reguired": true
-      
-    },
-    "UPSTREAM_REPO_BRANCH": {
-      "description": "Your can change repo branch here",
-      "value": "Vegeta-Userbot",
-      "reguired": true
       
     },
     "BOT_USERNAME": {
