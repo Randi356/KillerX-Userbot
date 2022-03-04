@@ -26,6 +26,14 @@ Userbot Telegram yang di buat untuk bersenang senang
  
   <p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=UmFuZGkzNTYvVmVnZXRhLVVzZXJib3QgVmVnZXRhLVVzZXJib3Q">
   <img src="https://img.shields.io/badge/Deploy%20via%20Bot-blue?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
+  
+### String Session 🖇
+
+`
+
+Klik tombol di samping untuk membuat string milikmu`
+
+[![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://replit.com/@Randi356/Vegeta-String#main.py)
 
 ## SECURITY POLICY
 
