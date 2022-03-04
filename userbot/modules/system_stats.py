@@ -249,7 +249,7 @@ async def amireallyalive(alive):
         f"╭✠╼━━━━━━❖━━━━━━━✠╮\n"
         f"┣• `😎 Telethon :`Ver {version.__version__} \n"
         f"┣• `😍 Python   :`Ver {python_version()} \n"
-        f"┣• `🤖 Bot Ver  :`7.1 \n"
+        f"┣• `🤖 Bot Ver  :`9.1 \n"
         f"┣• `📕 Modules  :`{len(modules)} \n"
         f"╰✠╼━━━━━━❖━━━━━━━✠╯\n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
@@ -287,7 +287,7 @@ async def amireallyalive(alive):
         f"❃ **🤠Username**    ➥ `@{user.username}` \n"
         f"❃ **😊Telethon**       ➥ `Versi {version.__version__}` \n"
         f"❃ **🐼Python**          ➥ `Versi {python_version()}` \n"
-        f"❃ **😎Versi Bot**      ➥ `7.1` \n"
+        f"❃ **😎Versi Bot**      ➥ `9.1` \n"
         f"❃ **📕Modul**           ➥ `{len(modules)}` \n\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
         f"[{REPO_NAME}](https://github.com/Randi356/Vegeta-Userbot) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
@@ -322,7 +322,7 @@ async def amireallyalive(alive):
     await asyncio.sleep(3)
     output = (
         f"**✠╼━━━━━━❖━━━━━━━✠ ** \n"
-        f"**     🔥𝙲𝙷𝙸𝙻𝙻𝚈-𝚄𝚂𝙴𝚁𝙱𝙾𝚃🔥** \n"
+        f"**     🔥VEGETA-USERBOT🔥** \n"
         f"**✠╼━━━━━━❖━━━━━━━✠** \n"
         f"**╭╼════════════════════╾╮** \n"
         f"**│  ⇱ **SISTEM ALIVE USERBOT** ⇲ \n"
