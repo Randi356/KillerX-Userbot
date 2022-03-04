@@ -19,7 +19,7 @@ from PIL import Image
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 REPOLINK = str(
-    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/Randi356/RendyCoders"
+    UPSTREAM_REPO_URL) if UPSTREAM_REPO_URL else "https://github.com/Randi356/Vegeta-Userbot"
 # ============================================
 
 opener = urllib.request.build_opener()
@@ -87,7 +87,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[❄️ Vegeta-Userbot Repo](https://github.com/Randi356/Vegeta-Old/blob/DEVS/README.md)"
+        "\n[❄️ Vegeta-Userbot Repo](https://github.com/Randi356/Vegeta-Userbot/blob/Vegeta-Userbot/README.md)"
         "\n[❄️Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[❄️Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -112,7 +112,7 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         "**Hey**, I am using **🌸Vegeta-Userbot🌸** \n"
         "❄️━━━━━━━━━━━━━━━━━━━━━━卍\n"
-        "⇼ **Repo Userbot :** [Repo](https://github.com/Randi356/Vegeta-Old)\n"
+        "⇼ **Repo Userbot :** [Repo](https://github.com/Randi356/Vegeta-Userbot)\n"
         "⇼ **Owner Bot       :** [Rendy](t.me/CuteInspire)\n"
         "❄️━━━━━━━━━━━━━━━━━━━━━━卍\n"
         "⇼ **Instagram       :** [instagram](instagram.com/yotteno)\n"
@@ -125,7 +125,7 @@ async def repo_is_here(wannasee):
 async def repo_is_here(wannasee):
     """For .repo command, just returns the repo URL."""
     await wannasee.edit(
-        f"⇼ **GET STRING SESSION TELEGRAM :** [KLIK DISINI](https://replit.com/@Randi356/StringSession-1#main.py)\n"
+        f"⇼ **GET STRING SESSION TELEGRAM :** [KLIK DISINI](https://replit.com/@Randi356/Vegeta-String#main.py)\n"
     )
 
 
