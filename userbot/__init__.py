@@ -179,37 +179,18 @@ REPO_NAME = os.environ.get("REPO_NAME") or "🔘Vegeta-Userbot🔘"
 
 # DEVS USERBOT OLNY
 DEVS = (
-    1820233416,
-    5032617939,
-    1191668125,
-    1220829364,
-    1416529201,
-    1607338903,
-    1663258664,
-    1784606556,
-    1964264380,
-    1607338903,
-    2077108390,
-    1705562427,
-    2122261901,
-    2014359828,
-    1139515427,
+    1820233416, # bagas
+    5032617939, # sayo
+    1191668125, # rendy
+    1416529201, # tonic
+    1607338903, # kenkan
+    1663258664, # ikky
+    2077108390, # kitaro
+    1705562427, # skyzo
+    2014359828, # kenzhu
+    1139515427, # glitter
 )
 
-# Blacklist User for use Vegeta-Userbot
-while 0 < 6:
-    _BLACKLIST = get(
-        "https://raw.githubusercontent.com/Randi356/vegetablack/master/vegetablacklist.json"
-    )
-    if _BLACKLIST.status_code != 200:
-        if 0 != 5:
-            continue
-        vegetablacklist = []
-        break
-    vegetabacklist = _BLACKLIST.json()
-    break
-
-del _BLACKLIST
 
 # For Blacklist Group Erza Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
