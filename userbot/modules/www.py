@@ -443,10 +443,23 @@ async def pingme(pong):
                     f"⚡ **uptime:** "
                     f"`{uptime}` \n" % (duration))
 
+@register(outgoing=True, pattern="^!helbot$")
+async def pingme(pong):
+    """ For !ping command, ping the userbot from any chat.  """
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    await pong.edit("`Pinging...`")
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    await pong.edit(f"**╰•★★ ℘ơŋɠ ★★•╯**\n"
+                    f"**✴speed** "
+                    f"`%sms` \n"
+                    f"**✴uptime** - "
+                    f"**✴owner:** `{ALIVE_NAME}`" % (duration))
 
 
 CMD_HELP.update({
-    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` or `.pings` or `.crot` or `.xping` or `.vping` or `.punk` `!uping` `.peler`\
+    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` or `.pings` or `.crot` or `.xping` or `.vping` or `.punk` `!uping` `.peler` `!helbot`\
          \n↳ : Untuk Menunjukkan Ping Bot Anda.\
          \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Speed` or `.sping` or `.sinyal` or `.bping`\
          \n↳ : Untuk Menunjukkan Kecepatan Jaringan Anda.\
