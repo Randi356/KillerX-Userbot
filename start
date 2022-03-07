@@ -1,0 +1,27 @@
+# Credits @rencprx
+# from https://github.com/Randi356/Vegeta-Userbot
+
+#!/bin/bash
+
+_get_ziplink () {
+    echo "aHR0cHM6Ly9naXRodWIuY29tL1JhbmRpMzU2L1ZlZ2V0YS1Vc2VyYm90L2FyY2hpdmUvbWFzdGVyLnppcA==" | base64 -d
+}
+
+_set_bot () {
+    local zippath
+    zippath="Vegeta-Userbot.zip"
+    echo "  Downloading source code ..."
+    wget -q $(_get_ziplink) -O "$zippath"
+    echo "  Unpacking Data ..."
+    vepath=$(zipinfo -1 "$zippath" | grep -v "/.");
+    unzip -qq "$zippath"
+    echo "Done"
+    echo "  Cleaning ..."
+    rm -rf "$zippath"
+    sleep 5
+    cd $vepath
+    echo "    Starting Bot    "
+    python3 -m userbot
+}
+
+_set_bot
