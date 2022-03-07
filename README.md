@@ -35,7 +35,7 @@
 
 Klik tombol di samping untuk membuat string milikmu`
 
-[![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://replit.com/@Randi356/Vegeta-String#main.py)
+[![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://replit.com/@Randi356/Vegeta-String)
 
 # Session via Bot
  
