@@ -15,4 +15,4 @@ RUN pip3 install -r https://raw.githubusercontent.com/Randi356/Vegeta-Userbot/Ve
 EXPOSE 80 443
 
 # Finalization
-CMD ["python3","-m","userbot"]
+CMD ["bash", "start"]
