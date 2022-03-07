@@ -53,7 +53,11 @@
     "BOT_TOKEN": {
       "description": "Untuk menampilkam mode tombol .xhelp, Ambil token di @BotFather",
       "required": true
-      
+    },
+    "UPSTREAM_REPO_BRANCH": {
+      "description": "Branch of Vegeta ubot [Vegeta-Userbot, dev]",
+      "value": "Vegeta-Userbot",
+      "required": true   
     },
     "BOT_USERNAME": {
       "description": "isi username bot mu yang dari @BotFather",
