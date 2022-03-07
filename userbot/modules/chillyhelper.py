@@ -13,15 +13,15 @@ async def usit(e):
     await e.edit(
         f"**Hai {DEFAULTUSER} Kalau Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `.xhelp` Atau Bisa `.help` atau Minta Bantuan Ke:\n"
         "\n[GSAHMANJA](t.me/gsahmanja)"
-        "\n\n[SUPPORT](https://t.me/RemixSupport)"
-        "\n\n[CHANNEL](https://t.me/codersUpdates)")
+        "\n\n[SUPPORT](https://t.me/VegetaSupports)"
+        "\n\n[CHANNEL](https://t.me/RendyProjects)")
 
 
 @register(outgoing=True, pattern="^.rvars$")
 async def var(m):
     await m.edit(
         f"**Disini Daftar Vars Dari {DEFAULTUSER}:**\n"
-        "\n[DAFTAR VARS](https://raw.githubusercontent.com/Randi356/Vegeta-deploy-old/Vegeta-Userbot/varshelper.txt)")
+        "\n[DAFTAR VARS](https://raw.githubusercontent.com/Randi356/Vegeta-Userbot/Vegeta-Userbot/varshelper.txt)")
 
 
 CMD_HELP.update({
