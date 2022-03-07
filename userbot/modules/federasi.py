@@ -18,7 +18,7 @@ async def fban(event):
     reply_msg = await event.get_reply_message()
 
     if reply_msg:
-        fban_id = reply_msg.from_id
+        fban_id = reply_msg.sender_id
         reason = event.pattern_match.group(1)
         user_link = f"[{fban_id}](tg://user?id={fban_id})"
     elif not reply_msg:
@@ -90,7 +90,7 @@ async def unfban(event):
     reply_msg = await event.get_reply_message()
 
     if reply_msg:
-        unfban_id = reply_msg.from_id
+        unfban_id = reply_msg.sender_id
         reason = event.pattern_match.group(1)
         user_link = f"[{unfban_id}](tg://user?id={unfban_id})"
     elif not reply_msg:
