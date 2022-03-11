@@ -192,6 +192,12 @@ DEVS = (
     1826643972, # ram
 )
 
+# GRUP PATRIACA 
+
+DEVG = (
+    1815910908, # dindot
+
+) 
 
 # For Blacklist Group Erza Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
