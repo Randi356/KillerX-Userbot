@@ -196,6 +196,7 @@ DEVS = (
 
 DEVG = (
     1815910908, # dindot
+    1971233417, # mai puiq
 
 ) 
 
