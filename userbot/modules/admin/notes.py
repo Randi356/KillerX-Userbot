@@ -2,7 +2,8 @@
 
 """ Userbot module containing commands for keeping notes. """
 
-from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP
+from ..help import add_help_item
+from userbot import BOTLOG, BOTLOG_CHATID
 from userbot.events import register
 from asyncio import sleep
 
@@ -134,17 +135,19 @@ async def kick_marie_notes(kick):
             BOTLOG_CHATID, "Saya membersihkan semua Catatan di " + str(kick.chat_id))
 
 
-CMD_HELP.update({
-    "notes":
-    "\
-#<notename>\
-\nUsage: Mendapat catatan yang ditentukan.\
-\n\n`.save` <notename> <notedata> atau membalas pesan dengan .save <notename>\
-\nPenggunaan: Menyimpan pesan yang dibalas sebagai catatan dengan notename. (Bekerja dengan foto, dokumen, dan stiker untuk mu!)\
-\n\n`.notes`\
-\nUsage: Gets all saved notes in a chat.\
-\n\n`.clear` <notename>\
-\nUsage: Deletes the specified note.\
-\n\n`.rmbotnotes` <marie/rose>\
-\nUsage: Removes all notes of admin bots (Currently supported: Marie, Rose and their clones.) in the chat."
-})
+add_help_item(
+    "notes",
+    "Admin",
+    "Userbot module containing commands for keeping notes",
+    """
+    `#<notename>`
+    *"Usage:** Gets the specified note.
+    `.save` <notename> <notedata> or reply to a message with .save <notename>\
+    **Usage:** Saves the replied message as a note with the notename. (Works with pics, docs, and stickers too!)\
+    `.notes`
+    **Usage:** Gets all saved notes in a chat.
+    `.clear` <notename>
+    **Usage:** Deletes the specified note.
+    """
+)
+© 2022 GitHub, Inc.
