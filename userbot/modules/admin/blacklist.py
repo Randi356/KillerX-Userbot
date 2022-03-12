@@ -10,7 +10,7 @@ import io
 import re
 
 import userbot.modules.sql_helper.blacklist_sql as sql
-from userbot import CMD_HELP
+from ..help import add_help_item
 from userbot.events import register
 
 
@@ -88,10 +88,19 @@ async def on_delete_blacklist(rmbl):
         await rmbl.edit("`Berhasil Menghapus` **{}** `Di Blacklist`".format(text))
 
 
-CMD_HELP.update({"blacklist": ">`.blacklist`"
-                 "\nUsage: Melihat daftar blacklist yang aktif di obrolan."
-                 "\n\n>`.addblacklist <kata>`"
-                 "\nUsage: Memasukan pesan ke blacklist 'kata blacklist'."
-                 "\nlord bot akan otomatis menghapus 'kata blacklist'."
-                 "\n\n>`.rmblacklist <kata>`"
-                 "\nUsage: Menghapus kata blacklist."})
+
+
+add_help_item(
+   "blacklist"
+   "Admin"
+   "blacklist trigger",
+   """
+   
+`.blacklist`
+**Usage:** Melihat daftar blacklist yang aktif di obrolan.
+`.addblacklist` <kata>
+**Usage:** Memasukan pesan ke blacklist 'kata blacklist'.
+`.rmblacklist` <kata>
+**Usage:** Menghapus kata blacklist.
+   """
+)
