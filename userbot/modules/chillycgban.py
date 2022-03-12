@@ -155,7 +155,7 @@ async def gunben(userbot):
     if not sender.id == me.id:
         dark = await dc.reply("**Un-Gbanned Users**")
     else:
-        dark = await dc.edit("**")
+        dark = await dc.edit("**Un-Gbanned Users**")
     me = await userbot.client.get_me()
     await dark.edit(f"**Un-Gbanned Users**")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
