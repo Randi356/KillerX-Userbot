@@ -442,13 +442,11 @@ async def _(event):
                     await event.reply(str(e))
             await event.edit("`Berhasil Menambahkan Pengguna Ke Obrolan`")
 
-
 add_help_item(
    "chats"
    "Admin"
    "yntkts.",
    """
-    
 
 `.getid`
 **Usage:** Dapatkan ID dari media Telegram mana pun, atau pengguna mana pun.
@@ -466,4 +464,4 @@ add_help_item(
 **Usage:** Menambahkan pengguna ke obrolan, bukan ke pesan pribadi.
 `.chatinfo`[opsional: <reply/tag/chat id/invite link>]
 **Usage:** Mendapatkan info obrolan. Beberapa info mungkin dibatasi karena izin yang hilang.
-  """
+   """
