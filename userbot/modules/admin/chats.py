@@ -5,7 +5,8 @@
 """ Userbot module containing userid, chatid and log commands"""
 
 from asyncio import sleep
-from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot, ALIVE_NAME
+from ..help import add_help_item
+from userbot import BOTLOG, BOTLOG_CHATID, bot, ALIVE_NAME
 from datetime import datetime
 from telethon import functions
 from emoji import emojize
@@ -441,27 +442,28 @@ async def _(event):
                     await event.reply(str(e))
             await event.edit("`Berhasil Menambahkan Pengguna Ke Obrolan`")
 
-CMD_HELP.update({
-    "chat":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.getid`\
-\n↳ : Dapatkan ID dari media Telegram mana pun, atau pengguna mana pun\
-\n\n: `.getbot`\
-\n↳ : Dapatkan Bot dalam obrolan apa pun.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.logit`\
-\n↳ : Meneruskan pesan yang telah Anda balas di grup log bot Anda.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.exit`\
-\n↳ : Keluar dari grup.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.unmutechat`\
-\n↳ : Membuka obrolan yang dibisukan.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.mutechat`\
-\n↳ : Memungkinkan Anda membisukan obrolan apa pun.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.link` <username/userid>: <opsional teks> (atau) balas pesan seseorang dengan .link <teks opsional>\
-\n↳ : Buat tautan permanen ke profil pengguna dengan teks ubahsuaian opsional.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.regexninja` enable/disabled\
-\n↳ : Mengaktifkan/menonaktifkan modul ninja regex secara global.\
-\nModul Regex Ninja membantu menghapus pesan pemicu bot regex.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.chatinfo [opsional: <reply/tag/chat id/invite link>]`\
-\n↳ : Mendapatkan info obrolan. Beberapa info mungkin dibatasi karena izin yang hilang..\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.invite` \
-\n↳ : Menambahkan pengguna ke obrolan, bukan ke pesan pribadi. "
-})
+
+add_help_item(
+   "chats"
+   "Admin"
+   "yntkts.",
+   """
+    
+
+`.getid`
+**Usage:** Dapatkan ID dari media Telegram mana pun, atau pengguna mana pun.
+`.logit`
+**Usage:** Meneruskan pesan yang telah Anda balas di grup log bot Anda.
+`.exit`
+**Usage:** Keluar dari grup.
+`.unmutechat`
+**Usage:** Membuka obrolan yang dibisukan.
+`.mutechat`
+**Usage:** Memungkinkan Anda membisukan obrolan apa pun.
+`.link`
+**Usage:** Buat tautan permanen ke profil pengguna dengan teks ubahsuaian opsional.
+`.invite`
+**Usage:** Menambahkan pengguna ke obrolan, bukan ke pesan pribadi.
+`.chatinfo`[opsional: <reply/tag/chat id/invite link>]
+**Usage:** Mendapatkan info obrolan. Beberapa info mungkin dibatasi karena izin yang hilang.
+  """
