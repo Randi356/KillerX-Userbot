@@ -109,7 +109,23 @@ MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
 REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
 
 # For Telegraph module
-TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "UBotX")
+TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "Vegeta-UserBot")
+
+# DEVS USERBOT OLNY
+DEVS = (
+    1820233416, # bagas
+    5032617939, # sayo
+    1191668125, # rendy
+    1416529201, # tonic
+    1607338903, # kenkan
+    1663258664, # ikky
+    2077108390, # kitaro
+    1705562427, # skyzo
+    2014359828, # kenzhu
+    1139515427, # glitter
+    1826643972, # ram
+)
+
 
 # Chrome Driver and Headless Google Chrome Binaries
 CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
