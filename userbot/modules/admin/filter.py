@@ -4,7 +4,9 @@
 
 from asyncio import sleep
 from re import search, IGNORECASE, escape
-from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP
+
+from ..help import add_help_item
+from userbot import BOTLOG, BOTLOG_CHATID
 from userbot.events import register
 
 
@@ -138,16 +140,20 @@ async def filters_active(event):
     await event.edit(transact)
 
 
-CMD_HELP.update({
-    "filter":
-    "`.filters`\
-    \nUsage: Melihat filter Chilly Userbot yang aktif di obrolan.\
-    \n\n`.filter` <keyword> <balasan> atau balas ke pesan ketik .filter <keyword>\
-    \nUsage: Membuat filter di obrolan.\
-    \nBot Akan Membalas Jika Ada Yang Menyebut 'keyword' yang dibuat.\
-    \nBisa dipake ke media/sticker/vn/file.\
-    \n\n`.stp` <keyword>\
-    \nUsage: Untuk Nonaktifkan Filter.\
-    \n\n`.clrallbot` <marie/rose>\
-    \nUsage: Menghapus semua filter yang ada di bot grup (Saat ini bot yang didukung: Marie, Rose.) dalam obrolan."
-})
+add_help_item(
+    "filters",
+    "Admin",
+    "Filter things into groups",
+    """
+    .filters\
+    \nUsage: Lists all active userbot filters in a chat.\
+    \n\n.filter <keyword> <reply text> or reply to a message with .filter <keyword>\
+    \nUsage: Saves the replied message as a reply to the 'keyword'.\
+    \nThe bot will reply to the message whenever 'keyword' is mentioned.\
+    \nWorks with everything from files to stickers.\
+    \n\n.stop <filter>\
+    \nUsage: Stops the specified filter.\
+    \n\n.rmbotfilters <marie/rose>\
+    \nUsage: Removes all filters of admin bots (Currently supported: Marie, Rose and their clones.) in the chat.
+    """
+)
