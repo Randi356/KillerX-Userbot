@@ -1,8 +1,10 @@
 from datetime import datetime
 
 from pytz import timezone
+
+from ..help import add_help_item
 from userbot.events import register
-from userbot import CMD_HELP, bot, LOGS, CLEAN_WELCOME, BOTLOG_CHATID
+from userbot import bot, LOGS, CLEAN_WELCOME, BOTLOG_CHATID
 from telethon.events import ChatAction
 
 
@@ -170,16 +172,18 @@ async def del_welcome(event):
         await event.edit("`Anda Tidak Menyimpan Pesan Welcome Apapun Disini`")
 
 
-CMD_HELP.update({
-    "welcome":
-    ">`.setwelcome` <pesan welcome> atau balas ke pesan ketik `.setwelcome`"
-    "\nUsage: Menyimpan pesan welcome digrup."
-    "\n\nFormat Variabel yang bisa digunakan dipesan welcome:"
-    "\n`{mention}, {title}, {count}, {first}, {last}, {fullname}, "
-    "{userid}, {username}, {my_first}, {my_fullname}, {my_last}, "
-    "{my_mention}, {my_username}`"
-    "\n\n>`.checkwelcome`"
-    "\nUsage: Check pesan welcome yang anda simpan."
-    "\n\n>`.rmwelcome`"
-    "\nUsage: Menghapus pesan welcome yang anda simpan."
-})
+add_help_item(
+    "welcomes",
+    "Admin",
+    "Welcome the new members.",
+    """
+`.setwelcome` <welcome message> or reply to a message with .setwelcome
+**Usage:** Saves the message as a welcome note in the chat.
+**Available variables for formatting welcome messages:**
+`{mention}, {title}, {count}, {first}, {last}, {fullname}, {userid}, {username}, {my_first}, {my_fullname}, {my_last}, {my_mention}, {my_username}`
+`.checkwelcome`
+**Usage:** Check whether you have a welcome note in the chat.
+`.rmwelcome`
+**Usage:** Deletes the welcome note for the current chat.
+    """
+)
