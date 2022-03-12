@@ -4,7 +4,8 @@ from asyncio import sleep
 
 from telethon.errors import rpcbaseerrors
 
-from userbot import CMD_HELP
+from ..help add_help_item
+from userbot import BOTLOG, BOTLOG_CHATID
 from userbot.events import register
 
 
@@ -127,15 +128,22 @@ async def selfdestruct(destroy):
     """
 
 
-CMD_HELP.update({"purge": ">`.purge`"
-                 "\nUsage: Membersihkan semua pesan mulai dari pesan yang dibalas.",
-                 "purgeme": ">`.purgeme <angka>`"
-                 "\nUsage: Menghapus jumlah pesan anda, yang mau anda hapus.",
-                 "del": ">`Del`"
-                 "\nUsage: Menghapus pesan, balas ke pesan.",
-                 "edit": ">`.edit <pesan baru>`"
-                 "\nUsage: Ganti pesan terakhir Anda dengan <pesan baru>.",
-                 "sd": ">`.sd <x> <pesan>`"
-                 "\nUsage: Membuat pesan yang hancur sendiri dalam x detik."
-                 "\nJaga agar detik di bawah 100 karena bot Anda akan tidur.",
-                 })
+add_help_item(
+    "purge",
+    "Admin",
+    "Some commands for you to purge your group",
+    """
+.sd <x> <message>\
+\nUsage: Creates a message that selfdestructs in x seconds.\
+\nKeep the seconds under 100 since it puts your bot to sleep.\
+\n\n.edit <newmessage>\
+\nUsage: Replace your last message with <newmessage>\
+\n\n.del\
+\nUsage: Deletes the message you replied to.\
+\n\n.purgeme <x>\
+\nUsage: Deletes x amount of your latest messages\
+\n\n.purge\
+\nUsage: Purges all messages starting from the reply.
+    """
+)
+© 2022 GitHub, Inc.
