@@ -1,10 +1,11 @@
 # Using Python Slim-Buster
 FROM xluxz/geezproject:buster
+
 # VEGETA-USERBOT
-# CuteInspire
+# rencprx
 
 
-RUN git clone -b Vegeta-Userbot https://github.com/Randi356/Vegeta-Userbot /root/userbot
+RUN git clone -b dev https://github.com/Randi356/Vegeta-Userbot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
