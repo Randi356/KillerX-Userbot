@@ -1,13 +1,9 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.c (the "License");
-# you may not use this file except in compliance with the License.
-# thanks to anishsk
+# Ported By @rencprx 
 
 from telethon.tl.functions.messages import EditChatDefaultBannedRightsRequest
 from telethon.tl.types import ChatBannedRights
 
-from userbot import CMD_HELP
+from ..help import add_help_item
 from userbot.events import register
 
 
@@ -187,11 +183,14 @@ async def rem_locks(event):
         return
 
 
-CMD_HELP.update({
-    "locks":
-    "`.lock <all atau Jenis>` atau `.unlock <all atau Jenis>`\
-\nUsage: Memungkinkan anda kunci atau membuka kunci, beberapa jenis pesan dalam obrolan.\
-\n[Anda Harus Jadi Admin Grup Untuk Menggunakan Perintah!]\
-\n\nJenis pesan yang bisa dikunci atau dibuka adalah: \
-\n`all, msg, media, sticker, gif, game, inline, poll, invite, pin, info`\n**Contoh:** `.lock msg` atau `.unlock msg`"
-})
+add_help_item(
+    "locks",
+    "Admin",
+    "Allows you to lock/unlock some common message types in the chat",
+    """
+    .lock <all (or) type(s)> or .unlock <all (or) type(s)>\
+    \n[NOTE: Requires proper admin rights in the chat !!]\
+    \n\nAvailable message types to lock/unlock are: \
+    \n`all, msg, media, sticker, gif, game, inline, poll, invite, pin, info`
+    """
+)
