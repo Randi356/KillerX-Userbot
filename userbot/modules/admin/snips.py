@@ -2,8 +2,9 @@
 
 """ Userbot module containing commands for keeping global notes. """
 
+from ..help import add_help_item
 from userbot.events import register
-from userbot import CMD_HELP, BOTLOG_CHATID
+from userbot import BOTLOG_CHATID
 
 
 @register(outgoing=True,
@@ -112,16 +113,20 @@ async def on_snip_delete(event):
         await event.edit(f"`Tidak dapat menemukan snip:` **{name}**")
 
 
-CMD_HELP.update({
-    "snips":
-    "\
-$<snip_name>\
-\nUsage: Mendapatkan snip yang ditentukan, di mana saja.\
-\n\n`.snip` <name> <data> atau membalas pesan dengan .snip <name>\
-\nUsage: Menyimpan pesan sebagai snip (catatan global) dengan nama. (Bekerja dengan foto, dokumen, dan stiker juga!)\
-\n\n`.snips`\
-\nUsage: Mendapat semua potongan yang disimpan.\
-\n\n`.remsnip` <snip_name>\
-\nUsage: Menghapus snip yang ditentukan.\
-"
-})
+
+add_help_item(
+    "snips",
+    "Admin",
+    "Similar to notes but global and only you can use",
+    """
+    `.$<snip_name>`
+    Usage: Gets the specified snip, anywhere.
+    `.snip` <name> <data> or reply to a message with .snip <name>
+    **Usage:** Saves the message as a snip (global note) with the name. (Works with pics, docs, and stickers too!)
+    `.snips`
+    **Usage: Gets all saved snips.
+    `.remsnip` <snip_name>
+    **Usage:** Deletes the specified snip.
+    """
+)
+© 2022 GitHub, Inc.
