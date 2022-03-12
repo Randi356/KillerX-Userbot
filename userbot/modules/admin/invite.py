@@ -11,8 +11,9 @@ from telethon.errors import (
     ChannelPublicGroupNaError)
 from telethon.tl.functions.channels import GetFullChannelRequest
 
+from ..help import add_help_item
 from userbot.events import register
-from userbot import CMD_HELP, DEVS
+from userbot import DEVS
 
 
 async def get_chatinfo(event):
@@ -81,8 +82,11 @@ async def get_users(event):
     return await ram.edit(f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people")
 
 
-CMD_HELP.update({
-    "invite":
-        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.inviteall groups username`\
-          \n📌 : __Scrapes users from the given chat to your group__."
-})
+add_help_item(
+    "invite",
+    "Admin",
+    "Inviteall group id.",
+    """
+    `.inviteall`
+    """
+)
