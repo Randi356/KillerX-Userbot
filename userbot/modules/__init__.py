@@ -1,14 +1,18 @@
+# Ported By @rencprx
+
 """ Init file which loads all of the modules """
 from userbot import LOGS
 
 
 def __list_all_modules():
-    from os.path import dirname, basename, isfile
-    import glob
+    from os.path import dirname, isfile, relpath
+    from glob import glob
 
-    mod_paths = glob.glob(dirname(__file__) + "/*.py")
+    root_dir = dirname(__file__)
+    mod_paths = glob(root_dir + "/**/*.py", recursive=True)
     all_modules = [
-        basename(f)[:-3] for f in mod_paths
+        '.'.join(relpath(f, root_dir).split('/'))[:-3]
+        for f in mod_paths
         if isfile(f) and f.endswith(".py") and not f.endswith("__init__.py")
     ]
     return all_modules
