@@ -27,7 +27,8 @@ from telethon.tl.types import (
     PeerChat,
 )
 
-from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, DEVS
+from ..help import add_help_item
+from userbot import BOTLOG, BOTLOG_CHATID, DEVS
 from userbot.events import register
 
 # =================== CONSTANT ===================
@@ -908,34 +909,36 @@ async def get_bots(show):
         remove("botlist.txt")
 
 
-CMD_HELP.update(
-    {
-        "admin": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.promote` <username/balas ke pesan> <nama title (optional)>"
-        "\n↳ : Mempromosikan member sebagai admin."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.demote` <username/balas ke pesan>"
-        "\n↳ : Menurunkan admin sebagai member."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ban` <username/balas ke pesan> <alasan (optional)>"
-        "\n↳ : Memblokir Seseorang."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.unban <username/reply>`"
-        "\n↳ : Menghapus Blokir."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.mute` <username/balas ke pesan> <alasan (optional)>"
-        "\n↳ : Membisukan Seseorang Di Grup, Bisa Ke Admin Juga."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.unmute` <username/balas ke pesan>"
-        "\n↳ : Membuka bisu orang yang dibisukan."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gmute` <username/balas ke pesan> <alasan (optional)>"
-        "\n↳ : Membisukan ke semua grup yang kamu punya sebagai admin."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ungmute` <username/reply>"
-        "\n↳ : Reply someone's message with `.ungmute` to remove them from the gmuted list."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.zombies`"
-        "\n↳ : Untuk mencari akun terhapus dalam grup."
-        "Gunakan `.zombies clean` untuk menghapus Akun Terhapus dari grup."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.all`"
-        "\n↳ : Tag semua member dalam grup."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.admins`"
-        "\n↳ : Melihat daftar admin di grup."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bots`"
-        "\n↳ : Melihat daftar bot dalam grup."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.users` Atau >`.users` <nama member>"
-        "\n↳ : Mendapatkan daftar pengguna daam grup."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.setgpic` <balas ke gambar>"
-        "\n↳ : Mengganti foto profil grup."})
+add_help_item(
+    "admin",
+    "Admin",
+    "Some admin-related commands",
+    """
+    `.promote` <username/userid>: <custom rank (optional)> (or) reply to a message with .promote <rank (optional)>
+    **Usage:** Provides admin rights to the person in the chat.
+    `.demote` <username/userid> (or) reply to a message with .demote
+    **Usage:** Revokes the person's admin permissions in the chat.
+    `.ban` <username/userid>: <reason (optional)> (or) reply to a message with .ban <reason (optional)>
+    **Usage:** Bans the person off your chat.
+    `.unban` <username/userid> (or) reply to a message with .unban
+    **Usage:** Removes the ban from the person in the chat.
+    `.mute` <username/userid>: <reason (optional)> reply to a message with .mute <reason (optional)>
+    **Usage:** Mutes the person in the chat, works on admins too.
+    `.unmute` <username/userid> (or) reply to a message with .unmute
+    **Usage:** Removes the person from the muted list.
+    `.gmute` <username/userid>: <reason (optional)> (or) reply to a message with .gmute <reason (optional)>
+    **Usage:** Mutes the person in all groups you have in common with them.
+    `.ungmute` <username/userid> (or) reply to a message with .ungmute
+    **Usage:** Removes the person from the global mute list.
+    `.zombies`
+    **Usage:** Searches for deleted accounts in a group. Use .zombies clean to remove deleted accounts from the group.
+    `.admins`
+    **Usage:** Retrieves a list of admins in the chat.
+    `.bots`
+    **Usage:** Retrieves a list of bots in the chat.
+    `.users` or .users <search query>
+    **Usage:** Retrieves all (or queried) users in the chat.
+    `.setgpic` <reply to image>
+    **Usage:** Changes the group's display picture.
+    """
+)
