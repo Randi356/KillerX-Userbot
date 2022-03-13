@@ -1,19 +1,33 @@
-# Using Python Slim-Buster
-FROM xluxz/geezproject:buster
+FROM python:slim-buster
 
-# VEGETA-USERBOT
-# rencprx
+# By @rencprx 
 
+RUN apt update && apt upgrade -y && \
+    apt install --no-install-recommends -y \
+        bash \
+        curl \
+        ffmpeg \
+        gcc \
+        git \
+        libjpeg-dev \
+        libjpeg62-turbo-dev \
+        libwebp-dev \
+        musl \
+        musl-dev \
+        atomicparsley \
+        neofetch \
+        rsync \
+        zlib1g \
+        zlib1g-dev
 
-RUN git clone -b Vegeta-Userbot https://github.com/Randi356/Vegeta-Userbot /root/userbot
+RUN git clone https://github.com/Randi356/Vegeta-Userbot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
 
 #Install python requirements
-RUN pip3 install -r https://raw.githubusercontent.com/Randi356/Vegeta-Userbot/Vegeta-Userbot/requirements.txt
+RUN /bin/sh -c pip3 install -r https://raw.githubusercontent.com/Randi356/Vegeta-Userbot/Vegeta-Userbot/requirements.txt
 
 EXPOSE 80 443
 
-# Finalization
-CMD ["python3","-m","userbot"]
+CMD ["python3", "-m", "userbot"]
