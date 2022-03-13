@@ -1,7 +1,6 @@
 # port by Ramadhani892
 
 from userbot.events import register
-from userbot import CMD_HELP
 
 
 @register(outgoing=True, pattern="^.gsend ?(.*)")
@@ -31,8 +30,3 @@ async def remoteaccess(event):
         await event.edit("Pesan Di Di Teruskan Ke Grup Tujuan`")
     except BaseException:
         await event.edit("** Gabisa Tolol,Emang lu join grup nya TOD ? **")
-
-CMD_HELP.update({
-        "grouplink": ".gsend\
-    \nMengirim Pesan Jarak Jauh Ke Grup Lain .gsend <link grup> <pesan>."
-    })
