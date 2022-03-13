@@ -3,7 +3,7 @@
 # DONT'T REMOVE CREDIT YOU FUCK GBAN
 
 from time import sleep
-from userbot import CMD_HELP, bot
+from userbot import bot
 from userbot.events import register
 from telethon import events
 import asyncio
@@ -52,13 +52,3 @@ async def typewriter(typew):
     sleep(2)
     await typew.edit("**MAKAN TUH PLASTIK AWOKWOKWOKWOK**")
     
-CMD_HELP.update({
-    "memes12":
-    "`.jamet`\
-    \nUsage:\
-    \n\n.berantem\
-    \nUsage:\
-    \n\n.rp\
-    \nUsage:"
- 
-}) 
