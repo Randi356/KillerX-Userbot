@@ -1,7 +1,7 @@
 
 
 from time import sleep
-from userbot import CMD_HELP, bot
+from userbot import bot
 from userbot.events import register
 from telethon import events
 import asyncio
@@ -190,9 +190,9 @@ async def _(event):
         await event.edit(input_str)
 
         animation_chars = [
-            "**OWNER RAM-UBOT ADALAH MANUSIA TERGANTENG DI HATI PEMAKAI NYA, KENALAN DULU SAMA OWNER NYA YUK**"
-            "**RAMADHANI NAMANYA,ORANG NYA BAIK**"
-            "**TINGGAL NYA DI TANGERANG, BTW ORANG TANGERANG GANTENG GANTENG DAN THEBEST POKOK NYA AWWHHHH**"
+            "**OWNER VEGETA ADALAH MANUSIA TERGANTENG DI HATI PEMAKAI NYA, KENALAN DULU SAMA OWNER NYA YUK**"
+            "**RENDY NAMANYA,ORANG NYA BAIK**"
+            "**TINGGAL NYA DI TANGERANG, BTW ORANG JAKARTA GANTENG GANTENG DAN THEBEST POKOK NYA AWWHHHH**"
             "**KALO MAU FORK REPONYA,IZIN DULU KE ORANG NYA YA GENGSSS**"
             "**POKOK NYA OWNER NYA THEBEST BANGET SERIUSSSSS**"
             "**UDAH POKOK NYA ITU AJA SIH,INTINYA OWNER NYA GANTENG DAN BAIK PARAH**"]
@@ -202,21 +202,3 @@ async def _(event):
             await asyncio.sleep(animation_interval)
 
             await event.edit(animation_chars[i % 6])
-
-CMD_HELP.update({
-    "memes5":
-    "`.nah` ; `.huh` ; `.owner`\
-    \nUsage: cobain.\
-    \n\n`.bunga` ; `.buah`\
-    \nUsage: animasi.\
-    \n\n`.waktu`\
-    \nUsage: animasi."
-})
-
-CMD_HELP.update({
-    "memes6":
-    "`.hua`\
-    \nUsage: nangis.\
-    \n\n`.cinta` ; `.canda`\
-    \nUsage: liat sendiri"
-})
