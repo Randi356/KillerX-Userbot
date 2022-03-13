@@ -1,7 +1,7 @@
 import asyncio
 
 from userbot.events import register
-from userbot import CMD_HELP, DEVS
+from userbot import DEVS
 
 
 GCAST_BLACKLIST = [
@@ -89,15 +89,3 @@ async def gucast(event):
                     er += 1
     await kk.edit(f"Berhasil Mengirim Pesan Ke `{done}` obrolan, kesalahan dalam `{er}` obrolan(s)")
 
-
-CMD_HELP.update(
-    {
-        "gcast": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gcast`\
-         \n↳ : Mengirim Pesan Group Secara Global."})
-
-CMD_HELP.update(
-    {
-         "gucast": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gucast`\
-         \n↳ : Mengirim Pesan Pribadi Secara Global."
-    }
-)
