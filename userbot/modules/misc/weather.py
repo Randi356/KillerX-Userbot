@@ -1,4 +1,4 @@
-# Ported By @rencprx
+# Ported By @rencprx 
 
 """ Userbot module for getting the weather of a city. """
 
@@ -9,7 +9,8 @@ from pytz import country_timezones as c_tz
 from pytz import timezone as tz
 from pytz import country_names as c_n
 
-from userbot import CMD_HELP, WEATHER_DEFCITY
+from ..help import add_help_item
+from userbot import WEATHER_DEFCITY
 from userbot import OPEN_WEATHER_MAP_APPID as OWM_API
 from userbot.events import register
 
@@ -34,7 +35,7 @@ async def get_tz(con):
         return
 
 
-@register(outgoing=True, pattern="^.weather(?: |$)(.*)")
+@register(outgoing=True, pattern="^\.weather(?: |$)(.*)")
 async def get_weather(weather):
     """ For .weather command, gets the current weather of a city. """
 
@@ -44,6 +45,7 @@ async def get_weather(weather):
         return
 
     APPID = OWM_API
+    result = None
 
     if not weather.pattern_match.group(1):
         CITY = DEFCITY
@@ -78,7 +80,7 @@ async def get_weather(weather):
     result = json.loads(request.text)
 
     if request.status_code != 200:
-        await weather.edit("`Invalid country.`")
+        await weather.edit(f"`Invalid country.`")
         return
 
     cityname = result['name']
@@ -127,12 +129,16 @@ async def get_weather(weather):
         + f"**Humidity:** `{humidity}%`\n" +
         f"**Wind:** `{kmph[0]} kmh | {mph[0]} mph, {findir}`\n" +
         f"**Sunrise:** `{sun(sunrise)}`\n" +
-        f"**Sunset:** `{sun(sunset)}`\n\n" + f"**{desc}**\n" +
+        f"**Sunset:** `{sun(sunset)}`\n\n\n" + f"**{desc}**\n" +
         f"`{cityname}, {fullc_n}`\n" + f"`{time}`")
 
 
-CMD_HELP.update({
-    "weather":
-    "`.weather` <city> or `.weather` <city>, <country name/code>\
-    \nUsage: Gets the weather of a city."
-})
+add_help_item(
+    "weather",
+    "Misc",
+    "Userbot module for getting the weather of a city.",
+    """
+    `.weather` <city> or .weather <city>, <country name/code>
+    **Usage:** Gets the weather of a city
+    """
+)
