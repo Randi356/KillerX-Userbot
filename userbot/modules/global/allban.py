@@ -2,7 +2,6 @@ from asyncio import sleep
 from telethon.tl.types import ChatBannedRights
 from telethon.tl.functions.channels import EditBannedRequest
 from userbot.events import register
-from userbot import CMD_HELP
 
 # Aku nambah kredit sdikit
 # rama ganteng bgt kan?
@@ -29,11 +28,3 @@ async def testing(event):
             await event.edit(str(e))
         await sleep(.5)
     await event.edit("Tidak Ada yang Terjadi di sini🙃🙂")
-
-CMD_HELP.update(
-    {
-        "allban": "**Plugin : **`allban`\
-    \n\n**Syntax : **`.allban`\
-    \n**Function : **ban all members in 1 cmnd"
-    }
-)
