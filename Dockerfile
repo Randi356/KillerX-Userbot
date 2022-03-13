@@ -2,24 +2,6 @@ FROM python:slim-buster
 
 # By @rencprx 
 
-RUN apt update && apt upgrade -y && \
-    apt install --no-install-recommends -y \
-        bash \
-        curl \
-        ffmpeg \
-        gcc \
-        git \
-        libjpeg-dev \
-        libjpeg62-turbo-dev \
-        libwebp-dev \
-        musl \
-        musl-dev \
-        atomicparsley \
-        neofetch \
-        rsync \
-        zlib1g \
-        zlib1g-dev
-
 RUN git clone -b Vegeta-Userbot https://github.com/Randi356/Vegeta-Userbot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
