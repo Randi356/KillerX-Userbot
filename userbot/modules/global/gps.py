@@ -2,7 +2,6 @@
 from geopy.geocoders import Nominatim
 from telethon.tl import types
 from userbot.events import register
-from userbot import CMD_HELP
 
 
 @register(outgoing=True, pattern="^.gps(?: |$)(.*)")
@@ -36,9 +35,3 @@ async def gps(event):
         await event.delete()
     else:
         await event.edit("`Saya Tidak Dapat Menemukannya`")
-
-CMD_HELP.update({
-    "gps":
-    ">.`gps`"
-    "\nUsage: Untuk Mendapatkan Lokasi Map"
-})
