@@ -1,5 +1,5 @@
 from telethon.events import ChatAction
-from userbot import ALIVE_NAME, CMD_HELP, DEVS, bot
+from userbot import ALIVE_NAME, DEVS, bot
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from userbot.events import register
 from telethon.tl.types import MessageEntityMentionName
@@ -206,11 +206,3 @@ async def gunben(userbot):
     return await dark.edit(
         f"**Perintah :** `{ALIVE_NAME}`\n**Pengguna:** [{user.first_name}](tg://user?id={user.id})\n**Aksi:** **Un-Gbanned Users**"
     )
-
-
-CMD_HELP.update({
-    "gban": "\
-**Modules:** __Global Banned__\n\n**Perintah:** `.gban`\
-\n**Penjelasan:** Melakukan Banned Secara Global Ke Semua Grup Dimana Anda Sebagai Admin\
-\n\n**Perintah:** `.ungban`\
-\n**Penjelasan:** Membatalkan Global Banned"})
