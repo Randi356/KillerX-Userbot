@@ -18,14 +18,14 @@ RUN apt update && apt upgrade -y && \
         zlib1g \
         zlib1g-dev
 
-COPY . /tmp/userbot_local
-WORKDIR /usr/src/app/Vegeta-Userbot/
+RUN git clone -b dev https://github.com/Randi356/Vegeta-Userbot /root/userbot
+RUN mkdir /root/userbot/.bin
+RUN pip install --upgrade pip setuptools
+WORKDIR /root/userbot
 
-RUN git clone -b dev https://github.com/Randi356/Vegeta-Userbot.git /usr/src/app/Vegeta-Userbot/
-RUN rsync --ignore-existing --recursive /tmp/userbot_local/ /usr/src/app/Vegeta-Userbot/
+#Install python requirements
+RUN pip3 install -r https://raw.githubusercontent.com/Randi356/Vegeta-Userbot/Vegeta-Userbot/requirements.txt
 
-RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install --no-warn-script-location --no-cache-dir -r requirements.txt
+EXPOSE 80 443
 
-RUN rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
 CMD ["python3", "-m", "userbot"]
