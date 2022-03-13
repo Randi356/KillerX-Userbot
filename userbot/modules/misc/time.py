@@ -1,6 +1,6 @@
 # Copyright (C) 2019 The Raphielscape Company LLC.
 #
-# Licensed under the Raphielscape Public License, Version 1.d (the "License");
+# Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
 """ Userbot module for getting the date
@@ -12,12 +12,13 @@ from pytz import country_names as c_n
 from pytz import country_timezones as c_tz
 from pytz import timezone as tz
 
-from userbot import CMD_HELP, COUNTRY, TZ_NUMBER
+from ..help import add_help_item
+from userbot import COUNTRY, TZ_NUMBER
 from userbot.events import register
 
 
 async def get_tz(con):
-    """ Dapatkan zona waktu dari negara tertentu. """
+    """ Get time zone of the given country. """
     if "(Uk)" in con:
         con = con.replace("Uk", "UK")
     if "(Us)" in con:
@@ -41,12 +42,13 @@ async def get_tz(con):
         return
 
 
-@register(outgoing=True, pattern="^.time(?: |$)(.*)(?<![0-9])(?: |$)([0-9]+)?")
+@register(outgoing=True,
+          pattern="^\.time(?: |$)(.*)(?<![0-9])(?: |$)([0-9]+)?")
 async def time_func(tdata):
-    """ Untuk perintah .time, kembalikan waktu
-        1. Negara disahkan sebagai argumen,
-        2. Negara pengguna bot default (setel dengan menggunakan .settime),
-        3. Server tempat menjalankan bot pengguna.
+    """ For .time command, return the time of
+        1. The country passed as an argument,
+        2. The default userbot country(set it by using .settime),
+        3. The server where the userbot runs.
     """
     con = tdata.pattern_match.group(1).title()
     tz_num = tdata.pattern_match.group(2)
@@ -69,7 +71,7 @@ async def time_func(tdata):
         return
 
     if not timezones:
-        await tdata.edit("`Negara tidak valid.`")
+        await tdata.edit("`Invaild country.`")
         return
 
     if len(timezones) == 1:
@@ -104,12 +106,13 @@ async def time_func(tdata):
         return
 
 
-@register(outgoing=True, pattern="^.date(?: |$)(.*)(?<![0-9])(?: |$)([0-9]+)?")
+@register(outgoing=True,
+          pattern="^\.date(?: |$)(.*)(?<![0-9])(?: |$)([0-9]+)?")
 async def date_func(dat):
-    """ Untuk perintah .date, kembalikan tanggal
-        1. Negara disahkan sebagai argumen,
-        2. Negara pengguna bot default (setel dengan menggunakan .settime),
-        3. Server tempat menjalankan bot pengguna.
+    """ For .date command, return the date of
+        1. The country passed as an argument,
+        2. The default userbot country(set it by using .settime),
+        3. The server where the userbot runs.
     """
     con = dat.pattern_match.group(1).title()
     tz_num = dat.pattern_match.group(2)
@@ -132,7 +135,7 @@ async def date_func(dat):
         return
 
     if not timezones:
-        await dat.edit("`Negara tidak valid.`")
+        await dat.edit("`Invaild country.`")
         return
 
     if len(timezones) == 1:
@@ -142,14 +145,14 @@ async def date_func(dat):
             tz_num = int(tz_num)
             time_zone = timezones[tz_num - 1]
         else:
-            return_str = f"`{c_name} memiliki banyak zona waktu:`\n"
+            return_str = f"`{c_name} has multiple timezones:`\n"
 
             for i, item in enumerate(timezones):
                 return_str += f"`{i+1}. {item}`\n"
 
-            return_str += "\n`Pilih salah satu dengan mengetik nomornya "
-            return_str += "dalam perintah.`\n"
-            return_str += f"Contoh: .date {c_name} 2"
+            return_str += "\n`Choose one by typing the number "
+            return_str += "in the command.`\n"
+            return_str += f"Example: .date {c_name} 2"
 
             await dat.edit(return_str)
             return
@@ -167,10 +170,19 @@ async def date_func(dat):
         return
 
 
-CMD_HELP.update({
-    "timedate":
-    "`.time` <country name/code> <timezone number>\
-\nUsage: Penggunaan: Dapatkan waktu suatu negara. Jika suatu negara memiliki beberapa zona waktu, itu akan mencantumkan semuanya dan membiarkan Anda memilih satu.\
-\n\n`.date` <country name/code> <timezone number>\
-\nUsage: Dapatkan tanggal suatu negara. Jika suatu negara memiliki beberapa zona waktu, itu akan mencantumkan semuanya dan membiarkan Anda memilih satu."
-})
+add_help_item(
+    "time",
+    "Misc",
+    "Userbot module for getting the Date and time of any country or the userbot server.",
+    """
+    `.date` <country name/code> <timezone number>
+    **Usage:** Get the date of a country. If a country has 
+    multiple timezones, it will list all of them 
+    and let you select one.
+
+    `.time` <country name/code> <timezone number>
+    **Usage:** Get the time of a country. If a country has 
+    multiple timezones, it will list all of them 
+    and let you select one.
+    """
+)
