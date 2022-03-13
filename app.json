@@ -23,7 +23,7 @@
       "required": true
      },
      "STRING_SESSION": {
-      "description": "Ambil String Session di link https://replit.com/@Randi356/Vegeta-String#main.py",
+      "description": "Ambil String Session di link https://replit.com/@Randi356/Vegeta-String",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -37,7 +37,7 @@
     },
     "BOTLOG_CHATID": {
       "description": "Masuk @spambotVegeta atau Buatlah sebuah grup private/public masukan @kazukoRobot lalu ketik /id, Salin dan hapus id dibawah ini, Lalu tempel.",
-      "value": "-1001689681361",
+      "value": "-1001568778086",
       "required": true
     },
     "ALIVE_NAME": {
@@ -55,7 +55,7 @@
       "required": true
     },
     "UPSTREAM_REPO_BRANCH": {
-      "description": "Branch of Vegeta ubot [Vegeta-Userbot, dev]",
+      "description": "DONT'T CHANGE HERE",
       "value": "Vegeta-Userbot",
       "required": true   
     },
