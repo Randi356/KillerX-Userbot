@@ -1,78 +1,31 @@
-# We're using Alpine Edge
-FROM alpine:edge
+FROM python:slim-buster
 
-# We have to uncomment Community repo for some packages
-RUN sed -e 's;^#http\(.*\)/edge/community;http\1/edge/community;g' -i /etc/apk/repositories
+RUN apt update && apt upgrade -y && \
+    apt install --no-install-recommends -y \
+        bash \
+        curl \
+        ffmpeg \
+        gcc \
+        git \
+        libjpeg-dev \
+        libjpeg62-turbo-dev \
+        libwebp-dev \
+        musl \
+        musl-dev \
+        atomicparsley \
+        neofetch \
+        rsync \
+        zlib1g \
+        zlib1g-dev
 
-# install ca-certificates so that HTTPS works consistently
-# other runtime dependencies for Python are installed later
-RUN apk add --no-cache ca-certificates
+COPY . /tmp/userbot_local
+WORKDIR /usr/src/app/Vegeta-Userbot/
 
-# Installing Packages
-RUN apk add --no-cache --update \
-    bash \
-    build-base \
-    bzip2-dev \
-    curl \
-    coreutils \
-    figlet \
-    gcc \
-    g++ \
-    git \
-    aria2 \
-    util-linux \
-    libevent \
-    libjpeg-turbo-dev \
-    chromium \
-    chromium-chromedriver \
-    jpeg-dev \
-    libc-dev \
-    libffi-dev \
-    libpq \
-    libwebp-dev \
-    libxml2-dev \
-    libxslt-dev \
-    linux-headers \
-    musl-dev \
-    neofetch \
-    openssl-dev \
-    postgresql-client \
-    postgresql-dev \
-    pv \
-    jq \
-    wget \
-    python3-dev \
-    readline-dev \
-    ffmpeg \
-    figlet \
-    sqlite-dev \
-    sudo \
-    zlib-dev \
-    python-dev
+RUN git clone -b dev https://github.com/Randi356/Vegeta-Userbot.git /usr/src/app/Vegeta-Userbot/
+RUN rsync --ignore-existing --recursive /tmp/userbot_local/ /usr/src/app/Vegeta-Userbot/
 
+RUN python3 -m pip install --upgrade pip
+RUN python3 -m pip install --no-warn-script-location --no-cache-dir -r requirements.txt
 
-RUN python3 -m ensurepip \
-    && pip3 install --upgrade pip setuptools \
-    && rm -r /usr/lib/python*/ensurepip && \
-    if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi && \
-    if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi && \
-    rm -r /root/.cache
-
-#
-# Clone repo and prepare working directory
-#
-RUN git clone -b dev 'https://github.com/Randi356/Vegeta-Userbot.git' /root/userbot
-RUN mkdir /root/userbot/bin/
-WORKDIR /root/userbot/
-
-#
-# Copies session and config (if it exists)
-#
-COPY ./sample_config.env ./userbot.session* ./config.env* /root/userbot/
-
-#
-# Install requirements
-#
-RUN pip3 install -r requirements.txt
-RUN pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
-CMD ["python3","-m","userbot"]
+RUN rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
+CMD ["python", "-m", "userbot"]
