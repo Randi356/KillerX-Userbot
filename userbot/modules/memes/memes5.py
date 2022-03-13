@@ -1,5 +1,5 @@
 from time import sleep
-from userbot import CMD_HELP, bot
+from userbot import bot
 from userbot.events import register
 from telethon import events
 import asyncio
@@ -462,19 +462,3 @@ async def typewriter(typew):
     sleep(2)
     await typew.edit("TINGGALIN AJA YA AJG!!!!")
     
-    
-CMD_HELP.update({
-    "memes9":
-    "`.gabut` ; `.orgil`\
-    \nUsage: ntahlah gabut doang.\
-    \n\n`.ass`\
-    \nUsage: Salam duls biar sopan."
-})
-
-CMD_HELP.update({
-    "memes10":
-    "`.cinta`\
-    \nUsage: mengirim cintamu ke seseorang.\
-    \n\n`.sange` ;  `.gblk`\
-    \nUsage: cobalah sndiri ngentot."
-})
