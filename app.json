@@ -45,23 +45,15 @@
       "value": "Vegeta-Userbot",
       "required": true
     },
-    "S_PACK_NAME": {
-      "description": "Nama Sticker Pack Mu",
-      "value": "Made by @rencprx",
-      "required": false
-    },
-    "BOT_TOKEN": {
-      "description": "Untuk menampilkam mode tombol .xhelp, Ambil token di @BotFather",
-      "required": true
-    },
     "TELEGRAPH_SHORT_NAME": {
       "description": "Required for telegraph module.",
       "value": "TeamVupdates",
-      "required": true 
-    },
-    "BOT_USERNAME": {
-      "description": "isi username bot mu yang dari @BotFather",
       "required": true
+    },
+    "TZ_NUMBER": {
+      "description": "Change this value in case your country has multiple Time Zones.",
+      "value": "1",
+      "required": false
     }
   },
   "addons": [
