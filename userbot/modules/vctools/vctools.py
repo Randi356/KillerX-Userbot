@@ -9,7 +9,6 @@ from telethon.tl.functions.phone import DiscardGroupCallRequest as stopvc
 from telethon.tl.functions.phone import GetGroupCallRequest as getvc
 from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 
-from userbot import CMD_HELP
 from userbot.events import register
 
 NO_ADMIN = "`LU BUKAN ADMIN NGENTOT!!`"
@@ -80,14 +79,3 @@ async def _(ren):
             pass
     await ren.edit(f"`Menginvite {z} Member`")
 
-
-CMD_HELP.update(
-    {
-        "vcalls": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.startvc`\
-         \n↳ : Memulai Obrolan Suara dalam Group.\
-         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stopvc`\
-         \n↳ : `Menghentikan Obrolan Suara Pada Group.`\
-         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vcinvite`\
-         \n↳ : Invite semua member yang berada di group. (Kadang bisa kadang kaga)."
-    }
-)
