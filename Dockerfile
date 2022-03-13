@@ -20,7 +20,7 @@ RUN apt update && apt upgrade -y && \
         zlib1g \
         zlib1g-dev
 
-RUN git clone https://github.com/Randi356/Vegeta-Userbot /root/userbot
+RUN git clone -b Vegeta-Userbot https://github.com/Randi356/Vegeta-Userbot /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
