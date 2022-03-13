@@ -1,6 +1,4 @@
-FROM python:slim-buster
-
-# By @rencprx 
+FROM vckyouuu/geezprojects:buster
 
 RUN git clone -b Vegeta-Userbot https://github.com/Randi356/Vegeta-Userbot /root/userbot
 RUN mkdir /root/userbot/.bin
