@@ -53,7 +53,11 @@
     "BOT_TOKEN": {
       "description": "Untuk menampilkam mode tombol .xhelp, Ambil token di @BotFather",
       "required": true
-      
+    },
+    "TELEGRAPH_SHORT_NAME": {
+      "description": "Required for telegraph module.",
+      "value": "TeamVupdates",
+      "required": true 
     },
     "BOT_USERNAME": {
       "description": "isi username bot mu yang dari @BotFather",
