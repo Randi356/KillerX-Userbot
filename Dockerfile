@@ -28,4 +28,4 @@ RUN python3 -m pip install --upgrade pip
 RUN python3 -m pip install --no-warn-script-location --no-cache-dir -r requirements.txt
 
 RUN rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
-CMD ["python", "-m", "userbot"]
+CMD ["python3", "-m", "userbot"]
