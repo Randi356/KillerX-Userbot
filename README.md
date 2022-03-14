@@ -51,3 +51,5 @@ CLICK [SECURITY](https://github.com/Randi356/Vegeta-Userbot/blob/Vegeta-Userbot/
 
 *   [LANDAK RAMA](https://github.com/ramadhani892) - RAM-UBOT
 *   [RENDY](https://github.com/Randi356/Vegeta-Userbot) - VEGETA-USERBOT
+*   [VCKY](https://t.me/vckyouubitch) GEEZ-USERBOT
+*   [ULTROID](https://github.com/TeamUltroid) TEAM ULTROID
