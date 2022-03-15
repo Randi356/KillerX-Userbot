@@ -62,7 +62,7 @@ Klik tombol di samping untuk membuat string milikmu`
 
 ## SECURITY POLICY
 
-CLICK [SECURITY](https://github.com/Randi356/Vegeta-Userbot/blob/Vegeta-Userbot/SECURITY.MD)
+CLICK [SECURITY](https://github.com/Randi356/Vegeta-Userbot/blob/Vegeta-Userbot/SECURITY.md) 
 
 
 # Special Credits 🔥
