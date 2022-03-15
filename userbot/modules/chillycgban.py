@@ -6,7 +6,7 @@ from telethon.tl.types import MessageEntityMentionName
 
 
 async def get_full_user(event):
-    args = event.pattern_match.group(1).split(':', 1)
+    args = event.pattern_match.group(1).split(":", 1)
     extra = None
     if event.reply_to_msg_id and not len(args) == 2:
         previous_message = await event.get_reply_message()
@@ -83,11 +83,11 @@ async def gben(userbot):
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
-        dark = await dc.reply("**Scanning**")
+        dark = await dc.reply("**Global Banning Yesus")
     else:
-        dark = await dc.edit("**Scanned Done*")
+        dark = await dc.edit("**Scanned Done**")
     me = await userbot.client.get_me()
-    await dark.edit(f"**Gbanned User**")
+    await dark.edit(f"**Global Banning added groups**")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -128,7 +128,7 @@ async def gben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await dark.edit(f"**GBanned User**")
+                await dark.edit(f"**fuck you gban**")
             except BaseException:
                 b += 1
     else:
