@@ -4,6 +4,24 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
     <p align="center"> 
 
+
+
+</p>
+<p align="center">
+    <a href="https://github.com/Randi356/Vegeta-Userbot"> <img src="https://img.shields.io/github/repo-size/Randi356/Vegeta-Userbot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Randi356/Vegeta-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/Randi356/YVegeta-Userbot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Randi356/Vegeta-Userbot/issues"> <img src="https://img.shields.io/github/issues/Randi356/Vegeta-Userbot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Randi356/Vegeta-Userbot/network/members"> <img src="https://img.shields.io/github/forks/Randi356/Vegeta-Userbot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
+    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
+</p>
+
+
+<a href="https://t.me/VegetaSupports"><img src="https://img.shields.io/badge/CHANGE%20LOG-A+-blue.svg?style=for-the-badge&logo=Factor.">
+  [![GitHub issues](https://img.shields.io/github/issues/Randi356/Vegeta-Userbot?&style=plastic&logo=github)](https://github.com/Randi356/Vegeta-Userbot/issues)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Randi356/Vegeta-Userbot?&style=plastic&logo=github)](https://github.com/Randi356/Vegeta-Userbot/graphs/commit-activity)
+[![GitHub contributors](https://img.shields.io/github/contributors/Randi356/Vegeta-Userbot?&style=plastic&logo=github)](https://GitHub.com/Randi356/Vegeta-Userbot/graphs/contributors/)
+
+
 ```
              ⚠️ PERINGATAN UNTUK ANDA ⚠️ ️
   Vegeta-Userbot digunakan untuk membantu aktifitas akun anda di telegram
