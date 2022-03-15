@@ -36,6 +36,23 @@
 </p>
 
 
+# Heroku config vars
+
+```
+REM_BG_API_KEY : # get api remove.bg
+OCR_SPACE_API_KEY : # get api ocr
+ALIVE_LOGO : # Link telegraph 
+PM_AUTO_BAN : True # pm blocked
+DB_URI : # SQL Database URI
+NC_LOG_P_M_S : # set to True if you want to log PMs to your PM_LOGGR_BOT_API_ID
+PM_LOGGR_BOT_API_ID : #send .get_id in any channel to forward all your NEW PMs to this group
+MONGO_URI : # link get mongodb.com
+REDIS_URI : # link get redislab.com
+REDIS_PASSWORD : # get link redislab.com
+
+ask cek link @VegetaSupports
+```
+
 # Heroku vegeta deploy
   
   
