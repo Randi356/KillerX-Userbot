@@ -177,6 +177,8 @@ VEGETA_TEKS_KOSTUM = os.environ.get("VEGETA_TEKS_KOSTUM") or "ㅤ"
 # Untuk Melihat Repo
 REPO_NAME = os.environ.get("REPO_NAME") or "🔘Vegeta-Userbot🔘"
 
+SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
+
 # DEVS USERBOT OLNY
 DEVS = (
     1820233416, # bagas
