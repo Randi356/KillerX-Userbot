@@ -72,9 +72,9 @@ Klik tombol di samping untuk membuat string milikmu
   <p align="center"><a href="https://t.me/VegetaSessionBot">
   <img src="https://img.shields.io/badge/SESSION%20VIA%20BOT-red?style=flat&logo=session" width="325" height="50.100" /></a></p>
 
-## SECURITY POLICY
-CLICK [SECURITY](https://github.com/Randi356/Vegeta-Userbot/blob/Vegeta-Userbot/SECURITY.md) 
-
+# CLICK SECURITY POLICE
+<p align="center"><a href="https://github.com/Randi356/Vegeta-Userbot/blob/Vegeta-Userbot/SECURITY.md">
+  <img src="https://img.shields.io/badge/SECURITY-gray?style=flat&logo=session" width="325" height="50.100" /></a></p>
 
 # Special Credits 🔥
 
