@@ -40,7 +40,6 @@
 https://user-images.githubusercontent.com/63757267/159135843-77550722-176d-4ff8-bb62-dfbb58505803.mp4
 
 # Heroku config vars
-
 ```
 REM_BG_API_KEY : # get api remove.bg
 OCR_SPACE_API_KEY : # get api ocr
@@ -56,32 +55,24 @@ REDIS_PASSWORD : # get link redislab.com
 ask cek link @VegetaSupports
 ```
 
-# Heroku vegeta deploy
-  
-  
- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+# Heroku vegeta deploy 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
   
  # Deploy via Bot
- 
   <p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=UmFuZGkzNTYvVmVnZXRhLVVzZXJib3QgVmVnZXRhLVVzZXJib3Q">
   <img src="https://img.shields.io/badge/Deploy%20via%20Bot-blue?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
   
 ### String Session 🖇
-
-`
-
-Klik tombol di samping untuk membuat string milikmu`
+Klik tombol di samping untuk membuat string milikmu
 
 [![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://replit.com/@Randi356/Vegeta-String)
 
 # Session via Bot
- 
   <p align="center"><a href="https://t.me/VegetaSessionBot">
   <img src="https://img.shields.io/badge/SESSION%20VIA%20BOT-red?style=flat&logo=session" width="325" height="50.100" /></a></p>
 
 ## SECURITY POLICY
-
 CLICK [SECURITY](https://github.com/Randi356/Vegeta-Userbot/blob/Vegeta-Userbot/SECURITY.md) 
 
 
