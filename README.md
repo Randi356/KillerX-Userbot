@@ -1,6 +1,10 @@
+</p>
+<p align="center">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-                                                             
-                                         Ｖｅｇｅｔａ－Ｕｓｅｒｂｏｔ
+  Ｖｅｇｅｔａ－Ｕｓｅｒｂｏｔ
+  
+</p>
+<p align="centar">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
@@ -32,10 +36,11 @@
     
 # Vegeta Support
 <p align="center">
-  <img src="https://telegra.ph/file/38b588acea66a3e4c43f7.jpg">
+  <src="https://telegra.ph/file/38b588acea66a3e4c43f7.jpg">
 </p>
 
 # support videos
+
 https://user-images.githubusercontent.com/63757267/159135843-77550722-176d-4ff8-bb62-dfbb58505803.mp4
 
 # Heroku config vars
