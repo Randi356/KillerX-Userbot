@@ -1,4 +1,3 @@
-</p>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
   Ｖｅｇｅｔａ－Ｕｓｅｒｂｏｔ
@@ -36,7 +35,7 @@
     
 # Vegeta Support
 <p align="center">
-  <src="https://telegra.ph/file/38b588acea66a3e4c43f7.jpg">
+  <img src="https://telegra.ph/file/38b588acea66a3e4c43f7.jpg">
 </p>
 
 # support videos
