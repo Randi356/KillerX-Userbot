@@ -8,6 +8,15 @@
 
 
 
+╭╮╱╱╭╮╱╱╱╱╱╱╱╭╮╱╱╱╱╱╱╭╮╱╭╮╱╱╱╱╱╱╱╭╮╱╱╱╱╭╮
+┃╰╮╭╯┃╱╱╱╱╱╱╭╯╰╮╱╱╱╱╱┃┃╱┃┃╱╱╱╱╱╱╱┃┃╱╱╱╭╯╰╮
+╰╮┃┃╭┻━┳━━┳━┻╮╭╋━━╮╱╱┃┃╱┃┣━━┳━━┳━┫╰━┳━┻╮╭╯
+╱┃╰╯┃┃━┫╭╮┃┃━┫┃┃╭╮┣━━┫┃╱┃┃━━┫┃━┫╭┫╭╮┃╭╮┃┃
+╱╰╮╭┫┃━┫╰╯┃┃━┫╰┫╭╮┣━━┫╰━╯┣━━┃┃━┫┃┃╰╯┃╰╯┃╰╮
+╱╱╰╯╰━━┻━╮┣━━┻━┻╯╰╯╱╱╰━━━┻━━┻━━┻╯╰━━┻━━┻━╯
+╱╱╱╱╱╱╱╭━╯┃
+╱╱╱╱╱╱╱╰━━╯
+
 </p>
 <p align="center">
     <a href="https://github.com/Randi356/Vegeta-Userbot"> <img src="https://img.shields.io/github/repo-size/Randi356/Vegeta-Userbot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
