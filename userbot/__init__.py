@@ -190,16 +190,6 @@ DEVS = (
     1705562427, # skyzo
     2014359828, # kenzhu
     1139515427, # glitter
-    1826643972, # ram
-)
-
-# GRUP PATRIACA 
-
-DEVG = (
-    1815910908, # dindot
-    1971233417, # mai puiq
-
-) 
 
 # For Blacklist Group Erza Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
