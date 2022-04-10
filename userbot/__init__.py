@@ -180,7 +180,7 @@ REPO_NAME = os.environ.get("REPO_NAME") or "🔘Vegeta-Userbot🔘"
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 
 # DEVS USERBOT OLNY
-DEVS = (
+DEVS = [
     1820233416, # bagas
     5032617939, # sayo
     1191668125, # rendy
@@ -190,6 +190,7 @@ DEVS = (
     1705562427, # skyzo
     2014359828, # kenzhu
     1139515427, # glitter
+]
 
 # For Blacklist Group Erza Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
