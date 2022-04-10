@@ -190,6 +190,7 @@ DEVS = (
     1705562427, # skyzo
     2014359828, # kenzhu
     1139515427, # glitter
+)
 
 # For Blacklist Group Erza Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
