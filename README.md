@@ -7,16 +7,6 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
-
-╭╮╱╱╭╮╱╱╱╱╱╱╱╭╮╱╱╱╱╱╱╭╮╱╭╮╱╱╱╱╱╱╱╭╮╱╱╱╱╭╮
-┃╰╮╭╯┃╱╱╱╱╱╱╭╯╰╮╱╱╱╱╱┃┃╱┃┃╱╱╱╱╱╱╱┃┃╱╱╱╭╯╰╮
-╰╮┃┃╭┻━┳━━┳━┻╮╭╋━━╮╱╱┃┃╱┃┣━━┳━━┳━┫╰━┳━┻╮╭╯
-╱┃╰╯┃┃━┫╭╮┃┃━┫┃┃╭╮┣━━┫┃╱┃┃━━┫┃━┫╭┫╭╮┃╭╮┃┃
-╱╰╮╭┫┃━┫╰╯┃┃━┫╰┫╭╮┣━━┫╰━╯┣━━┃┃━┫┃┃╰╯┃╰╯┃╰╮
-╱╱╰╯╰━━┻━╮┣━━┻━┻╯╰╯╱╱╰━━━┻━━┻━━┻╯╰━━┻━━┻━╯
-╱╱╱╱╱╱╱╭━╯┃
-╱╱╱╱╱╱╱╰━━╯
-
 </p>
 <p align="center">
     <a href="https://github.com/Randi356/Vegeta-Userbot"> <img src="https://img.shields.io/github/repo-size/Randi356/Vegeta-Userbot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
@@ -28,9 +18,10 @@
 
 
 <a href="https://t.me/VegetaSupports"><img src="https://img.shields.io/badge/CHANGE%20LOG-A+-blue.svg?style=for-the-badge&logo=Factor.">
-  [![GitHub issues](https://img.shields.io/github/issues/Randi356/Vegeta-Userbot?&style=plastic&logo=github)](https://github.com/Randi356/Vegeta-Userbot/issues)
+[![GitHub issues](https://img.shields.io/github/issues/Randi356/Vegeta-Userbot?&style=plastic&logo=github)](https://github.com/Randi356/Vegeta-Userbot/issues)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Randi356/Vegeta-Userbot?&style=plastic&logo=github)](https://github.com/Randi356/Vegeta-Userbot/graphs/commit-activity)
 [![GitHub contributors](https://img.shields.io/github/contributors/Randi356/Vegeta-Userbot?&style=plastic&logo=github)](https://GitHub.com/Randi356/Vegeta-Userbot/graphs/contributors/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/hackinguserbot/rendyprojects)](https://hub.docker.com/r/hackinguserbot/rendyprojects/tags)
 
 
 ```
@@ -94,3 +85,7 @@ Klik tombol di samping untuk membuat string milikmu
 *   [RENDY](https://github.com/Randi356/Vegeta-Userbot) - VEGETA-USERBOT
 *   [VCKY](https://t.me/vckyouubitch) GEEZ-USERBOT
 *   [ULTROID](https://github.com/TeamUltroid) TEAM ULTROID
+
+
+
+
