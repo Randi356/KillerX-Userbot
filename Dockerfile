@@ -1,5 +1,5 @@
 # create docker image build
-FROM hackinguserbot/rendyprojects:buster
+FROM rendyprojects/vegeta-userbot:dev
 
 # credit my owner @FFmpegNotInstalled
 # from hub.docker.com
