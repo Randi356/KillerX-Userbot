@@ -103,4 +103,4 @@ scikit-image
 pendulum
 opencv-python
 youtube-search-python
-spamwatch
+
