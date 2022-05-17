@@ -21,7 +21,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/Randi356/Vegeta-Userbot?&style=plastic&logo=github)](https://github.com/Randi356/Vegeta-Userbot/issues)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Randi356/Vegeta-Userbot?&style=plastic&logo=github)](https://github.com/Randi356/Vegeta-Userbot/graphs/commit-activity)
 [![GitHub contributors](https://img.shields.io/github/contributors/Randi356/Vegeta-Userbot?&style=plastic&logo=github)](https://GitHub.com/Randi356/Vegeta-Userbot/graphs/contributors/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/hackinguserbot/rendyprojects)](https://hub.docker.com/r/hackinguserbot/rendyprojects/tags)
+[![Docker Pulls](https://img.shields.io/docker/pulls/rendyprojects/vegeta-userbot)](https://hub.docker.com/r/rendyprojects/vegeta-userbot/tags)
 
 
 ```
