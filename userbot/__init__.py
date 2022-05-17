@@ -182,7 +182,6 @@ SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 # DEVS USERBOT OLNY
 DEVS = (
     1820233416, # bagas
-    5032617939, # sayo
     1191668125, # rendy
     1416529201, # tonic
     1607338903, # kenkan
