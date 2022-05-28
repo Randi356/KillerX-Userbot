@@ -238,9 +238,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     ".update"
-    "\nUsage: Untuk Melihat Pembaruan Terbaru VEGETA-UBOT."
+    "\nUsage: Untuk Melihat Pembaruan Terbaru KillerX-Userbot."
     "\n\n.update one"
-    "\nUsage: Memperbarui VEGETA-UBOT."
+    "\nUsage: Memperbarui KillerX-Userbot."
     "\n\n.update all"
-    "\nUsage: Memperbarui VEGETA-UBOT Dengan Cara Deploy Ulang."
+    "\nUsage: Memperbarui KillerX-Userbot Dengan Cara Deploy Ulang."
 })
