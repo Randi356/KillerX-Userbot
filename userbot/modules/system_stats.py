@@ -1,4 +1,4 @@
-# System Stats VEGETA-USERBOT
+# System Stats 
 
 import asyncio
 from asyncio import create_subprocess_exec as asyncrunapp
@@ -20,7 +20,7 @@ from userbot import (
    GROUP_LINK,
    BOT_VER, 
    CMD_HELP, 
-   VEGETA_TEKS_KOSTUM, 
+   KILLERX_TEKS_KOSTUM, 
    IG_ALIVE, 
    REPO_NAME, 
    UPSTREAM_REPO_BRANCH, 
@@ -171,7 +171,7 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**☛**VEGETA-UBOT Versi:** \n "
+            "**☛**KillerX-Userbot Versi:** \n "
             f"{verout}"
             "\n**☛**Revisi:**\n "
             f"{revout}"
@@ -234,13 +234,13 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("`PINGING.....`")
+    await alive.edit("**PINGING.....**")
     await asyncio.sleep(1)
     await alive.edit("🔥")
     await asyncio.sleep(3)
     output = (
-        f"**𝙲𝙷𝙸𝙻𝙻𝚈-𝚄𝚂𝙴𝚁𝙱𝙾𝚃{REPO_NAME}𝙲𝙷𝙸𝙻𝙻𝚈-𝚄𝚂𝙴𝚁𝙱𝙾𝚃** \n\n"
-        f"\n__**{VEGETA_TEKS_KOSTUM}**__\n"
+        f"**KillerX-𝚄𝚂𝙴𝚁𝙱𝙾𝚃{REPO_NAME}KillerX-𝚄𝚂𝙴𝚁𝙱𝙾𝚃** \n\n"
+        f"\n__**{KILLERX_TEKS_KOSTUM}**__\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
         f"**👑 owner** \n"
         f" ➥ `{DEFAULTUSER}` \n"
@@ -253,7 +253,7 @@ async def amireallyalive(alive):
         f"┣• `📕 Modules  :`{len(modules)} \n"
         f"╰✠╼━━━━━━❖━━━━━━━✠╯\n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-        f"[🌹𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼🌹]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/Randi356/Vegeta-Userbot) || [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK}) \n"
+        f"[🌹𝙸𝙽𝚂𝚃𝙰𝙶𝚁𝙰𝙼🌹]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/Randi356/KillerX-Userbot) || [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK}) \n"
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰")
     if ALIVE_LOGO:
         try:
@@ -281,7 +281,7 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n"
-        f"       **🌹VEGETA-USERBOT🌹** \n"
+        f"       *👹KILLERX-USERBOT👹** \n"
         f"**╰✠╼━━━━━━❖━━━━━━━✠╯**\n"
         f"❃ **👑Owner**             ➥ `{DEFAULTUSER}` \n"
         f"❃ **🤠Username**    ➥ `@{user.username}` \n"
@@ -290,7 +290,7 @@ async def amireallyalive(alive):
         f"❃ **😎Versi Bot**      ➥ `9.1` \n"
         f"❃ **📕Modul**           ➥ `{len(modules)}` \n\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
-        f"[{REPO_NAME}](https://github.com/Randi356/Vegeta-Userbot) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
+        f"[{REPO_NAME}](https://github.com/Randi356/KillerX-Userbot) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ **")
     if ALIVE_LOGO:
         try:
@@ -316,13 +316,13 @@ async def amireallyalive(alive):
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("`CONNECTING......`")
+    await alive.edit("**CONNECTING......**")
     await asyncio.sleep(1)
     await alive.edit("🔥")
     await asyncio.sleep(3)
     output = (
         f"**✠╼━━━━━━❖━━━━━━━✠ ** \n"
-        f"**     🔥VEGETA-USERBOT🔥** \n"
+        f"**     👹KILLERX-USERBOT👹** \n"
         f"**✠╼━━━━━━❖━━━━━━━✠** \n"
         f"**╭╼════════════════════╾╮** \n"
         f"**│  ⇱ **SISTEM ALIVE USERBOT** ⇲ \n"
@@ -335,7 +335,7 @@ async def amireallyalive(alive):
         f"**╟◈ 👾 **Bot Ver  :** v{BOT_VER} \n"
         f"**╟◈ 📂 **Plugins  :** {len(modules)} Plugin \n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰**\n"
-        f"[{REPO_NAME}](https://github.com/Randi356/Vegeta-Userbot) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
+        f"[{REPO_NAME}](https://github.com/Randi356/KillerX-Userbot) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
         f"**▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ **")
     if ALIVE_LOGO:
         try:
@@ -374,15 +374,15 @@ async def amireallyalive(alive):
     await alive.edit("**Prossing** **Boostin**")
     await alive.edit("**Prossing** **Boosting**")
     await asyncio.sleep(1)
-    await alive.edit("**Prossing Boosting** **V**")
-    await alive.edit("**Prossing Boosting** **Ve**")
-    await alive.edit("**Prossing Boosting** **Veg**")
-    await alive.edit("**Prossing Boosting** **Veget**")
-    await alive.edit("**Prossing Boosting** **Vegeta**")
+    await alive.edit("**Prossing Boosting** **K**")
+    await alive.edit("**Prossing Boosting** **Ki**")
+    await alive.edit("**Prossing Boosting** **Kil**")
+    await alive.edit("**Prossing Boosting** **Kill**")
+    await alive.edit("**Prossing Boosting** **Kille**")
     await asyncio.sleep(1)
-    await alive.edit("**Proses Boosting** **Vegeta U**")
-    await alive.edit("**Proses Boosting** **Vegeta Us**")
-    await alive.edit("**Proses Boosting** **Vegeta Use**")
+    await alive.edit("**Proses Boosting** **KillerX U**")
+    await alive.edit("**Proses Boosting** **KillerX Us**")
+    await alive.edit("**Proses Boosting** **KillerX Use**")
     await alive.edit("**Proses Boosting** **Vegeta User**")
     await alive.edit("**Proses Boosting** **Vegeta Userb**")
     await alive.edit("**Proses Boosting** **Vegeta Userbo**")
@@ -409,7 +409,7 @@ async def amireallyalive(alive):
     await alive.edit("8✊===D")
     await asyncio.sleep(1)
     output = (
-        f"**🐼Vegeta Userbot is actived!🐼** \n\n"
+        f"**🐼KillerX Userbot is actived!🐼** \n\n"
         f"┣❏😎 **Master**: {DEFAULTUSER} \n"
         f"┣❏🧐 **Username**: **@{user.username}** \n"
         f"┣❏🐍 **Python**:  Versi {python_version()} \n"
@@ -417,7 +417,7 @@ async def amireallyalive(alive):
         f"┣❏📂 **Plugins**: {len(modules)} Plugins \n"
         f"┣❏🔮 **Telethon**: Versi {version.__version__} \n\n"
         f"🌸 SUPPORT [SUPPORT]({GROUP_LINK}) \n"
-        f"📍 REPO [VEGETA USERBOT](https://github.com/Randi356/Vegeta-Userbot)\n")
+        f"📍 REPO [KILLERX USERBOT](https://github.com/Randi356/KillerX-Userbot)\n")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
