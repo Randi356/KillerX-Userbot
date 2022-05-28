@@ -87,7 +87,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[❄️ Vegeta-Userbot Repo](https://github.com/Randi356/Vegeta-Userbot/blob/Vegeta-Userbot/README.md)"
+        "\n[❄️ KillerX-Userbot Repo](https://github.com/Randi356/KillerX-Userbot/blob/KillerX-Userbot/README.md)"
         "\n[❄️Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[❄️Special - Note](https://telegra.ph/Special-Note-11-02)")
 
@@ -110,10 +110,10 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "**Hey**, I am using **🌸Vegeta-Userbot🌸** \n"
+        "**Hey**, I am using **🌸KillerX-Userbot🌸** \n"
         "❄️━━━━━━━━━━━━━━━━━━━━━━卍\n"
-        "⇼ **Repo Userbot :** [Repo](https://github.com/Randi356/Vegeta-Userbot)\n"
-        "⇼ **Owner Bot       :** [Rendy](t.me/CuteInspire)\n"
+        "⇼ **Repo Userbot :** [Repo](https://github.com/Randi356/KillerX-Userbot)\n"
+        "⇼ **Owner Bot       :** [Rendy](t.me/rencprx)\n"
         "❄️━━━━━━━━━━━━━━━━━━━━━━卍\n"
         "⇼ **Instagram       :** [instagram](instagram.com/yotteno)\n"
         "⇼ **Support           :** [Channel](https://t.me/RendyProjects)\n"
@@ -276,13 +276,13 @@ CMD_HELP.update({
     \n↳ : Dapatkan item acak dari daftar item.",
     "sleep": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sleep <seconds>`\
     \n↳ : `.sleep`\
-    \n  •  **Function : Biarkan Vegeta-Userbot tidur selama beberapa detik.",
+    \n  •  **Function : Biarkan KillerX-Userbot tidur selama beberapa detik.",
     "shutdown": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.shutdown`\
     \n↳ : Mematikan bot",
     "repo": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repo`\
-    \n↳ : Menampilan link Repository Vegeta-Userbot.",
+    \n↳ : Menampilan link Repository KillerX-Userbot.",
     "string": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.string`\
-    \n↳: Menampilkan link String Vegeta-Userbot",
+    \n↳: Menampilkan link String Killerx-Userbot",
     "readme": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙 `.readme`\
     \n↳ : Menyediakan tautan untuk mengatur userbot dan modulnya.",
     "repeat": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.repeat <no> <text>`\
