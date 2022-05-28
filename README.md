@@ -1,6 +1,6 @@
 <p align="center">
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-  Ｖｅｇｅｔａ－Ｕｓｅｒｂｏｔ
+  KILLERX-USERBOT
   
 </p>
 <p align="centar">
@@ -9,31 +9,31 @@
 
 </p>
 <p align="center">
-    <a href="https://github.com/Randi356/Vegeta-Userbot"> <img src="https://img.shields.io/github/repo-size/Randi356/Vegeta-Userbot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Randi356/Vegeta-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/Randi356/YVegeta-Userbot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Randi356/Vegeta-Userbot/issues"> <img src="https://img.shields.io/github/issues/Randi356/Vegeta-Userbot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Randi356/Vegeta-Userbot/network/members"> <img src="https://img.shields.io/github/forks/Randi356/Vegeta-Userbot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
+    <a href="https://github.com/Randi356/KillerX-Userbot"> <img src="https://img.shields.io/github/repo-size/Randi356/KillerX-Userbot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Randi356/KillerX-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/Randi356/KillerX-Userbot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Randi356/KillerX-Userbot/issues"> <img src="https://img.shields.io/github/issues/Randi356/KillerX-Userbot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/Randi356/KillerX-Userbot/network/members"> <img src="https://img.shields.io/github/forks/Randi356/KillerX-Userbot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 
 
-<a href="https://t.me/VegetaSupports"><img src="https://img.shields.io/badge/CHANGE%20LOG-A+-blue.svg?style=for-the-badge&logo=Factor.">
-[![GitHub issues](https://img.shields.io/github/issues/Randi356/Vegeta-Userbot?&style=plastic&logo=github)](https://github.com/Randi356/Vegeta-Userbot/issues)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Randi356/Vegeta-Userbot?&style=plastic&logo=github)](https://github.com/Randi356/Vegeta-Userbot/graphs/commit-activity)
-[![GitHub contributors](https://img.shields.io/github/contributors/Randi356/Vegeta-Userbot?&style=plastic&logo=github)](https://GitHub.com/Randi356/Vegeta-Userbot/graphs/contributors/)
+<a href="https://t.me/pantekyks"><img src="https://img.shields.io/badge/CHANGE%20LOG-A+-blue.svg?style=for-the-badge&logo=Factor.">
+[![GitHub issues](https://img.shields.io/github/issues/Randi356/KillerX-Userbot?&style=plastic&logo=github)](https://github.com/Randi356/KillerX-Userbot/issues)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Randi356/KillerX-Userbot?&style=plastic&logo=github)](https://github.com/Randi356/KillerX-Userbot/graphs/commit-activity)
+[![GitHub contributors](https://img.shields.io/github/contributors/Randi356/KillerX-Userbot?&style=plastic&logo=github)](https://GitHub.com/Randi356/KillerX-Userbot/graphs/contributors/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/rendyprojects/vegeta-userbot)](https://hub.docker.com/r/rendyprojects/vegeta-userbot/tags)
 
 
 ```
              ⚠️ PERINGATAN UNTUK ANDA ⚠️ ️
-  Vegeta-Userbot digunakan untuk membantu aktifitas akun anda di telegram
+  KillerX-Userbot digunakan untuk membantu aktifitas akun anda di telegram
    Kami tidak bertanggung jawab atas apa yang anda salah gunakan pada repository ini
       ! Hati hati dalam penggunaan pada repository ini !
    Jika salah satu member salah gunakan repository ini , kami terpaksa harus meng gban anda 
   Jangan pernah sekali sekali menyalah gunakan repository ini
 ```
     
-# Vegeta Support
+# KillerX Support
 <p align="center">
   <img src="https://telegra.ph/file/38b588acea66a3e4c43f7.jpg">
 </p>
@@ -58,7 +58,7 @@ REDIS_PASSWORD : # get link redislab.com
 ask cek link @VegetaSupports
 ```
 
-# Heroku vegeta deploy 
+# Heroku KillerX deploy 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
   
@@ -82,7 +82,7 @@ Klik tombol di samping untuk membuat string milikmu
 # Special Credits 🔥
 
 *   [LANDAK RAMA](https://github.com/ramadhani892) - RAM-UBOT
-*   [RENDY](https://github.com/Randi356/Vegeta-Userbot) - VEGETA-USERBOT
+*   [RENDY](https://github.com/Randi356/KillerX-Userbot) - KILLERX-USERBOT
 *   [VCKY](https://t.me/vckyouubitch) GEEZ-USERBOT
 *   [ULTROID](https://github.com/TeamUltroid) TEAM ULTROID
 
