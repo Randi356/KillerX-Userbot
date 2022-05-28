@@ -1,6 +1,6 @@
 {
-  "name": "VEGETA-USERBOT",
-  "description": "[VEGETA-USERBOT] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "name": "KillerX-Userbot",
+  "description": "[KillerX-Userbot] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
   "logo": "https://telegra.ph/file/38b588acea66a3e4c43f7.jpg",
   "keywords": [
     "telegram",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Randi356/Vegeta-Userbot",
+  "repository": "https://github.com/Randi356/KillerX-Userbot",
   "telegram": "https://t.me/rencprx",
-  "success_url": "https://t.me/VegetaSupports",
+  "success_url": "https://t.me/pantekyks",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -56,7 +56,7 @@
     },
     "UPSTREAM_REPO_BRANCH": {
       "description": "DONT'T CHANGE HERE",
-      "value": "Vegeta-Userbot",
+      "value": "KillerX-Userbot",
       "required": true   
     },
     "BOT_USERNAME": {
