@@ -105,9 +105,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/Randi356/Vegeta-Userbot")
+    "https://github.com/Randi356/KillerX-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Vegeta-Userbot")
+    "UPSTREAM_REPO_BRANCH", "KillerX-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -172,10 +172,10 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Untuk Perintah .rambot (alive)
-VEGETA_TEKS_KOSTUM = os.environ.get("VEGETA_TEKS_KOSTUM") or "ㅤ"
+KILLERX_TEKS_KOSTUM = os.environ.get("KILLERX_TEKS_KOSTUM") or "ㅤ"
 
 # Untuk Melihat Repo
-REPO_NAME = os.environ.get("REPO_NAME") or "🔘Vegeta-Userbot🔘"
+REPO_NAME = os.environ.get("REPO_NAME") or "KillerX-Userbot"
 
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 
@@ -421,7 +421,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**🔥Vegeta-Userbot🔥 v{BOT_VER} Sedang berjalan!**\n\n"
+        f"**🔥KillerX-Userbot🔥 v{BOT_VER} Sedang berjalan!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -479,7 +479,7 @@ def paginate_help(page_number, loaded_modules, prefix):
                     "< ̤< ̤", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    f"⭐ 𝗖𝗟𝗢𝗦𝗘 ⭐", data="{}_close({})".format(prefix, modulo_page)
+                    f" 𝗖𝗟𝗢𝗦𝗘 ", data="{}_close({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
                     "> ̤> ̤", data="{}_next({})".format(prefix, modulo_page)
@@ -503,11 +503,11 @@ with bot:
         async def handler(event):
             await event.message.get_sender()
             text = (
-                f"**Hey**, __I am using__  **🔥Vegeta-Userbot** \n\n"
+                f"**Hey**, __I am using__  **🔥KillerX-Userbot** \n\n"
                 f"       __Thanks For Using me__\n\n"
-                f"🔥 **Group Support :** [Support](t.me/VegetaSupports)\n"
+                f"🔥 **Group Support :** [Support](t.me/pantekyks)\n"
                 f"🔥 **OWNER :** [Rendy](t.me/rencprx)\n"
-                f"🔥 **Repo :** [Vegeta-Userbot](https://github.com/Randi356/Vegeta-Userbot)\n"
+                f"🔥 **Repo :** [KillerX-Userbot](https://github.com/Randi356/KillerX-Userbot)\n"
             )
             await tgbot.send_file(
                 event.chat_id,
@@ -516,13 +516,13 @@ with bot:
                 buttons=[
                     [
                         custom.Button.url(
-                            text="🔥 Repo Vegeta-Userbot 🔥",
-                            url="https://github.com/Randi356/Vegeta-Userbot",
+                            text="🔥 Repo KillerX-Userbot 🔥",
+                            url="https://github.com/Randi356/KillerX-Userbot",
                         )
                     ],
                     [
                         custom.Button.url(
-                            text="GROUP", url="https://t.me/VegetaSupports"
+                            text="GROUP", url="https://t.me/pantekyks"
                         ),
                         custom.Button.url(
                             text="CHANNEL", url="https://t.me/RendyProjects"
@@ -541,20 +541,20 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"**⚡ inline Vegeta-Userbot ⚡**\n\n⚡ **Owner** [Rendy](t.me/rencprx)\n⚡ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**⚡ inline KillerX-Userbot ⚡**\n\n⚡ **Owner** [Rendy](t.me/rencprx)\n⚡ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository 🔥Vegeta-Userbot🔥",
+                    description="Repository 🔥KillerX-Userbot🔥",
                     url="https://t.me/RendyProjects",
-                    text="**🔥Vegeta-Userbot🔥**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **Owner :** [Rendy](https://t.me/rencprx)\n⚡ **Support :** @VegetaSupports\n⚡ **Repository :** [🔘Vegeta-Userbot🔘](https://github.com/Randi356/Vegeta-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**🔥KillerX-Userbot🔥**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **Owner :** [Rendy](https://t.me/rencprx)\n⚡ **Support :** @pantekyks\n⚡ **Repository :** [👹KillerX-Userbot👹](ttps://github.com/Randi356/KillerX-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/VegetaSupports"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/pantekyks"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
+                                "ʀᴇᴘᴏ", "https://github.com/Randi356/KillerX-Userbot"
                             ),
                         ],
                     ],
@@ -562,15 +562,15 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="🔥 Vegeta-UserBot 🔥",
-                    description="Vegeta-Userbot | Telethon",
-                    url="https://t.me/notsupports",
-                    text=f"**Vegeta-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **OWNER:** [Rendy](t.me/rencprx)\n⚡ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @VegetaSupports\n➖➖➖➖➖➖➖➖➖➖",
+                    title="🔥 KillerX-UserBot 🔥",
+                    description="KillerX-Userbot | Telethon",
+                    url="https://t.me/pantekyks",
+                    text=f"**KillerX-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n⚡ **OWNER:** [Rendy](t.me/rencprx)\n⚡ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @pantekyks\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/RendyProejcts"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Randi356/Vegeta-Userbot"
+                                "ʀᴇᴘᴏ", "https://github.com/Randi356/KillerX-Userbot"
                             ),
                         ],
                     ],
@@ -604,24 +604,24 @@ with bot:
                 result = builder.photo(
                     file=ramlogo,
                     link_preview=False,
-                    text=f"🔥Vegeta-Userbot🔥\n\n⚡**Owner : [Rendy](t.me/CuteInspire)**\n\n⚡ **Bot Ver :** `9.1`\n✨ **𝗠odules :** `{len(dugmeler)}`",
+                    text=f"🔥KillerX-Userbot🔥\n\n⚡**Owner : [Rendy](t.me/rencprx)**\n\n⚡ **Bot Ver :** `9.1`\n✨ **𝗠odules :** `{len(dugmeler)}`",
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari 🔥Vegeta-Userbot🔥 ",
+                    "Bantuan Dari Killerx-Userbot ",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " 🔥Vegeta-Userbot🔥 ",
-                    text="""**🔥Vegeta-Userbot\n\n Anda Bisa Membuat Vegeta Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
+                    " 🔥KillerX-Userbot🔥 ",
+                    text="""**🔥KillerX-Userbot\n\n Anda Bisa Membuat KillerX Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "🔥Vegeta-Userbot🔥",
-                                "https://github.com/Randi356/Vegeta-Userbot"),
+                                "KillerX-Userbot",
+                                "https://github.com/Randi356/KillerX-Userbot"),
                             custom.Button.url(
                                 "OWNER",
                                 "t.me/rencprx")]],
@@ -663,7 +663,7 @@ with bot:
                             Button.url("📢 Channel Support",
                                        "t.me/RendyProjects"),
                             Button.url("👥 Group support",
-                                       "t.me/VegetaSupports")],
+                                       "t.me/pantekyks")],
                         [Button.inline("Open Menu", data="nepo")],
                         [custom.Button.inline(
                             "Close", b"close")],
