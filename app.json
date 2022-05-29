@@ -1,0 +1,91 @@
+{
+  "name": "KillerX-Userbot",
+  "description": "[KillerX-Userbot] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "logo": "https://telegra.ph/file/38b588acea66a3e4c43f7.jpg",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/Randi356/KillerX-Userbot",
+  "telegram": "https://t.me/rencprx",
+  "success_url": "https://t.me/pantekyks",
+  "stack": "container",
+  "env": {
+    "API_KEY": {
+      "description": "Dapatkan Api Key di web my.telegram.org.",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Dapatkan Api Hash Di Web my.telegram.org.",
+      "required": true
+     },
+     "STRING_SESSION": {
+      "description": "Ambil String Session di link https://replit.com/@Randi356/Vegeta-String",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku API KEY mu, dapatkan dari web 'https://dashboard.heroku.com/account'",
+      "value": "Check Di Heroku Dashboard Mu",
+      "required": true
+    },
+    "BOTLOG_CHATID": {
+      "description": "Masuk @spambotVegeta atau Buatlah sebuah grup private/public masukan @kazukoRobot lalu ketik /id, Salin dan hapus id dibawah ini, Lalu tempel.",
+      "value": "-1001568778086",
+      "required": true
+    },
+    "ALIVE_NAME": {
+      "description": "Nama untuk menunjukan pesan .alive",
+      "value": "Vegeta-Userbot",
+      "required": true
+    },
+    "S_PACK_NAME": {
+      "description": "Nama Sticker Pack Mu",
+      "value": "Made by @rencprx",
+      "required": false
+    },
+    "BOT_TOKEN": {
+      "description": "Untuk menampilkam mode tombol .xhelp, Ambil token di @BotFather",
+      "required": true
+    },
+    "UPSTREAM_REPO_BRANCH": {
+      "description": "DONT'T CHANGE HERE",
+      "value": "KillerX-Userbot",
+      "required": true   
+    },
+    "BOT_USERNAME": {
+      "description": "isi username bot mu yang dari @BotFather",
+      "required": true
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],"buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+  }, {
+    "url": "https://github.com/heroku/heroku-buildpack-redis"
+  }, {
+    "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+  }, {
+    "url": "https://github.com/HasibulKabir/heroku-buildpack-rarlab"
+  },{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  }, {
+    "url": "https://github.com/amivin/aria2-heroku"
+  }, {
+    "url": "https://github.com/stevo550/buildpack-slug-cleaner"
+  }]
+}
