@@ -55,10 +55,10 @@ MONGO_URI : # link get mongodb.com
 REDIS_URI : # link get redislab.com
 REDIS_PASSWORD : # get link redislab.com
 
-ask cek link @VegetaSupports
+ask cek link https://t.me/testessg
 ```
 
-# Heroku KillerX deploy 
+# Heroku Yudha-userbot deploy 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
   
