@@ -35,7 +35,7 @@
     
 # KillerX Support
 <p align="center">
-  <img src="https://telegra.ph/file/58538b7cb200e3f49b449.jpg">
+  <img src="https://telegra.ph/file/cad7038fe82e47f79c609.jpg">
 </p>
 
 # support videos
