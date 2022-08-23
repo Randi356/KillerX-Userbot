@@ -26,7 +26,7 @@
 
 ```
              ⚠️ PERINGATAN UNTUK ANDA ⚠️ ️
-  KillerX-Userbot digunakan untuk membantu aktifitas akun anda di telegram
+  Yudha/user-bot digunakan untuk membantu aktifitas akun anda di telegram
    Kami tidak bertanggung jawab atas apa yang anda salah gunakan pada repository ini
       ! Hati hati dalam penggunaan pada repository ini !
    Jika salah satu member salah gunakan repository ini , kami terpaksa harus meng gban anda 
@@ -35,7 +35,7 @@
     
 # KillerX Support
 <p align="center">
-  <img src="https://telegra.ph/file/38b588acea66a3e4c43f7.jpg">
+  <img src="https://telegra.ph/file/cad7038fe82e47f79c609.jpg">
 </p>
 
 # support videos
@@ -55,10 +55,10 @@ MONGO_URI : # link get mongodb.com
 REDIS_URI : # link get redislab.com
 REDIS_PASSWORD : # get link redislab.com
 
-ask cek link @VegetaSupports
+ask cek link https://t.me/testessg
 ```
 
-# Heroku KillerX deploy 
+# Heroku Yudha-userbot deploy 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
   
