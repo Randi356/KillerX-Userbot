@@ -26,7 +26,7 @@
 
 ```
              ⚠️ PERINGATAN UNTUK ANDA ⚠️ ️
-  KillerX-Userbot digunakan untuk membantu aktifitas akun anda di telegram
+  Yudha/user-bot digunakan untuk membantu aktifitas akun anda di telegram
    Kami tidak bertanggung jawab atas apa yang anda salah gunakan pada repository ini
       ! Hati hati dalam penggunaan pada repository ini !
    Jika salah satu member salah gunakan repository ini , kami terpaksa harus meng gban anda 
@@ -35,7 +35,7 @@
     
 # KillerX Support
 <p align="center">
-  <img src="https://telegra.ph/file/38b588acea66a3e4c43f7.jpg">
+  <img src="https://telegra.ph/file/58538b7cb200e3f49b449.jpg">
 </p>
 
 # support videos
